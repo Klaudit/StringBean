@@ -12,15 +12,15 @@ This defines the division as a column (floats left) and applies a hard width, si
 
 #### Breakpoint Breakdown
 
-    SELECTOR        (x)POINTS       DEVICE WIDTHS
-    xsmall-x        1 to 16         =< 399px
-    small-x         1 to 16         400px to 899px
-    medium-x        1 to 16         900px to 1279px
-    large-x         1 to 16         1280px to 1919px
-    mega-2k-x       1 to 16         1920px to 2047px
-    mega-3k-x       1 to 16         2048px to 3071px
-    mega-4k-x       1 to 16         3072px to ~
-    full-16         16 (Fixed)      All Resolutions
+    LABEL     START    END      COLUMNS
+    -----------------------------------
+    XSMALL    0        319px    16
+    SMALL     320px    599px    16
+    MEDIUM    600px    1023px   16
+    LARGE     1024px   1919px   16
+    MEGA-2K   1920px   2047px   16
+    MEGA-3K   2048px   3071px   16
+    MEGA-4K   3072px   ~        16
 
 ##### Using breakpoint specific selectors
 You can stack the breakpoint selectors on an element.
