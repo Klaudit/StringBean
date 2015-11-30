@@ -1,9 +1,9 @@
 # StringBean
 The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. 
 
-Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think 2k, 3k, and 4k screens).
+Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
 
-In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-2k, mega-3k, and mega-4k.
+In addition to this, String Bean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
 
 ## How it works
 To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class, like so: class="column xsmall-16 small-16 medium-10 large-11".
@@ -13,15 +13,13 @@ This defines the division as a column (floats left) and applies a hard width, si
 #### Breakpoint Breakdown
 
     LABEL     START    END      COLUMNS
-    -----------------------------------
     XSMALL    0        319px    16
     SMALL     320px    599px    16
     MEDIUM    600px    1023px   16
-    LARGE     1024px   1919px   16
-    MEGA-2K   1920px   2047px   16
-    MEGA-3K   2048px   3071px   16
-    MEGA-4K   3072px   ~        16
-    FULL-16   0        ~        1
+    LARGE     1024px   1600px   16
+    MEGA-HD   1601px   2048px   16
+    MEGA-UHD  2049px   ~        16
+    FULL-16   0        ~        16
 
 ##### Using breakpoint specific selectors
 You can stack the breakpoint selectors on an element.
@@ -45,17 +43,17 @@ You can stack the breakpoint selectors on an element.
       </nav>
     </header>
 
-##### 2K, 3K, and 4K Classes
-Notice the additional classes starting "mega-" - these define the breakpoints for 2K, 3K, and 4K.
+##### HD and UHD Breakpoints
+Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
 
     <header class="container">
       <nav class="row">
-        <div class="column xsmall-16 small-16 medium-10 large-11 mega-2k-13 mega-3k-14 mega-4k-15">
+        <div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14">
           <h1>
             StringBean
           </h1>
         </div>
-        <div class="column xsmall-16 small-16 medium-5 large-4 mega-2k-3 mega-3k-2 mega-4k-1">
+        <div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2">
           <p id="Strapline">
             Powering the internet, gently.
           </p>
