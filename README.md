@@ -19,7 +19,7 @@ This defines the division as a column (floats left) and applies a hard width, si
     LARGE     1024px   1600px   16
     MEGA-HD   1601px   2048px   16
     MEGA-UHD  2049px   ~        16
-    FULL-16   0        ~        16
+    FULL-16   0        ~        1
 
 ##### Using breakpoint specific selectors
 You can stack the breakpoint selectors on an element.
