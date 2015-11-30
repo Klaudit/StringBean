@@ -1,28 +1,28 @@
 /** 
-* StringBean 1.0.0
-* ****************
+* StringBean 1.0.4a
+* *****************
 * @description : StringBean is a mobile-first responsive CSS framework designed
 * to work with not just mobiles, but also with higher resolutions such as 2K,
 * 3K, and 4K (and above).
-*
+* 
 * Breakpoints Supported
 * ---------------------
 *        LABEL     START    END      COLUMNS
 *     1. XSMALL    0        319px    16
 *     2. SMALL     320px    599px    16
 *     3. MEDIUM    600px    1023px   16
-*     4. LARGE     1024px   1919px   16
-*     5. MEGA-2K   1920px   2047px   16
-*     6. MEGA-3K   2048px   3071px   16
-*     7. MEGA-4K   3072px   ~        16
-*
+*     4. LARGE     1024px   1600px   16
+*     5. MEGA-HD   1601px   2048px   16
+*     6. MEGA-UHD  2049px   ~        16
+*     7. FULL-16   0        ~        16
+* 
 * Contents
 * --------
 *   1. Resets
-*   2. Basic Formatting
+*   2. Containers & Rows
+*   3. Basic Formatting
 *      a. Layouts (Fixed Widths)
 *      b. Headings & Others
-*   3. Containers & Rows
 *   4. Columns & Grids
 *   5. Visibility
 *   6. Buttons & Links
@@ -32,33 +32,34 @@
 */
 
 /** 1. Resets **/
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
+	sub, sup, a, b, i, u, strong { display:inline-block; }
     html,body { display:block; width:100%; font-size:13px; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
     ol, ul { list-style: none; }
-
-/** 2. Basic Formatting **/
-    .layout-800 { max-width:800px; } .layout-860 { max-width:860px; } .layout-900 { max-width:900px; } .layout-960 { max-width:960px; } .layout-980 { max-width:980px; } .layout-1000 { max-width:1000px; } .layout-1024 { max-width:1024px; } .layout-1200 { max-width:1200px; } .layout-1400 { max-width:1400px; }  /** Enforce Grid max widths **/
+    
+/** 2. Containers and Rows **/
+    .container { display:block; clear:both; }
+    .row { margin:0.5rem 2% 0.5rem 2%; clear:both; }
+    
+/** 3. Basic Formatting **/
+    .layout-800 { margin:auto; max-width:800px; } .layout-860 { margin:auto; max-width:860px; } .layout-900 { margin:auto; max-width:900px; } .layout-960 { margin:auto; max-width:960px; } .layout-980 { margin:auto; max-width:980px; } .layout-1000 { margin:auto; max-width:1000px; } .layout-1024 { margin:auto; max-width:1024px; } .layout-1200 { margin:auto; max-width:1200px; } .layout-1400 { margin:auto; max-width:1400px; }  /** Enforce Grid max widths **/
     h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
     h1,h2,h3,h4,h5,h6,p,span,small,li { padding-bottom:1em; } /** Adds top padding for all text-bearing elements **/
     pre { background:#f5f5f5; border:1px solid #ddd; padding:0.25em; overflow:auto; } /** PRE & CODE formatting **/
-
-/** 3. Containers and Rows **/
-    .container { display:block; clear:both; }
-    .row { margin:0.5rem 2% 0.5rem 2%; clear:both; }
-
+    
 /** 4. Columns & Grids **/
     .column, .columns, .grid { display:block; margin-left:1.25%; margin-right:1.25%; float:left; }
-
+    
 /** 5. Visibility **/
-    .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-xlarge { display:none; }
-    .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-xlarge { display:inline-block; }
+    .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
+    .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd { display:inline-block; }
     .hide { display:none; }
-
+    
 /** 6. Buttons & Links **/
     .button { display:inline-block; width:auto; border:0; padding:0.25rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:1.5rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; white-space: nowrap; }
     .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/
-
+    
 /** 7. Status Formatting **/
     .normal, .inactive, .success, .alert, .information, .regal { padding:0.5rem; color:#fff; }
     .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
@@ -99,7 +100,7 @@
         .xsmall-16, .full-16 { width:99.00%; }
         .xsmall-third { width:30.833% }
         .row { margin-left:0.5%; margin-right:0.5%; }
-        .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
+        .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .show-only-xsmall { display:block; }
     }
     
@@ -124,7 +125,7 @@
         .small-16, .full-16 { width:99.00%; }
         .small-third { width:30.833% }
         .row { margin-left:0.5%; margin-right:0.5%; }
-        .hide-below-medium, .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
+        .hide-below-medium, .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall { display:none; }  /** Show elements only below certain points **/
         .show-only-small { display:block; }
     }
@@ -148,13 +149,13 @@
         .medium-15 { width:91.25%; }
         .medium-16, .full-16 { width:97.50%; }
         .medium-third { width:30.833% }
-        .hide-below-large, .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
+        .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small { display:none; } /** Show elements only below certain points **/
         .show-only-medium { display:block; }
     }
     
     /** LARGE **/
-    @media screen and (min-width: 1024px) and (max-width: 1919px) {
+    @media screen and (min-width: 1024px) and (max-width: 1600px) {
         .large-1 { width:3.75%; }
         .large-2 { width:10.00%; }
         .large-3 { width:16.25%; }
@@ -172,80 +173,56 @@
         .large-15 { width:91.25%; }
         .large-16, .full-16 { width:97.50%; }
         .large-third { width:30.833% }
-        .hide-below-mega-2k, .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
+        .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium { display:none; }  /** Show elements only below certain points **/
         .show-only-large { display:block; }
     }
     
-    /** 2K **/
-    @media screen and (min-width: 1920px) and (max-width: 3071px) {
-        .mega-2k-1 { width:3.75%; }
-        .mega-2k-2 { width:10.00%; }
-        .mega-2k-3 { width:16.25%; }
-        .mega-2k-4 { width:22.50%; }
-        .mega-2k-5 { width:28.75%; }
-        .mega-2k-6 { width:35.00%; }
-        .mega-2k-7 { width:41.25%; }
-        .mega-2k-8 { width:47.50%; }
-        .mega-2k-9 { width:53.75%; }
-        .mega-2k-10 { width:60.00%; }
-        .mega-2k-11 { width:66.25%; }
-        .mega-2k-12 { width:72.50%; }
-        .mega-2k-13 { width:78.75%; }
-        .mega-2k-14 { width:85.00%; }
-        .mega-2k-15 { width:91.25%; }
-        .mega-2k-16, .full-16 { width:97.50%; }
-        .mega-2k-third { width:30.833% }
-        .hide-below-mega-3k, .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
-        .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
-        .show-only-mega-2k { display:block; }
-    }
-    
     /** 3K **/
-    @media screen and (min-width: 3072px) and (max-width: 4095px) {
-        .mega-3k-1 { width:3.75%; }
-        .mega-3k-2 { width:10.00%; }
-        .mega-3k-3 { width:16.25%; }
-        .mega-3k-4 { width:22.50%; }
-        .mega-3k-5 { width:28.75%; }
-        .mega-3k-6 { width:35.00%; }
-        .mega-3k-7 { width:41.25%; }
-        .mega-3k-8 { width:47.50%; }
-        .mega-3k-9 { width:53.75%; }
-        .mega-3k-10 { width:60.00%; }
-        .mega-3k-11 { width:66.25%; }
-        .mega-3k-12 { width:72.50%; }
-        .mega-3k-13 { width:78.75%; }
-        .mega-3k-14 { width:85.00%; }
-        .mega-3k-15 { width:91.25%; }
-        .mega-3k-16, .full-16 { width:97.50%; }
-        .mega-3k-third { width:30.833% }
-        .hide-below-mega-4k { display:none; }  /** Hide elements below certain points **/
-        .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-2k { display:none; }
-        .show-only-mega-3k { display:block; }
+    @media screen and (min-width: 1601px) and (max-width: 2048px) {
+        .mega-hd-1 { width:3.75%; }
+        .mega-hd-2 { width:10.00%; }
+        .mega-hd-3 { width:16.25%; }
+        .mega-hd-4 { width:22.50%; }
+        .mega-hd-5 { width:28.75%; }
+        .mega-hd-6 { width:35.00%; }
+        .mega-hd-7 { width:41.25%; }
+        .mega-hd-8 { width:47.50%; }
+        .mega-hd-9 { width:53.75%; }
+        .mega-hd-10 { width:60.00%; }
+        .mega-hd-11 { width:66.25%; }
+        .mega-hd-12 { width:72.50%; }
+        .mega-hd-13 { width:78.75%; }
+        .mega-hd-14 { width:85.00%; }
+        .mega-hd-15 { width:91.25%; }
+        .mega-hd-16, .full-16 { width:97.50%; }
+        .mega-hd-third { width:30.833% }
+        .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
+        .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
+        .show-only-mega-hd { display:block; }
     }
     
     /** 4K **/
-    @media screen and (min-width: 4096px) {
-        .mega-4k-1 { width:3.75%; }
-        .mega-4k-2 { width:10.00%; }
-        .mega-4k-3 { width:16.25%; }
-        .mega-4k-4 { width:22.50%; }
-        .mega-4k-5 { width:28.75%; }
-        .mega-4k-6 { width:35.00%; }
-        .mega-4k-7 { width:41.25%; }
-        .mega-4k-8 { width:47.50%; }
-        .mega-4k-9 { width:53.75%; }
-        .mega-4k-10 { width:60.00%; }
-        .mega-4k-11 { width:66.25%; }
-        .mega-4k-12 { width:72.50%; }
-        .mega-4k-13 { width:78.75%; }
-        .mega-4k-14 { width:85.00%; }
-        .mega-4k-15 { width:91.25%; }
-        .mega-4k-16, .full-16 { width:97.50%; }
-        .mega-4k-third { width:30.833% }
-        .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-2k, .hide-above-mega-3k { display:none; }
-        .show-only-mega-4k { display:block; }
+    @media screen and (min-width: 2049px) {
+        .mega-uhd-1 { width:3.75%; }
+        .mega-uhd-2 { width:10.00%; }
+        .mega-uhd-3 { width:16.25%; }
+        .mega-uhd-4 { width:22.50%; }
+        .mega-uhd-5 { width:28.75%; }
+        .mega-uhd-6 { width:35.00%; }
+        .mega-uhd-7 { width:41.25%; }
+        .mega-uhd-8 { width:47.50%; }
+        .mega-uhd-9 { width:53.75%; }
+        .mega-uhd-10 { width:60.00%; }
+        .mega-uhd-11 { width:66.25%; }
+        .mega-uhd-12 { width:72.50%; }
+        .mega-uhd-13 { width:78.75%; }
+        .mega-uhd-14 { width:85.00%; }
+        .mega-uhd-15 { width:91.25%; }
+        .mega-uhd-16, .full-16 { width:97.50%; }
+        .mega-uhd-third { width:30.833% }
+        .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd { display:none; }
+        .show-only-mega-uhd { display:block; }
     }
     
 /** END StringBean **/
