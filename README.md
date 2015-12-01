@@ -15,8 +15,8 @@ This defines the division as a column (floats left) and applies a hard width, si
     LABEL     START    END      COLUMNS
     XSMALL    0        319px    16
     SMALL     320px    599px    16
-    MEDIUM    600px    1023px   16
-    LARGE     1024px   1600px   16
+    MEDIUM    600px    900px    16
+    LARGE     901px    1600px   16
     MEGA-HD   1601px   2048px   16
     MEGA-UHD  2049px   ~        16
     FULL-16   0        ~        1
