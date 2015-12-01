@@ -1,3 +1,5 @@
+@import url('http://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
 /** 
 * StringBean 1.0.4a
 * *****************
@@ -34,7 +36,7 @@
 /** 1. Resets **/
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
 	sub, sup, a, b, i, u, strong { display:inline-block; }
-    html,body { display:block; width:100%; font-size:13px; }
+    html,body { display:block; width:100%; font-size:16px; font-family: 'Quattrocento Sans'; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
     ol, ul { list-style: none; }
     
@@ -57,13 +59,13 @@
     .hide { display:none; }
     
 /** 6. Buttons & Links **/
-    .button { display:inline-block; width:auto; border:0; padding:0.25rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:1.5rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; white-space: nowrap; }
+    .button { display:inline-block; width:auto; border:0; padding:0.5rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:2rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; white-space: nowrap; }
     .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/
     
 /** 7. Status Formatting **/
     .normal, .inactive, .success, .alert, .information, .regal { padding:0.5rem; color:#fff; }
-    .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; }
-    .rounded { border-radius:2px; -moz-border-radius:2px; -webkit-border-radius:2px; }
+    .normal { background:#000; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; } .amber { background:#f47944; } .moot { background:#2e6386; }
+    .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
     
     /** a. Opacity Animations **/
     .partial-fadeout:hover, .partial-fadeout:focus { animation: partial-fadeout 1s; }
