@@ -69,7 +69,8 @@
     /** white-space: nowrap; **/
     
 /** 7. Status Formatting **/
-    .normal { background:#000; } .warning { background:#ffcc00; } .inactive { background:#9b9b9b; } .success { background:#5eae45; } .alert { background:#d93f3f; } .information { background:#1a75ae; } .regal { background:#774a79; } .amber { background:#f47944; } .moot { background:#2e6386; }
+    .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
+	.normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
     
     /** a. Opacity Animations **/
