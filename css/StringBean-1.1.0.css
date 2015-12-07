@@ -35,7 +35,7 @@
 
 /** 1. Resets **/
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
-	sub, sup, a, b, i, u, strong { display:inline-block; box-sizing:border-box; }
+    sub, sup, a, b, i, u, strong { display:inline-block; box-sizing:border-box; }
     html,body { display:block; width:100%; font-size:16px; font-family: 'Quattrocento Sans', sans-serif; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
     ol, ul { list-style: none; }
@@ -70,7 +70,7 @@
     
 /** 7. Status Formatting **/
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
-	.normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
+    .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
     
     /** a. Opacity Animations **/
