@@ -35,7 +35,7 @@
 
 /** 1. Resets **/
     html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; }
-    sub, sup, a, b, i, u, strong { display:inline-block; box-sizing:border-box; }
+	sub, sup, a, b, i, u, strong { display:inline-block; box-sizing:border-box; }
     html,body { display:block; width:100%; font-size:16px; font-family: 'Quattrocento Sans', sans-serif; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
     ol, ul { list-style: none; }
@@ -48,20 +48,21 @@
 /** 3. Basic Formatting **/
     .layout-800 { margin:auto; max-width:800px; } .layout-860 { margin:auto; max-width:860px; } .layout-900 { margin:auto; max-width:900px; } .layout-960 { margin:auto; max-width:960px; } .layout-980 { margin:auto; max-width:980px; } .layout-1000 { margin:auto; max-width:1000px; } .layout-1024 { max-width:1024px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } .layout-1400 { margin:auto; max-width:1400px; }  /** Enforce Grid max widths **/
     h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
-    h1,h2,h3,h4,h5,h6,p,span,small,li,table,.grid { padding-top:0.5em; padding-bottom:0.5em; } /** Adds top padding for all text-bearing elements **/
+    h1,h2,h3,h4,h5,h6,p,span,small,li,table,.grid { padding-top:0.5em; padding-bottom:0.5em; } img { padding-top:0.5em; padding-bottom:0.5em; } /** Adds top padding for all text-bearing elements **/
     pre { background:#f5f5f5; border:1px solid #ddd; padding:0.25em; overflow:auto; } /** PRE & CODE formatting **/
     sub,sup { font-size:0.75em; }
     
 /** 4. Columns & Grids **/
     .column, .columns { display:block; margin-left:1%; margin-right:1%; float:left; }
     .box { display:block; float:left; }
+    .column.third { width:30.833%; } .columns.third { width:30.833%; } .box.third { width:33.3% }
     
 /** 5. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
     .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd { display:inline-block; }
-    .hide { display:none; }
     .float-left { float:left; } .float-right { float:right; }
     .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
+    .hide { display:none; }
     
 /** 6. Buttons & Links **/
     .button { display:inline-block; width:auto; border:0; padding:0.25rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:2rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; }
@@ -70,7 +71,7 @@
     
 /** 7. Status Formatting **/
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
-    .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
+	.normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
     
     /** a. Opacity Animations **/
