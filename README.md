@@ -142,6 +142,30 @@ Using .table, .row, and .cell you can create a responsive spreadsheet-style tabl
         </ul>
     </div>
 
+### Grids
+The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
+
+    <ul class="grid">
+        <li class="box xsmall-16 small-16 medium-7 large-5">
+            Box #1
+        </li>
+        
+        <li class="box xsmall-16 small-16 medium-7 large-5">
+            Box #2
+        </li>
+        
+        <li class="box xsmall-16 small-16 medium-7 large-5">
+            Box #3
+        </li>
+    </ul>
+
+##### Buttons with Colour Selectors
+If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
+
+    <a href="/login" class="button normal">Login</a>
+    <a href="/login" class="button inactive">Register</a>
+    <a href="/login" class="button alert">Contact</a>
+
 ### Buttons
 The button classes provide a beautiful way to display a button to the user.  
 
@@ -160,13 +184,6 @@ you can easily and consistently colour speciality/focus elements with standardis
     alert           Red         d93f3f
     regal           Purple      774a79
 
-##### Buttons with Colour Selectors
-If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
-
-    <a href="/login" class="button normal">Login</a>
-    <a href="/login" class="button inactive">Register</a>
-    <a href="/login" class="button alert">Contact</a>
-
 ##### Divisions with Colour Selectors
 You can also apply colour sleectors to other elements such as divisions...
 
@@ -179,23 +196,6 @@ or...
     <aside class="success">
         You are logged in! (<a href="#logout">Logout</a>)
     </aside>
-
-### Grids
-The grid class is like the row class, except it accepts "box" sub elements (as per below).  These are used in combination to display a responsive grid to the user - a good use case for this would be a gallery of photos.
-
-    <ul class="grid">
-        <li class="box xsmall-16 small-16 medium-7 large-5">
-            Box #1
-        </li>
-        
-        <li class="box xsmall-16 small-16 medium-7 large-5">
-            Box #2
-        </li>
-        
-        <li class="box xsmall-16 small-16 medium-7 large-5">
-            Box #3
-        </li>
-    </ul>
 
 As simple as that!  You should also check out the button functionality.
 
