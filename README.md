@@ -116,7 +116,7 @@ You can use the show-only-x set of selectors to show content on certain breakpoi
         Hello World!
     </div>
 
-##### Tables, Rows, and Cells
+### Tables, Rows, and Cells
 Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content.  If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
 
     <div class="table">
