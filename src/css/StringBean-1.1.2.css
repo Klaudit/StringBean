@@ -61,7 +61,7 @@
     .grid.table { padding:0; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
     .grid.table > .row { margin:0 0 0 0; overflow:auto; height:100%; }
     .grid.table > .row > .cell { float:left; overflow:auto; height:100%; text-align:center; border-right:1px solid #ddd; border-top:1px solid #ddd; }
-    .grid.table > .row > .cell.header { font-weight:bold; background:#ddd; }
+    .grid.table > .row > .cell.header { font-weight:bold; background:#f5f5f5; }
 
 /** 5. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
@@ -70,14 +70,15 @@
     .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
     .hide { display:none; }
     
-/** 6. Buttons & Links **/
+/** 6. Buttons, Links, and Features **/
     .button { display:inline-block; width:auto; border:0; padding:0.25rem; padding-left:1.5rem; padding-right:1.5rem; min-height:2rem; line-height:2rem; vertical-align:middle; margin-left:0.25rem; position:relative; left:-0.25rem; margin-right:0.25rem; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; }
-    .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/
-    /** white-space: nowrap; **/
+    .button + .button { margin-left:0.25rem; margin-right:0.25rem; } /** If two buttons then pad-left the second **/ /** white-space: nowrap; **/
+    .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; }
+    .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 { padding-top:0; padding-bottom:0; } .jumbotron p, .jumbotron a { margin-top:0; margin-bottom:0.25rem; }
     
 /** 7. Status Formatting **/
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
-	.normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
+    .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
     
     /** a. Opacity Animations **/
