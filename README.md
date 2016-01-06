@@ -159,6 +159,13 @@ The grid class is like the row class, except it accepts "box" sub elements (as p
         </li>
     </ul>
 
+### Buttons
+The button classes provide a beautiful way to display a button to the user.  
+
+    <a href="/login" class="button">Login</a>
+    <a href="/login" class="button">Register</a>
+    <a href="/login" class="button">Contact</a>
+
 ##### Buttons with Colour Selectors
 If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
 
@@ -166,12 +173,24 @@ If you combine the button class with other classes such as "information" (blue c
     <a href="/login" class="button inactive">Register</a>
     <a href="/login" class="button alert">Contact</a>
 
-### Buttons
-The button classes provide a beautiful way to display a button to the user.  
+### Info Wheels
+Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
 
-    <a href="/login" class="button">Login</a>
-    <a href="/login" class="button">Register</a>
-    <a href="/login" class="button">Contact</a>
+    <span class="info-wheel success">12</span>
+
+### Labels
+Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser.  Labels are a good way to signify versions, or small snippets of information.
+
+    <span class="label success">
+        Version 1.1.4
+    </span>
+
+### Progress Bars
+You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
+
+    <div class="progress-bar" style="width:500px;">
+        <div class="progress-bar-filler information" style="width:75%;">75%</div>
+    </div>
 
 ### Element Colour Selectors
 you can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
