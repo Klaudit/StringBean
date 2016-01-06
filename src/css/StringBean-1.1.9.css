@@ -66,7 +66,7 @@
 /** 5. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
     .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd { display:inline-block; }
-    .float-left { float:left; } .float-right { float:right; }
+    .float-left { float:left; } .float-right { float:right; } .clear-both { clear:both; }
     .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; }
     .hide { display:none; }
     
