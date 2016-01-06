@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
-
 /** 
 * StringBean CSS Framework
 * ************************
@@ -27,10 +26,11 @@
 *      b. Headings & Others
 *   4. Columns & Grids
 *   5. Visibility
-*   6. Buttons & Links
-*   7. Status Formatting
-*   8. Animations
-*   9. Breakpoints
+*   6. Buttons & Links, and Features
+*   7. Forms & Inputs
+*   8. Status Formatting
+*   9. Animations
+*  10. Breakpoints
 */
 
 /** 1. Resets **/
@@ -71,7 +71,7 @@
     .hide { display:none; }
     
 /** 6. Buttons, Links, and Features **/
-    .button { display:inline-block; width:auto; border:0; vertical-align:middle; margin-right:0.5rem; height:2em; line-height:2em; padding-left:1em; padding-right:1em; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; }
+    .button { display:inline-block; width:auto; border:0; vertical-align:middle; margin-right:0.5rem; height:2em; line-height:2em; padding-left:1em; padding-right:1em; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; cursor:pointer; }
     .button-set .button { margin-left:0px; margin-right:0px; } 
     .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; }
     .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 { padding-top:0; padding-bottom:0; } .jumbotron p, .jumbotron a { margin-top:0; margin-bottom:0.25rem; }
@@ -79,8 +79,12 @@
     .label { display:inline-block; width:auto; padding:0.25em; min-height:1.25em; line-height:1.25em; vertical-align:middle; margin-right:0.25rem; color:#fff; font-size:0.75rem; font-weight:bold; word-wrap:break-word;; }
     .progress-bar { display:inline-block; border:1px solid #ddd; }
     .progress-bar-filler { line-height:1em; min-height:1em; text-align:center; background-color:#000; color:#fff; font-weight:bold; font-size:0.75em; padding:0.25em 0 0.25em 0; }
-    
-/** 7. Status Formatting **/
+
+/** 7. Forms **/
+    form, input, button { font-size:1em; font-weight:normal; }
+    input[type=text], input[type=password], input[type=file], input[type=submit] { display:inline-block; border:1px solid #ddd; padding:0 0.5em 0 0.5em; min-height:2.25em; line-height:2em; }
+
+/** 8. Status Formatting **/
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
     .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
@@ -91,13 +95,13 @@
     .fadeout:hover, .fadeout:focus { animation: fadeout 1s; }
     .fadein:hover, .fadein:focus { animation: fadein 1s; }
     
-/** 8. Animations **/
+/** 9. Animations **/
     @keyframes partial-fadeout { 0% { opacity: 1;    }  100% { opacity: 0.75; }}
     @keyframes partial-fadein  { 0% { opacity: 0.75; }  100% { opacity: 1;    }}
     @keyframes fadeout         { 0% { opacity: 1;    }  100% { opacity: 0;    }}
     @keyframes fadein          { 0% { opacity: 0;    }  100% { opacity: 1;    }}
     
-/** 9. Breakpoints **/
+/** 10. Breakpoints **/
     
     /** XSMALL **/
     @media screen and (max-width: 319px) {
@@ -140,7 +144,7 @@
         .show-only-large { display:block; }
     }
     
-    /** 3K **/
+    /** HD **/
     @media screen and (min-width: 1601px) and (max-width: 2048px) {
         .mega-hd-1 { width:4.25%; } .mega-hd-2 { width:10.50%; } .mega-hd-3 { width:16.75%; } .mega-hd-4 { width:23.00%; } .mega-hd-5 { width:29.25%; } .mega-hd-6 { width:35.50%; } .mega-hd-7 { width:41.75%; } .mega-hd-8 { width:48.00%; } .mega-hd-9 { width:54.25%; } .mega-hd-10 { width:60.50%; } .mega-hd-11 { width:66.75%; } .mega-hd-12 { width:73.00%; } .mega-hd-13 { width:79.25%; } .mega-hd-14 { width:85.50%; } .mega-hd-15 { width:91.75%; } .mega-hd-16, .full-16 { width:98.00%; }
         .cell.mega-hd-1 { width:6.250%; } .cell.mega-hd-2 { width:12.50%; } .cell.mega-hd-3 { width:18.75%; } .cell.mega-hd-4 { width:25.00%; } .cell.mega-hd-5 { width:31.25%; } .cell.mega-hd-6 { width:37.50%; } .cell.mega-hd-7 { width:43.75%; } .cell.mega-hd-8 { width:50.00%; } .cell.mega-hd-9 { width:56.25%; } .cell.mega-hd-10 { width:62.50%; } .cell.mega-hd-11 { width:68.75%; } .cell.mega-hd-12 { width:75.00%; } .cell.mega-hd-13 { width:81.25%; } .cell.mega-hd-14 { width:87.50%; } .cell.mega-hd-15 { width:93.75%; } .cell.mega-hd-16 { width:100.0%; }
@@ -150,7 +154,7 @@
         .show-only-mega-hd { display:block; }
     }
     
-    /** 4K **/
+    /** Ultra-HD (2K, 3K, and 4K **/
     @media screen and (min-width: 2049px) {
         .mega-uhd-1 { width:4.25%; } .mega-uhd-2 { width:10.50%; } .mega-uhd-3 { width:16.75%; } .mega-uhd-4 { width:23.00%; } .mega-uhd-5 { width:29.25%; } .mega-uhd-6 { width:35.50%; } .mega-uhd-7 { width:41.75%; } .mega-uhd-8 { width:48.00%; } .mega-uhd-9 { width:54.25%; } .mega-uhd-10 { width:60.50%; } .mega-uhd-11 { width:66.75%; } .mega-uhd-12 { width:73.00%; } .mega-uhd-13 { width:79.25%; } .mega-uhd-14 { width:85.50%; } .mega-uhd-15 { width:91.75%; } .mega-uhd-16, .full-16 { width:98.00%; }
         .cell.mega-uhd-1 { width:6.250%; } .cell.mega-uhd-2 { width:12.50%; } .cell.mega-uhd-3 { width:18.75%; } .cell.mega-uhd-4 { width:25.00%; } .cell.mega-uhd-5 { width:31.25%; } .cell.mega-uhd-6 { width:37.50%; } .cell.mega-uhd-7 { width:43.75%; } .cell.mega-uhd-8 { width:50.00%; } .cell.mega-uhd-9 { width:56.25%; } .cell.mega-uhd-10 { width:62.50%; } .cell.mega-uhd-11 { width:68.75%; } .cell.mega-uhd-12 { width:75.00%; } .cell.mega-uhd-13 { width:81.25%; } .cell.mega-uhd-14 { width:87.50%; } .cell.mega-uhd-15 { width:93.75%; } .cell.mega-uhd-16 { width:100.0%; }
