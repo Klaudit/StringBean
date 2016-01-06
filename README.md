@@ -173,6 +173,15 @@ If you combine the button class with other classes such as "information" (blue c
     <a href="/login" class="button inactive">Register</a>
     <a href="/login" class="button alert">Contact</a>
 
+##### Button Sets
+When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
+
+    <div class="row button-set">
+        <a href="" class="button information">One</a>
+        <a href="" class="button information">Two</a>
+        <a href="" class="button information">Three</a>
+    </div>
+
 ### Info Wheels
 Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
 
