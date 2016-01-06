@@ -229,7 +229,7 @@ or...
         You are logged in! (<a href="#logout">Logout</a>)
     </aside>
 
-# Forms & Inputs
+### Forms & Inputs
 
     <form action="post" method="/auth">
         <label>
