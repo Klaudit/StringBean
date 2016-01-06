@@ -116,6 +116,21 @@ You can use the show-only-x set of selectors to show content on certain breakpoi
         Hello World!
     </div>
 
+### Pre-Set Colour Classes
+You can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
+
+    NOTE: HEX has been deprecated - now RGBa standardised - docs need to be updated.
+
+Pre-Set colour table:
+
+    CLASS           COLOUR      HEX CODE
+    normal          Black       000000
+    inactive        Grey        9d9d9d
+    information     Blue        1a75ae
+    success         Green       5eae45
+    alert           Red         d93f3f
+    regal           Purple      774a79
+
 ### Tables, Rows, and Cells
 Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content.  If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
 
@@ -200,17 +215,6 @@ You can visually represent the state of loading AJAX or other assets by using th
     <div class="progress-bar" style="width:500px;">
         <div class="progress-bar-filler information" style="width:75%;">75%</div>
     </div>
-
-### Element Colour Selectors
-you can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
-
-    SELECTOR        COLOUR      HEX CODE
-    normal          Black       000000
-    inactive        Grey        9d9d9d
-    information     Blue        1a75ae
-    success         Green       5eae45
-    alert           Red         d93f3f
-    regal           Purple      774a79
 
 ##### Divisions with Colour Selectors
 You can also apply colour sleectors to other elements such as divisions...
