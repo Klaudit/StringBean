@@ -75,9 +75,9 @@
     .button-set .button { margin-left:0px; margin-right:0px; } 
     .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; }
     .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 { padding-top:0; padding-bottom:0; } .jumbotron p, .jumbotron a { margin-top:0; margin-bottom:0.25rem; }
-    .info-wheel { border-radius:3em; -moz-border-radius:3em; -webkit-border-radius:3em; padding:0.15em; width:1.6em; text-align:center; font-size:0.75rem; color:#fff; }
-    .label { display:inline-block; width:auto; padding:0.25em; min-height:1.25em; line-height:1.25em; vertical-align:middle; margin-right:0.25rem; color:#fff; font-size:0.75rem; font-weight:bold; word-wrap:break-word;; }
-    .progress-bar { display:inline-block; border:1px solid #ddd; }
+    .info-wheel { border-radius:3em; -moz-border-radius:3em; -webkit-border-radius:3em; padding:0.15em; width:1.6em; text-align:center; font-size:0.75rem; color:#fff; } .info-wheel + .info-wheel { margin-left:1px; }
+    .label { display:inline-block; width:auto; padding:0 0.5em 0 0.5em; min-height:1.75em; line-height:1.75em; vertical-align:middle; margin-right:0.25rem; color:#fff; font-size:0.75rem; font-weight:bold; word-wrap:break-word;; }
+    .progress-bar { display:inline-block; border:1px solid #ddd; background-color:#f5f5f5; }
     .progress-bar-filler { line-height:2em; min-height:2em; text-align:center; background-color:#000; color:#fff; font-weight:bold; font-size:0.75em; padding:0.25em 0 0.25em 0; }
 
 /** 7. Forms (Basic Support) **/
