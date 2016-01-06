@@ -229,6 +229,27 @@ or...
         You are logged in! (<a href="#logout">Logout</a>)
     </aside>
 
+# Forms & Inputs
+
+    <form action="post" method="/auth">
+        <label>
+            Username
+        </label>
+        <input type="text" placeholder="Enter your username" />
+        
+        <label>
+            Password
+        </label>
+        <input type="password" placeholder="Enter your password" />
+        
+        <label>
+            Pin No.
+        </label>
+        <input type="password" placeholder="1234" />
+        
+        <input type="submit" class="button information" value="Login" />
+    </form>
+
 As simple as that!  You should also check out the button functionality.
 
 ### A word on Internet Explorer 8 and Below
