@@ -39,24 +39,23 @@
     html,body { display:block; width:100%; font-size:16px; font-family: 'Quattrocento Sans', sans-serif; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
     ol, ul { list-style: none; }
-    
+
 /** 2. Containers and Rows **/
-    .container { display:block; clear:both; overflow:auto; }
+    .container, .grid { display:block; clear:both; overflow:auto; }
     .row { display:block; margin:0.5rem 2% 0.5rem 2%; clear:both; overflow:auto; }
-    .grid { display:block; clear:both; overflow:auto; }
-    
+
 /** 3. Basic Formatting **/
     .layout-800 { margin:auto; max-width:800px; } .layout-860 { margin:auto; max-width:860px; } .layout-900 { margin:auto; max-width:900px; } .layout-960 { margin:auto; max-width:960px; } .layout-980 { margin:auto; max-width:980px; } .layout-1000 { margin:auto; max-width:1000px; } .layout-1024 { max-width:1024px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } .layout-1400 { margin:auto; max-width:1400px; }  /** Enforce Grid max widths **/
     h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
     h1,h2,h3,h4,h5,h6,p,span,small,li,table,.grid { padding-top:0.5em; padding-bottom:0.5em; } img { padding-top:0.5em; padding-bottom:0.5em; } /** Adds top padding for all text-bearing elements **/
     pre { background:#f5f5f5; border:1px solid #ddd; padding:0.25em; overflow:auto; } /** PRE & CODE formatting **/
     sub,sup { font-size:0.75em; }
-    
+
 /** 4. Columns & Grids **/
     .column, .columns { display:block; margin-left:1%; margin-right:1%; float:left; }
-    .column.third { width:30.833%; } .columns.third { width:30.833%; } .cell.third { width:33.3% }
-    .cell, .object { display:block; }
-    
+    .third { width:33.3% } .column.third { width:30.833%; } .columns.third { width:30.833%; }
+    .cell { display:block; float:left; }
+
     /** Grid Table **/
     .grid.table { padding:0; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
     .grid.table > .row { margin:0 0 0 0; overflow:auto; height:100%; }
@@ -69,11 +68,12 @@
     .float-left { float:left; } .float-right { float:right; } .clear-both { clear:both; }
     .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; } .align-top { verical-align:top; } .align-middle { vertical-align:middle } .align-bottom { vertical-align:bottom; }
     .hide { display:none; }
-    
+
 /** 6. Buttons, Links, and Features **/
     .button { display:inline-block; width:auto; border:0; vertical-align:middle; margin-right:0.5rem; height:2em; line-height:2em; padding-left:1em; padding-right:1em; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; cursor:pointer; }
     .button-set .button { margin-left:0px; margin-right:0px; } 
     .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; }
+    .jumbotron .row { margin:0 0 0 0; padding:1em; } .jumbotron .row + .row { padding-top:0; }
     .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 { padding-top:0; padding-bottom:0; } .jumbotron p, .jumbotron a { margin-top:0; margin-bottom:0.25rem; }
     .info-wheel { border-radius:3em; -moz-border-radius:3em; -webkit-border-radius:3em; padding:0.15em; width:1.6em; text-align:center; font-size:0.75rem; color:#fff; } .info-wheel + .info-wheel { margin-left:1px; }
     .label { display:inline-block; width:auto; padding:0 0.5em 0 0.5em; min-height:1.75em; line-height:1.75em; vertical-align:middle; margin-right:0.25rem; color:#fff; font-size:0.75rem; font-weight:bold; word-wrap:break-word;; }
@@ -88,21 +88,21 @@
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
     .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .rounded { border-radius:0.25rem; -moz-border-radius:0.25rem; -webkit-border-radius:0.25rem; }
-    
+
     /** a. Opacity Animations **/
     .partial-fadeout:hover, .partial-fadeout:focus { animation: partial-fadeout 1s; }
     .partial-fadein:hover, .partial-fadein:focus { animation: partial-fadein 1s; }
     .fadeout:hover, .fadeout:focus { animation: fadeout 1s; }
     .fadein:hover, .fadein:focus { animation: fadein 1s; }
-    
+
 /** 9. Animations **/
     @keyframes partial-fadeout { 0% { opacity: 1;    }  100% { opacity: 0.75; }}
     @keyframes partial-fadein  { 0% { opacity: 0.75; }  100% { opacity: 1;    }}
     @keyframes fadeout         { 0% { opacity: 1;    }  100% { opacity: 0;    }}
     @keyframes fadein          { 0% { opacity: 0;    }  100% { opacity: 1;    }}
-    
+
 /** 10. Breakpoints **/
-    
+
     /** XSMALL **/
     @media screen and (max-width: 319px) {
         .xsmall-1 { width:4.25%; } .xsmall-2 { width:10.50%; } .xsmall-3 { width:16.75%; } .xsmall-4 { width:23.00%; } .xsmall-5 { width:29.25%; } .xsmall-6 { width:35.50%; } .xsmall-7 { width:41.75%; } .xsmall-8 { width:48.00%; } .xsmall-9 { width:54.25%; } .xsmall-10 { width:60.50%; } .xsmall-11 { width:66.75%; } .xsmall-12 { width:73.00%; } .xsmall-13 { width:79.25%; } .xsmall-14 { width:85.50%; } .xsmall-15 { width:91.75%; } .xsmall-16, .full-16 { width:98.00%; }
@@ -112,7 +112,7 @@
         .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .show-only-xsmall { display:block; }
     }
-    
+
     /** SMALL **/
     @media screen and (min-width: 320px) and (max-width: 599px) {
         .small-1 { width:4.25%; } .small-2 { width:10.50%; } .small-3 { width:16.75%; } .small-4 { width:23.00%; } .small-5 { width:29.25%; } .small-6 { width:35.50%; } .small-7 { width:41.75%; } .small-8 { width:48.00%; } .small-9 { width:54.25%; } .small-10 { width:60.50%; } .small-11 { width:66.75%; } .small-12 { width:73.00%; } .small-13 { width:79.25%; } .small-14 { width:85.50%; } .small-15 { width:91.75%; } .small-16, .full-16 { width:98.00%; }
@@ -123,7 +123,7 @@
         .hide-above-xsmall { display:none; }  /** Show elements only below certain points **/
         .show-only-small { display:block; }
     }
-    
+
     /** MEDIUM **/
     @media screen and (min-width: 600px) and (max-width: 900px) {
         .medium-1 { width:4.25%; } .medium-2 { width:10.50%; } .medium-3 { width:16.75%; } .medium-4 { width:23.00%; } .medium-5 { width:29.25%; } .medium-6 { width:35.50%; } .medium-7 { width:41.75%; } .medium-8 { width:48.00%; } .medium-9 { width:54.25%; } .medium-10 { width:60.50%; } .medium-11 { width:66.75%; } .medium-12 { width:73.00%; } .medium-13 { width:79.25%; } .medium-14 { width:85.50%; } .medium-15 { width:91.75%; } .medium-16, .full-16 { width:98.00%; }
@@ -133,7 +133,7 @@
         .hide-above-xsmall, .hide-above-small { display:none; } /** Show elements only below certain points **/
         .show-only-medium { display:block; }
     }
-    
+
     /** LARGE **/
     @media screen and (min-width: 901px) and (max-width: 1600px) {
         .large-1 { width:4.25%; } .large-2 { width:10.50%; } .large-3 { width:16.75%; } .large-4 { width:23.00%; } .large-5 { width:29.25%; } .large-6 { width:35.50%; } .large-7 { width:41.75%; } .large-8 { width:48.00%; } .large-9 { width:54.25%; } .large-10 { width:60.50%; } .large-11 { width:66.75%; } .large-12 { width:73.00%; } .large-13 { width:79.25%; } .large-14 { width:85.50%; } .large-15 { width:91.75%; } .large-16, .full-16 { width:98.00%; }
@@ -143,7 +143,7 @@
         .hide-above-xsmall, .hide-above-small, .hide-above-medium { display:none; }  /** Show elements only below certain points **/
         .show-only-large { display:block; }
     }
-    
+
     /** HD **/
     @media screen and (min-width: 1601px) and (max-width: 2048px) {
         .mega-hd-1 { width:4.25%; } .mega-hd-2 { width:10.50%; } .mega-hd-3 { width:16.75%; } .mega-hd-4 { width:23.00%; } .mega-hd-5 { width:29.25%; } .mega-hd-6 { width:35.50%; } .mega-hd-7 { width:41.75%; } .mega-hd-8 { width:48.00%; } .mega-hd-9 { width:54.25%; } .mega-hd-10 { width:60.50%; } .mega-hd-11 { width:66.75%; } .mega-hd-12 { width:73.00%; } .mega-hd-13 { width:79.25%; } .mega-hd-14 { width:85.50%; } .mega-hd-15 { width:91.75%; } .mega-hd-16, .full-16 { width:98.00%; }
@@ -153,7 +153,7 @@
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
         .show-only-mega-hd { display:block; }
     }
-    
+
     /** Ultra-HD (2K, 3K, and 4K **/
     @media screen and (min-width: 2049px) {
         .mega-uhd-1 { width:4.25%; } .mega-uhd-2 { width:10.50%; } .mega-uhd-3 { width:16.75%; } .mega-uhd-4 { width:23.00%; } .mega-uhd-5 { width:29.25%; } .mega-uhd-6 { width:35.50%; } .mega-uhd-7 { width:41.75%; } .mega-uhd-8 { width:48.00%; } .mega-uhd-9 { width:54.25%; } .mega-uhd-10 { width:60.50%; } .mega-uhd-11 { width:66.75%; } .mega-uhd-12 { width:73.00%; } .mega-uhd-13 { width:79.25%; } .mega-uhd-14 { width:85.50%; } .mega-uhd-15 { width:91.75%; } .mega-uhd-16, .full-16 { width:98.00%; }
