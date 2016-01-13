@@ -26,8 +26,8 @@
  */
 
 /** 1. Resets **/
-    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; overflow:auto; }
-    sub, sup, a, b, i, u, strong, span { display:inline-block; box-sizing:border-box; overflow:auto; line-height:1.25em; }
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { display:block; margin:0; padding:0; border:0; font-size:100%; font:inherit; vertical-align:baseline; box-sizing:border-box; line-height:1.25em; overflow:auto; width:auto; }
+    sub, sup, a, b, i, u, strong, span { display:inline-block; box-sizing:border-box; width:auto; overflow:auto; line-height:1.15em; vertical-align:middle; }
     html,body { display:block; width:100%; font-size:16px; font-family: 'Quattrocento Sans', sans-serif; }
     article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; overflow:auto; }
     ol, ul { list-style:none; overflow:auto; }
