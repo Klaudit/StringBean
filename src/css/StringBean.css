@@ -62,8 +62,7 @@
     .hide { display:none; }
 
 /** 6. Buttons, Links, and Features **/
-    .button { display:inline-block; width:auto; border:0; vertical-align:middle; height:2em; line-height:2em; padding-left:1em; padding-right:1em; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; cursor:pointer; }
-    .button + .button { margin-left:0.5em; }
+    .button { display:inline-block; width:auto; border:0; vertical-align:middle; height:2em; line-height:2em; padding-left:1em; padding-right:1em; color:#fff; font-size:1rem; font-weight:bold; text-decoration:none; opacity:1; word-wrap:break-word; cursor:pointer; } .button + .button { margin-left:0.5em; }
     .button-set .button { margin-left:0px; margin-right:0px; } 
     .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; }
     .jumbotron .row { margin:0 0 0 0; padding:1em; } .jumbotron .row + .row { padding-top:0; }
@@ -74,8 +73,8 @@
     .progress-bar-filler { line-height:2em; min-height:2em; text-align:center; background-color:#000; color:#fff; font-weight:bold; font-size:0.75em; padding:0.25em 0 0.25em 0; }
 
 /** 7. Forms (Basic Support) **/
-    form, input, button { font-size:1em; font-weight:normal; }
-    input[type=text], input[type=password], input[type=file], input[type=submit] { display:inline-block; border:1px solid #ddd; padding:0 0.5em 0 0.5em; min-height:2.25em; line-height:2em; }
+    form, input, button, textarea, select { font-size:1em; font-weight:normal; }
+    input[type=text], input[type=password], input[type=file], input[type=submit], input[type=radio], input[type=checkbox], textarea, select { display:inline-block; border:1px solid #ddd; padding:0 0.5em 0 0.5em; min-height:2.25em; line-height:2em; }
 
 /** 8. Status Formatting **/
     .normal { background-color:rgba(0,0,0,1); } .warning { background-color:rgba(255,200,0,1); } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); } .alert { background-color:rgba(215,65,65,1); } .information { background-color:rgba(25,120,175,1); } .regal { background-color:rgba(120,75,120,1); } .amber { background-color:rgba(220,100,50,1); } .moot { background-color:rgba(70,100,120,1); }
