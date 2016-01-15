@@ -265,3 +265,8 @@ The master branch contains the latest stable version of StringBean, merged from 
 ### Version Branches
 StringBean is released in major+minor version.  By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
 
+# Support Information
+Support can be delivered via the Github wiki and issue tabs - ask a question and I will endevour to answer.
+
+# Want to contribute?
+If you want to contribute to this project then feel free to look at the CONTRIBUTING.md file.
