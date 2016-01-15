@@ -256,3 +256,12 @@ As simple as that!  You should also check out the button functionality.
 This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever.  Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
 
 If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
+
+# Project Release Information
+
+### Master Branch
+The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
+
+### Version Branches
+StringBean is released in major+minor version.  By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
+
