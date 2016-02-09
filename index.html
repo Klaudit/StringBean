@@ -1,298 +1,512 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>StringBean - The Featherweight Responsive CSS Framework</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link href='css/StringBean-1.0.1a.css' rel='stylesheet' type='text/css'>
-
-    <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:500' rel='stylesheet' type='text/css'>
-
-    <style type="text/css">
-        body { font-family: 'Alegreya Sans', sans-serif; }
-        #graded-bar { background:#000; }
-        #graded-bar h1 { color:#fff; padding:0; font-size:1.5rem; line-height:1.5rem; }
-        #Strapline { font-size:1.5rem; line-height:2rem; color:#fff; }
-        .MyForm { min-width:200px; max-width:500px; margin:0; clear:both; }
-        .Downloads { margin-bottom:10px; }
-        #logo { height:40px; margin-bottom:-10px; }
-    </style>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-66609583-2', 'auto');
-        ga('send', 'pageview');
-
-    </script>
-
-</head>
-<body>
-
-<header class="container" id="graded-bar">
-
-    <nav class="row">
-        <div class="column xsmall-16 small-16 medium-10 large-12 mega-2k-12 mega-3k-12 mega-4k-12">
-            <a href="">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/logo.png" alt="StringBean" id="logo" />
-            </a>
-        </div>
-
-        <div class="column xsmall-16 small-16 medium-6 large-4 mega-2k-4 mega-3k-4 mega-4k-4">
-            <small id="Strapline">
-                Powering the internet, gently.
-            </small>
-        </div>
-    </nav>
-
-</header>
-
-<!-- Main Content -->
-<article class="container row">
-
-    <div class="column xsmall-16 small-16 medium-10 large-11 mega-2k-12 mega-3k-13 mega-4k-14">
-
-        <h1>What is StringBean?</h1>
-
-        <p>
-            The featherweight responsive CSS Framework based on a 16-point system (rather than the traditional 12-point system that other frameworks use)
-            this gives the developer the power to divide the screen up in more finite segments. The extra 4 break points give you greater control over the
-            widths of content on your site.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes
-            into its own!
-        </p>
-
-        <p>
-            In addition to this, String Bean also has 5 breakpoints instead of the traditional 4. You can implement your design with: xsmall, small, medium, large, and xlarge.
-        </p>
-
-        <p class="Downloads">
-            <a href="https://github.com/markgreenall/String-Bean/" class="button information rounded">View on Github</a>
-            <a href="https://github.com/markgreenall/String-Bean/zipball/master" class="button success rounded">Download .zip</a>
-            <a href="https://github.com/markgreenall/String-Bean/tarball/master" class="button success rounded">Download .tar.gz</a>
-        </p>
-
-        <h2>How does it work?</h2>
-
-        <p>
-            Let's have a look at some of the things you can do with the String Bean framework...
-        </p>
-
-        <h4>Forms &amp; Inputs</h4>
-
-        <ol class="grid MyForm">
-
-            <form action="" method="post" name="MyForm">
-
-                <li class="box xsmall-6 small-5 medium-5 large-5 mega-2k-4 mega-3k-3 mega-4k-2">
-                    <label>
-                        First Name:
-                    </label>
-                </li>
-
-                <li class="box xsmall-16 small-11 medium-11 large-11 mega-2k-12 mega-2k-13 mega-2k-14">
-                    <input type="text" value="Enter your first name..." class="full-16" />
-                </li>
-
-                <li class="box xsmall-16 small-5 medium-5 large-5 mega-2k-4 mega-3k-3 mega-4k-2">
-                    <label>
-                        Last Name:
-                    </label>
-                </li>
-
-                <li class="box xsmall-16 small-11 medium-11 large-11 mega-2k-12 mega-3k-13 mega-4k-14">
-                    <input type="text" value="Enter your last name..." class="full-16" />
-                </li>
-
-                <li class="box xsmall-16 small-5 medium-5 large-5 mega-2k-4 mega-3k-3 mega-4k-2">
-                    <label>
-                        Phone Number:
-                    </label>
-                </li>
-
-                <li class="box xsmall-16 small-11 medium-11 large-11 mega-2k-12 mega-3k-13 mega-4k-14">
-                    <input type="text" value="Enter your phone number..." class="full-16" />
-                </li>
-
-                <li class="box xsmall-16 small-5 medium-5 large-5 mega-2k-4 mega-3k-3 mega-4k-2">
-                    <label>
-                        Email Address:
-                    </label>
-                </li>
-
-                <li class="box xsmall-16 small-11 medium-11 large-11 mega-2k-12 mega-3k-13 mega-4k-14">
-                    <input type="text" value="Enter your email address..." class="full-16" />
-                </li>
-
-                <li class="box full-16 align-right">
-                    <a href="javascript:MyForm.submit" class="button information rounded">Send Request</a>
-                </li>
-
-            </form>
-
-        </ol>
-
-        <p>
-            Forms use the same breakpoint classes that are used on the other elements, except you use a Grid and "li" elements to construct it. Like so :-
-        </p>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        
+        <!-- StringBean 1.1.0 -->
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
+        <!-- / -->
+        
+        <link href='https://fonts.googleapis.com/css?family=Khula' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+            body, html { font-family: 'Khula', sans-serif; }
+        	.jumbotron { background:#fff; border:0; }
+        	.service-alert { padding:0.5em; color:#fff; }
+        </style>
+        
+    </head>
+    <body>
+        
+        
+        <main class="container">   
             
-<pre><code class="language-css">&lt;p class="grid"&gt;
-    &lt;form action="" method="post"&gt;
-
-        &lt;li class="box xsmall-6 small-4 medium-4 large-2"&gt;
-            &lt;label&gt;
-                First Name:
-            &lt;/label&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-12 medium-12 large-14"&gt;
-            &lt;input type="text" value="Enter your first name..." class="full-16" /&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-4 medium-4 large-2"&gt;
-            &lt;label&gt;
-                Email Address:
-            &lt;/label&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-12 medium-12 large-14"&gt;
-            &lt;input type="text" value="Enter your email address..." class="full-16" /&gt;
-        &lt;/li&gt;
-        
-        &lt;li class="box xsmall-16 small-16 medium-16 large-16 align-right"&gt;
-            &lt;input type="submit" value="Send Request" class="button information" /&gt;
-        &lt;/li&gt;
-        
-    &lt;/form&gt;
-&lt;/p&gt;</code></pre>
-
-
-
-        <h4>Using Breakpoints &amp; Columns</h4>
-
-<pre><code class="language-css">&lt;header class="container"&gt;
+                        
+            
+            <header class="row">
+                
+                <h1>
+	                <img src="https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg" alt="" style="width:100%; max-width:300px;" />
+    			</h1>
+    			 
+            </header>
+            
+            
+            <section class="row">
+            
+            
+                <article class="column xsmall-16 small-16 medium-10 large-10 mega-hd-10 mega-uhd-10">
+                    
+                    <h1>
+                        Documentation
+                    </h1>
+                    
+                    <p>
+    					The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.
+					</p>
+					
+					<p>
+    					Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
+					</p>
+					
+					<p>
+    					StringBean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
+					</p>
+					
+					<h3>
+    					How it works
+	   				</h3>
+	   				
+	   				<p>
+	   				    To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class.
+					</p>
+					
+					<p>
+    					This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
+					</p>
+					
+					<h3>
+    					Breakpoint Breakdown
+					</h3>
+					
+					<p>
+    				    LABEL     START    END      COLUMNS<br />
+	   				    XSMALL    0        319px    16<br />
+				        SMALL     320px    599px    16<br />
+				        MEDIUM    600px    900px    16<br />
+				        LARGE     901px    1600px   16<br />
+			            MEGA-HD   1601px   2048px   16<br />
+				        MEGA-UHD  2049px   ~        16<br />
+					    FULL-16   0        ~        1<br />
+					</p>
+					
+					<h3>
+    				    Using breakpoint specific selectors
+					</h3>
+					
+					<p>
+    					You can stack the breakpoint selectors on an element.
+					</p>
+					
+					<code><pre class="rounded">class="xsmall-5 small-9 medium-10 large-2"</pre></code>
+                    
+                    <p>
+    					Normal resolutions (sub-1080p HD)
+					</p>
+					
+<code><pre class="rounded">
+  &lt;header class="container"&gt;
     &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
-            &lt;h1&gt;
-                String Bean
-            &lt;/h1&gt;
+	  &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
+        &lt;h1&gt;
+          StringBean
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;div class="column xsmall-16 small-16 medium-5 large-4"&gt;
+        &lt;p id="Strapline"&gt;
+		  Powering the internet, gently.
+        &lt;/p&gt;
         &lt;/div&gt;
-        &lt;div class="column xsmall-16 small-16 medium-6 large-5"&gt;
-            &lt;p id="Strapline"&gt;
-                Powering the internet, gently.
-            &lt;/p&gt;
-        &lt;/div&gt;
+      &lt;/nav&gt;
+  &lt;/header&gt;
+</pre></code>
+
+					<h3>
+					   HD and UHD Breakpoints
+					</h3>
+					
+					<p>
+    					Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
+					</p>
+					
+					
+<code><pre class="rounded">
+  &lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+      &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
+        &lt;h1&gt;
+          StringBean
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      
+      &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
+        &lt;p id="Strapline"&gt;
+          Powering the internet, gently.
+        &lt;/p&gt;
+      &lt;/div&gt;
     &lt;/nav&gt;
-&lt;/header&gt;</code></pre>
+  &lt;/header&gt;
+</pre></code>
 
+                    <h3>
+    					Taking full width on all breakpoints
+					</h3>
+					
+					<p>
+    					If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
+					</p>
+					
+<code><pre>
+  class="full-16"
+</pre></code>
+                    <h3>
+    					Three-Way Split
+					</h3>
+					
+					<p>
+    					With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+					</p>
+					
+<code><pre>
+&lt;div class="column medium-third"&gt;
+  Column 1
+&lt;/div&gt;
+&lt;div class="column medium-third"&gt;
+  Column 2
+&lt;/div&gt;
+&lt;div class="column medium-third"&gt;
+  Column 3
+&lt;/div&gt;
+</pre></code>
 
-        <h4>Hiding content below breakpoints</h4>
+                    <h3>
+        				Layouts
+					</h3>
+					
+					<p>
+    					Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
+					</p>
+					
+                    
+<code><pre>
+&lt;main class="container"&gt;
+    &lt;article class="row layout-960"&gt;
+        &lt;h1&gt;
+            Hello World!
+        &lt;/h1&gt;
+        &lt;p&gt;
+            Some content goes in here.
+        &lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+</pre></code>
 
-        <p>
-            You can use the hide-below-x (where x is the xsmall, small, medium, large, or mega-x-x breakpoints) to hide content.  This section is tagged as such, so you won't be able to see it below "large".
-        </p>
-
-<pre><code class="language-css">&lt;div class="grid hide-below-medium"&gt;
-    Hello World!
-&lt;/div&gt;</code></pre>
-
-
-        <h4>Showing content below breakpoints</h4>
-
-        <p>
-            You can use the show-below-x (where x is the xsmall, small, medium, large, or mega-x-x breakpoints) to show content.  This section is tagged as such, so you won't be able to see it below "large".
-        </p>
-
-<pre><code class="language-css">&lt;div class="grid show-below-medium"&gt;
-    Hello World!
-&lt;/div&gt;</code></pre>
-
-
-        <h4>Buttons</h4>
-
-<pre><code class="language-css">&lt;a href="/login" class="button normal information"&gt;Login&lt;/a&gt;
-&lt;a href="/login" class="button normal alert"&gt;Register&lt;/a&gt;</code></pre>
-
-
-        <h4>Grid</h4>
-
-<pre><code class="language-css">&lt;div class="grid"&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #1
-    &lt;/li&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #2
-    &lt;/li&gt;
-    &lt;li class="box xsmall-16 small-16 medium-8 large-4 xlarge-4"&gt;
-        Box #3
-    &lt;/li&gt;
-&lt;/div&gt;</code></pre>
-
-        <p>As simple as that!.</p>
-
-    </div>
-
-    <!-- Right Menu -->
-    <aside class="column xsmall-16 small-16 medium-6 large-5 mega-2k-4 mega-3k-3 mega-4k-2">
-
-
-        <h4>Some pictures of string beans...</h4>
-
-        <ol class="grid full-16">
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/8.jpg" alt="String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/1.jpg" alt="More String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/2.jpg" alt="Even more String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/4.jpg" alt="Wow! Loads of String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/6.jpg" alt="Exciting levels of String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/7.jpg" alt="String Beans! Everywhere!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/9.jpg" alt="Ooh, shut that door! Some String Beans!" class="full-16" />
-            </li>
-
-            <li class="box xsmall-16 small-8 medium-8 large-4 xlarge-4 align-center">
-                <img src="https://www.markgreenall.uk/assets/String-Bean/5.jpg" alt="Never felt so vegetarian as I do around String Beans!" class="full-16" />
-            </li>
-
-        </ol>
-
-    </aside>
-
-</article>
-
-<script src="js/matchmedia.polyfill.js"></script>
-<script src="js/Respond.js"></script>
-
-<!-- PRISM - Syntax Highlighter -->
-    <link href="http://beta.markgreenall.uk/css/Prism.css" rel="stylesheet" />
-    <script src="http://beta.markgreenall.uk/js/Prism.js"></script>
-<!-- -->
-
-</body>
+					
+					<h3>
+    					Showing/Hiding Elements at Certain Breakpoints
+					</h3>
+					
+					<p>
+    					You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
+					</p>
+					
+					
+					
+					<h3>
+    					Hiding Content Below Breakpoints
+					</h3>
+					
+					<p>
+    					You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+					</p>
+					
+					<p>
+					   Resize the Window: <span class="hide-below-medium">Hello world!</span>
+					</p>
+					
+					
+					
+					<h3>
+    					Showing Content Below Certain Breakpoints
+					</h3>
+					
+					<p>
+					   Resize the Window: <span class="hide-above-medium">Hello World!</span>
+                    </p>
+                    
+                    
+                    
+					<h3>
+    					Showing Content Only on Certain Breakpoints
+					</h3>
+					
+					<p>
+    					You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+					</p>
+					
+					<p>
+					   Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
+					</p>
+					
+					
+					
+					<h3>
+    					Pre-Set Colour Classes
+					</h3>
+					
+					<p>
+    					You can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
+					</p>
+					
+					<p>
+    					NOTE: HEX has been deprecated - now RGBa standardised - docs need to be updated.
+    				</p>
+    				
+    				<h3>
+    					Pre-Set colour table:
+					</h3>
+					
+					<table>
+					CLASS           COLOUR      HEX CODE
+					normal          Black       000000
+					inactive        Grey        9d9d9d
+					information     Blue        1a75ae
+					success         Green       5eae45
+					alert           Red         d93f3f
+					regal           Purple      774a79
+					Tables, Rows, and Cells
+					</table>
+					
+					
+					<h3>
+					   Tables, Rows, and Cells
+					</h3>
+					
+					<p>
+    					Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content. If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
+					</p>
+					
+					
+					<div class="table">
+					    <ul class="row">
+					        <li class="cell information third">First Name</li>
+					        <li class="cell information third">Last Name</li>
+					        <li class="cell information third">Access Level</li>
+					    </ul>
+					    <ul class="row">
+					        <li class="cell third">John</li>
+					        <li class="cell third">Doe</li>
+					        <li class="cell third">1</li>
+					    </ul>
+					    <ul class="row">
+					        <li class="cell third">Jane</li>
+					        <li class="cell third">Doe</li>
+					        <li class="cell third">1</li>
+					    </ul>
+					    <ul class="row">
+					        <li class="cell third">John</li>
+					        <li class="cell third">Smith</li>
+					        <li class="cell third">2</li>
+					    </ul>
+					</div>
+					
+					
+					
+					<h3>
+					   Buttons
+					</h3>
+					
+					<p>
+    					The button classes provide a beautiful way to display a button to the user.
+					</p>
+					
+					<a href="/login" class="button">Login</a>
+					<a href="/login" class="button">Register</a>
+					<a href="/login" class="button">Contact</a>
+					
+					
+					<h3>
+    					Buttons with Colour Selectors
+					</h3>
+					
+					<p>
+    					If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
+					</p>
+					
+					<a href="/login" class="button normal">Login</a>
+					<a href="/login" class="button inactive">Register</a>
+					<a href="/login" class="button alert">Contact</a>
+					
+					
+					<h3>
+    					Button Sets
+					</h3>
+					
+					<p>
+    					When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
+					</p>
+					
+					<div class="button-set">
+					    <a href="" class="button information">One</a>
+					    <a href="" class="button information">Two</a>
+					    <a href="" class="button information">Three</a>
+					</div>
+					
+					
+					<h3>
+    					Info Wheels
+					</h3>
+					
+					<p>
+    					Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
+					</p>
+					
+					<span class="info-wheel success">12</span>
+					
+					
+					<h3>
+    					Labels
+					</h3>
+					
+					<p>
+    					Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
+					</p>
+					
+					<span class="label success">
+					    Version 1.1.4
+					</span>
+					
+					<h3>
+    					Progress Bars
+					</h3>
+					
+					<p>
+    					You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
+					</p>
+					
+					<div class="progress-bar" style="width:500px;">
+					    <div class="progress-bar-filler information" style="width:75%;">75%</div>
+					</div>
+					
+					<h3>
+    					Divisions with Colour Selectors
+					</h3>
+					
+					<p>
+    					You can also apply colour sleectors to other elements such as divisions...
+					</p>
+					
+					<div class="alert">
+                       <p>
+					       There was an error saving your password!
+					   </p>
+					</div>
+					
+					<p>
+					   or...
+					</p>
+					
+					<aside class="success">
+					   <p>
+        			     You are logged in! (<a href="#logout">Logout</a>)
+        			   </p>
+					</aside>
+					
+					
+					<h3>
+    					Forms &amp; Inputs
+					</h3>
+					
+					<form action="post" method="/auth">
+					    <label>
+					        Username
+					    </label>
+					    <input type="text" placeholder="Enter your username" />
+					
+					    <label>
+					        Password
+					    </label>
+					    <input type="password" placeholder="Enter your password" />
+					
+					    <label>
+					        Pin No.
+					    </label>
+					    <input type="password" placeholder="1234" />
+					
+					    <input type="submit" class="button information" value="Login" />
+					</form>
+					
+					<h3>
+					   ....and that, is that.
+					</h3>
+					                    
+                </article>
+				
+				
+				
+			    <aside class="column xsmall-16 small-16 medium-6 large-6 mega-hd-6 mega-uhd-6">
+					
+					<h1>
+    					A word on Internet Explorer 8 and Below
+					</h1>
+					
+					<p>
+    					This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever. Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
+					</p>
+					
+					<p>
+    					If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
+					</p>
+					
+					<h1>
+    					Project Release Information
+    				</h1>
+    				
+    				<h3>
+    					Master Branch
+					</h3>
+					
+					<p>
+    					The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
+					</p>
+					
+					<h3>
+    					Version Branches
+					</h3>
+					
+					<p>
+    					StringBean is released in major+minor version. By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
+					</p>
+					
+					<h3>
+    					Support Information
+					</h3>
+					
+					<p>
+    					Support can be delivered via the Github wiki and issue tabs - ask a question and I will endevour to answer.
+					</p>
+					
+					<h1>
+    					Want to contribute?
+    				</h1>
+    				
+    				<p>
+    					If you want to contribute to this project then feel free to look at the CONTRIBUTING.md file.
+                    </p>
+                    
+                </aside>
+            
+            </section>
+            
+            
+        </main>	
+	    
+        
+        <!-- Media queries are not present in earlier browsers - specifically IE8 and
+             below - these javascript includes add media query support to older browsers.
+             This is known as polyfil / polyfilling. -->
+        <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/matchmedia.polyfill.js"></script>
+        <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/Respond.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        
+    </body>
 </html>
