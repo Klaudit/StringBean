@@ -39,8 +39,8 @@
 /** 3. Basic Formatting **/
     .layout-800 { margin:auto; max-width:800px; } .layout-860 { margin:auto; max-width:860px; } .layout-900 { margin:auto; max-width:900px; } .layout-960 { margin:auto; max-width:960px; } .layout-980 { margin:auto; max-width:980px; } .layout-1000 { margin:auto; max-width:1000px; } .layout-1024 { max-width:1024px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } .layout-1400 { margin:auto; max-width:1400px; }  /** Enforce Grid max widths **/
     h1 {font-size:3rem;} h2 {font-size:2.5rem;} h3 {font-size:2rem;} h4 {font-size:1.5rem;} h5 {font-size:1rem;} h6 {font-size:0.75rem;}
-    h1,h2,h3,h4,h5,h6,p,span,small,li,table,.grid { padding-top:0.5em; padding-bottom:0.5em; } img { padding-top:0.5em; padding-bottom:0.5em; } /** Adds top padding for all text-bearing elements **/
-    pre { background:#f5f5f5; border:1px solid #ddd; padding:0.25em; overflow:auto; } /** PRE & CODE formatting **/
+    h1,h2,h3,h4,h5,h6,p,span,small,li,table,.grid { padding-top:0.5rem; padding-bottom:0.5rem; } img { padding-top:0.5em; padding-bottom:0.5em; } /** Adds top padding for all text-bearing elements **/
+    pre { background:#f5f5f5; border:1px solid #ddd; padding:0.25em; margin:0.5rem 0 0.5rem 0; overflow:auto; } /** PRE & CODE formatting **/
     sub,sup { font-size:0.75em; }
 
 /** 4. Columns & Grids **/
