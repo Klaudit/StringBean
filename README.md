@@ -1,6 +1,6 @@
 ![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
 
-# StringBean Documentation
+# Documentation
 The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. 
 
 Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
