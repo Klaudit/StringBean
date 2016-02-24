@@ -23,19 +23,19 @@
             body, html { font-family: 'Source Sans Pro', sans-serif; font-weight:300; color:#222 !important; }
         	.container { margin-left:0; margin-right:0; }
             
-        	header { background-repeat: no-repeat; background-attachment: fixed; background-position: center; }
-            .Intro { position:absolute; top:50%; margin-top:-100px; width:99%; max-width:500px; height:900px; margin:auto; }
+        	header { background-repeat: no-repeat; background-attachment: fixed; background-position: center; height:900px; padding:0; }
+            .Intro { position:absolute; top:50%; margin:auto; margin-top:-150px; width:99%; max-width:500px; }
             
             @media screen and (max-width: 600px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_small.jpg'); }
             }
             @media screen and (min-width: 601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_medium.jpg'); }
+               .Intro { position:absolute; top:50%; left:50%; margin-top:-150px; margin-left:-250px; }
+               section.row > .column:last-child { border-left:1px dotted #aaa; padding-left:2rem; }
             }
             @media screen and (min-width: 901px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_large.jpg'); }
-               .Intro { position:absolute; top:50%; left:50%; margin-top:-200px; margin-left:-250px; }
-               section.row > .column:last-child { border-left:1px dotted #aaa; padding-left:2rem; }
             }
             @media screen and (min-width: 1601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_2k.jpg'); }
@@ -62,7 +62,7 @@
     <body>
         
         
-        <main class="container layout-1200">   
+        <main class="container">   
             
                         
             
@@ -104,7 +104,7 @@
             </header>
             
             
-            <section class="row" id="content">
+            <section class="row layout-1200" id="content">
                     
                 
                 <article class="column xsmall-16 small-16 medium-16 large-10">
