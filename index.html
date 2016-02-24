@@ -14,26 +14,30 @@
         
         <!-- StringBean -->
         <!-- https://s3-eu-west-1.amazonaws.com/stringbean -->
-        <link rel="stylesheet" href="./src/css/StringBean.css" />
-        
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
         
         
         <style type="text/css">
             body, html { font-family: 'Source Sans Pro', sans-serif; font-weight:300; color:#222 !important; }
         	.container { margin-left:0; margin-right:0; }
-        	
+            
         	header { background-repeat: no-repeat; background-attachment: fixed; background-position: center; }
+            .Intro { position:absolute; top:50%; margin-top:-100px; width:99%; max-width:500px; }
+            
             @media screen and (max-width: 600px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_small.jpg'); }
             }
-            @media screen and (min-width: 601px) and (max-width: 900px) {
+            @media screen and (min-width: 601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_medium.jpg'); }
             }
-            @media screen and (min-width: 901px) and (max-width: 1600px) {
+            @media screen and (min-width: 901px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_large.jpg'); }
+               .Intro { position:absolute; top:50%; left:50%; margin-top:-200px; margin-left:-250px; }
+               section.row > .column:last-child { border-left:1px dotted #aaa; padding-left:2rem; }
             }
-            @media screen and (min-width: 1601px) and (max-width: 2047px) {
+            @media screen and (min-width: 1601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_2k.jpg'); }
             }
             @media screen and (min-width: 2048px) {
@@ -44,6 +48,13 @@
             div > p { padding:1em; }
             strong { font-weight:600; }
             .code { background-color:#f5f5f5; border-left:0.25rem solid #10ec9c; padding:0.5em; }
+            
+            .Intro .row { padding:0; } .Intro .row:last-child { padding:2rem 0 }
+            .Intro small { font-weight:700; color:#448866; }
+            
+            #ScrollDown { position:absolute; bottom:50px; left:50%; margin-left:-50px; opacity:0.7; width:100px; font-size:3em; font-weight:700; text-align:center; text-decoration:none; color:#333; }
+            #ScrollDown:hover, #ScrollDown:focus { opacity:1; }
+            
         </style>
         
     </head>
@@ -55,29 +66,44 @@
                         
             
             <header class="row">
-                <div class="column xsmall-16 medium-8">
-                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/img/logo.png" alt="" style="width:100%; max-width:300px;" />
-                </div>
+                <div class="column full-16 align-center">
                 
-                <div class="column xsmall-16 medium-8 align-right">
-                    
-                    <h4>
-                        Get the source...
-                    </h4>
-                    
-                    <div class="button-set">
-                        <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot">
-                            View on Github
-                        </a>
-                        <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information">
-                            Download v2.0
-                        </a>
-                    </div>
+                    <div class="Intro">
+	                    
+	                    <div class="row">
+    	                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/img/logo.png" alt="" style="width:99%; max-width:500px;" />
+	                    </div>
+	                    
+	                    <div class="row">
+	                       <small>
+	                           THE 4K FEATHERWEIGHT FRAMEWORK
+	                       </small>
+	                    </div>
+	                    
+	                    <div class="row">
+    	                    <h4>
+	                           Get the source...
+	                        </h4>
+	                        
+	                        <div class="button-set">
+	                            <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot">
+	                                View on Github
+	                            </a>
+	                            <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information">
+	                                Download v2.0
+	                            </a>
+	                        </div>
+	                        
+	                    </div>
+	                </div>
+	                
+	                <a id="ScrollDown" class="fa fa-angle-double-down fa-lg" href="#content"></a>
+	                
                 </div>
             </header>
             
             
-            <section class="row">
+            <section class="row" id="content">
                     
                 
                 <article class="column xsmall-16 small-16 medium-16 large-10">
@@ -100,7 +126,7 @@
                     
                         
                         <h3>
-                            Breakpoint Breakdown
+                            <span class="fa fa-bolt"></span> Breakpoint Breakdown
                         </h3>
                         
                         
@@ -160,7 +186,7 @@
                     
                         
                         <h3>
-                            Using breakpoint specific selectors
+                            <span class="fa fa-bolt"></span> Using breakpoint specific selectors
                         </h3>
                         
                         <p>
@@ -196,7 +222,7 @@
                     
                             
                         <h3>
-                           HD and UHD Breakpoints
+                           <span class="fa fa-bolt"></span> HD and UHD Breakpoints
                         </h3>
                         
                         <p>
@@ -230,7 +256,7 @@
                     
     
                         <h3>
-                            Taking full width on all breakpoints
+                            <span class="fa fa-bolt"></span> Taking full width on all breakpoints
                         </h3>
                         
                         <p>
@@ -248,7 +274,7 @@ class="full-16"
                     <section class="row">
                     
                         <h3>
-                            Three-Way Split
+                            <span class="fa fa-bolt"></span> Three-Way Split
                         </h3>
                         
                         <p>
@@ -275,7 +301,7 @@ class="full-16"
                     
     
                         <h3>
-                            Layouts
+                            <span class="fa fa-bolt"></span> Layouts
                         </h3>
                         
                         <p>
@@ -304,7 +330,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Hiding Content Below Breakpoints
+                            <span class="fa fa-bolt"></span> Hiding Content Below Breakpoints
                         </h3>
                         
                         <p>
@@ -323,7 +349,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Showing Content Below Certain Breakpoints
+                            <span class="fa fa-bolt"></span> Showing Content Below Certain Breakpoints
                         </h3>
                         
                         <div class="code">
@@ -337,7 +363,7 @@ class="full-16"
                     
                         
                         <h3>
-                            Showing Content Only on Certain Breakpoints
+                            <span class="fa fa-bolt"></span> Showing Content Only on Certain Breakpoints
                         </h3>
                         
                         <p>
@@ -358,7 +384,7 @@ class="full-16"
                         
                         
                         <h3>
-                           Buttons
+                           <span class="fa fa-bolt"></span> Buttons
                         </h3>
                         
                         <p>
@@ -381,7 +407,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Buttons with Colour Selectors
+                            <span class="fa fa-bolt"></span> Buttons with Colour Selectors
                         </h3>
                         
                         <p>
@@ -405,7 +431,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Light &amp; Dark Buttons
+                            <span class="fa fa-bolt"></span> Light &amp; Dark Buttons
                         </h3>
                         
                         <button class="button dark">EXIT APP</button>
@@ -419,7 +445,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Button Sets
+                            <span class="fa fa-bolt"></span> Button Sets
                         </h3>
                         
                         <p>
@@ -441,7 +467,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Info Wheels
+                            <span class="fa fa-bolt"></span> Info Wheels
                         </h3>
                         
                         <p>
@@ -477,7 +503,7 @@ class="full-16"
                         
                         
                         <h3>
-                            Labels
+                            <span class="fa fa-bolt"></span> Labels
                         </h3>
                         
                         <p>
@@ -517,7 +543,7 @@ class="full-16"
                     
                         
                         <h3>
-                            Progress Bars
+                            <span class="fa fa-bolt"></span> Progress Bars
                         </h3>
                         
                         <p>
@@ -556,7 +582,7 @@ class="full-16"
 						
 						
 						<h3>
-						   Tables, Rows, and Cells
+						   <span class="fa fa-bolt"></span> Tables, Rows, and Cells
 						</h3>
 						
 						<p>
@@ -595,7 +621,7 @@ class="full-16"
                     
 						
 						<h3>
-	    					Divisions with Colour Selectors
+	    					<span class="fa fa-bolt"></span> Divisions with Colour Selectors
 						</h3>
 						
 						<p>
@@ -627,7 +653,7 @@ class="full-16"
 						
 						
 						<h3>
-	    					Forms &amp; Inputs
+	    					<span class="fa fa-bolt"></span> Forms &amp; Inputs
 						</h3>
 						
 						<form action="post" method="/auth">
@@ -739,14 +765,26 @@ class="full-16"
             
             
         </main>	
-	    
         
         <!-- Media queries are not present in earlier browsers - specifically IE8 and
              below - these javascript includes add media query support to older browsers.
              This is known as polyfil / polyfilling. -->
         <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/matchmedia.polyfill.js"></script>
         <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/Respond.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        
+        <script>
+            $(document).ready(function () {
+                SetIntroHeight();           
+            });
+            $(window).resize(function () {
+            	SetIntroHeight();
+            });
+            function SetIntroHeight () {
+            	$('header').height($(window).height());
+            }
+        </script>
         
     </body>
 </html>
