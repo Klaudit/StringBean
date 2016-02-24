@@ -57,28 +57,28 @@
     .label { display:inline-block; padding:0.1em 0.5em; font-size:0.75em; font-weight:bold; }
     
     /** Progress Bars **/
-    .progress-bar { display:inline-block; border:1px solid #ddd; background-color:#f5f5f5; }
+    .progress-bar { display:inline-block; border:1px solid #ddd; background-color:#f5f5f5; margin:1px 0; }
     .progress-bar-filler { line-height:2em; min-height:2em; text-align:center; font-weight:bold; font-size:0.75em; padding:0; width: attr(data-sb-value); }
     .progress-bar-filler:after { content: attr(data-sb-value); }  /** Displays the value of data-sb-value attribute in the innerHTML **/
     
     /** Grid Table **/
-    .table { padding:0; border-left:1px solid #ddd; border-bottom:1px solid #ddd; }
-    .table > .row { margin:0; padding:0; clear:both; overflow:hidden; }
-    .table > .row > .cell { float:left; text-align:center; border-right:1px solid #ddd; border-top:1px solid #ddd; }
+    .table { padding:0; }
+    .table > .row { margin:0; padding:0.5em 0; clear:both; overflow:hidden; border-bottom:1px solid #ddd;  }
+    .table > .row > .cell { float:left; text-align:center; }
     .table > .row > .cell.header { font-weight:bold; background:#f5f5f5; }
       
 /** 5. Basic Formatting **/    
     h1,h2,h3,h4,h5,h6 { margin:0.75rem 0; margin-bottom:0.25rem; font-weight:normal; } h1 { font-size:2.5rem; } h2 { font-size:2rem; } h3 { font-size:1.75rem; } h4 { font-size:1.5rem; } h5 { font-size:1.25rem; } h6 { font-size:1rem; }
     p { padding:0.5rem 0; }
     .button, button, input, selection { background-color:#10ec9c; }
-    .normal { background-color:rgba(0,0,0,1); color:#fff; } .warning { background-color:rgba(255,200,0,1); color:#fff; } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); color:#fff; } .alert { background-color:rgba(215,65,65,1); color:#fff; } .information { background-color:rgba(25,120,175,1); color:#fff; } .regal { background-color:rgba(120,75,120,1); color:#fff; } .amber { background-color:rgba(220,100,50,1); color:#fff; } .moot { background-color:rgba(70,100,120,1); color:#fff; }
+    .normal, .default { background-color:rgba(16,236,156,1); color:#555; } .warning { background-color:rgba(255,200,0,1); color:#fff; } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); color:#fff; } .alert { background-color:rgba(215,65,65,1); color:#fff; } .information { background-color:rgba(25,120,175,1); color:#fff; } .regal { background-color:rgba(120,75,120,1); color:#fff; } .amber { background-color:rgba(220,100,50,1); color:#fff; } .moot { background-color:rgba(70,100,120,1); color:#fff; }
     .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .light { background-color:#fff; border:1px solid #555; }
     .dark { background-color:#555; border:1px solid #333; color:#eee; }    
     .rounded { border-radius:5px; }
     
     /** Code & Pre **/
-    code > pre { background:#f5f5f5; padding:0.5em; border-left:0.25em solid #10ec9c; font-weight:500; }
+    code > pre { background:#f5f5f5; padding:0.5em; border-left:0.25em solid #10ec9c; }
     
     /** Sizes **/
     .small { font-size:0.75em; } .medium { font-size:1.25em; } .large { font-size:2em; }    
