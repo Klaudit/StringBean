@@ -33,7 +33,7 @@
     .third { width:33.3% } .column.third { width:30.833%; }
     .cell { display:inline-block; float:left; }
     .clear-fix { clear:both; }
-    .layout-600 { width:600px; margin:auto; } .layout-800 { width:800px; margin:auto; } .layout-960 { width:960px; margin:auto; } .layout-1200 { width:1200px; margin:auto; } 
+    .layout-600 { max-width:600px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
     
 /** 3. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
