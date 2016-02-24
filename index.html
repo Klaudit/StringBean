@@ -13,7 +13,11 @@
 		<![endif]-->
         
         <!-- StringBean 1.1.0 -->
-        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
+        <!-- 
+            <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
+        -->
+        
+        <link rel="stylesheet" href="./src/css/StringBean.css" />
         <!-- / -->
         
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
@@ -53,8 +57,24 @@
                         
             
             <header class="row">
-                <div class="column">
+                <div class="column xsmall-16 medium-8">
                     <img src="https://s3-eu-west-1.amazonaws.com/stringbean/img/logo.png" alt="" style="width:100%; max-width:300px;" />
+                </div>
+                
+                <div class="column xsmall-16 medium-8 align-right">
+                    
+                    <h4>
+                        Get the source...
+                    </h4>
+                    
+                    <div class="button-set">
+                        <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot">
+                            View on Github
+                        </a>
+                        <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information">
+                            Download v2.0
+                        </a>
+                    </div>
                 </div>
             </header>
             
@@ -69,16 +89,217 @@
                     </h1>
                     
                     <p>
-    					The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.
-					</p>
-					
-					<p>
-    					Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
+    					The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
 					</p>
 					
 					<p>
     					StringBean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
 					</p>
+					
+					
+					
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Breakpoint Breakdown
+                        </h3>
+                        
+                        
+                        <div class="table">
+                            <ul class="row">
+                                <li class="cell information xsmall-4">LABEL</li>
+                                <li class="cell information xsmall-4">START</li>
+                                <li class="cell information xsmall-4">END</li>
+                                <li class="cell information xsmall-4">COLUMNS</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">XSMALL</li>
+                                <li class="cell xsmall-4">0</li>
+                                <li class="cell xsmall-4">319px</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">SMALL</li>
+                                <li class="cell xsmall-4">320px</li>
+                                <li class="cell xsmall-4">599px</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">MEDIUM</li>
+                                <li class="cell xsmall-4">600px</li>
+                                <li class="cell xsmall-4">900px</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">LARGE</li>
+                                <li class="cell xsmall-4">901px</li>
+                                <li class="cell xsmall-4">1600px</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">MEGA-HD</li>
+                                <li class="cell xsmall-4">1601px</li>
+                                <li class="cell xsmall-4">2048px</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">MEGA-UHD</li>
+                                <li class="cell xsmall-4">2049px</li>
+                                <li class="cell xsmall-4">~</li>
+                                <li class="cell xsmall-4">16</li>
+                            </ul>
+                            <ul class="row">
+                                <li class="cell xsmall-4">FULL-16</li>
+                                <li class="cell xsmall-4">~</li>
+                                <li class="cell xsmall-4">~</li>
+                                <li class="cell xsmall-4">1</li>
+                            </ul>
+                        </div>
+                    
+                    </section>
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Using breakpoint specific selectors
+                        </h3>
+                        
+                        <p>
+                            You can stack the breakpoint selectors on an element.
+                        </p>
+                        
+                        <code><pre class="rounded">class="xsmall-5 small-9 medium-10 large-2"</pre></code>
+                        
+                        <p>
+                            Normal resolutions (sub-1080p HD)
+                        </p>
+                        
+<code><pre>
+&lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
+            &lt;h1&gt;
+                StringBean
+            &lt;/h1&gt;
+        &lt;/div&gt;
+        &lt;div class="column xsmall-16 small-16 medium-5 large-4"&gt;
+            &lt;p id="Strapline"&gt;
+                Powering the internet, gently.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</pre></code>
+                    
+                    
+                    </section>
+                    <section class="row">
+                    
+                            
+                        <h3>
+                           HD and UHD Breakpoints
+                        </h3>
+                        
+                        <p>
+                            Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
+                        </p>
+                        
+                        
+<code><pre>
+&lt;header class="container"&gt;
+    &lt;nav class="row"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
+            &lt;h1&gt;
+                StringBean
+            &lt;/h1&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
+            &lt;p id="Strapline"&gt;
+                Powering the internet, gently.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+</pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+    
+                        <h3>
+                            Taking full width on all breakpoints
+                        </h3>
+                        
+                        <p>
+                            If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
+                        </p>
+                        
+<code><pre>
+class="full-16"
+</pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        <h3>
+                            Three-Way Split
+                        </h3>
+                        
+                        <p>
+                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+                        </p>
+                        
+<code><pre>
+&lt;div class="column medium-third"&gt;
+    Column 1
+&lt;/div&gt;
+&lt;div class="column medium-third"&gt;
+    Column 2
+&lt;/div&gt;
+&lt;div class="column medium-third"&gt;
+    Column 3
+&lt;/div&gt;
+</pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+    
+                        <h3>
+                            Layouts
+                        </h3>
+                        
+                        <p>
+                            Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
+                        </p>
+                        
+                        
+<code><pre>
+&lt;main class="container"&gt;
+    &lt;article class="row layout-960"&gt;
+        &lt;h1&gt;
+            Hello World!
+        &lt;/h1&gt;
+        &lt;p&gt;
+            Some content goes in here.
+        &lt;/p&gt;
+    &lt;/article&gt;
+&lt;/main&gt;
+</pre></code>                    
+                    
+                    </section>
+                    
 					
                     
                     <section class="row">
@@ -238,256 +459,6 @@
                     
                     </section>
                     
-                    
-                    <section class="row">
-                    
-                        <h1>
-                            How it works
-                        </h1>
-                        
-                        <p>
-                            To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class.
-                        </p>
-                        
-                        <p>
-                            This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
-                        </p>
-                    
-                    
-                    </section>
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            Breakpoint Breakdown
-                        </h3>
-                        
-                        <p>
-                            LABEL     START    END      COLUMNS<br />
-                            XSMALL    0        319px    16<br />
-                            SMALL     320px    599px    16<br />
-                            MEDIUM    600px    900px    16<br />
-                            LARGE     901px    1600px   16<br />
-                            MEGA-HD   1601px   2048px   16<br />
-                            MEGA-UHD  2049px   ~        16<br />
-                            FULL-16   0        ~        1<br />
-                        </p>
-                    
-                    
-                    </section>
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            Using breakpoint specific selectors
-                        </h3>
-                        
-                        <p>
-                            You can stack the breakpoint selectors on an element.
-                        </p>
-                        
-                        <code><pre class="rounded">class="xsmall-5 small-9 medium-10 large-2"</pre></code>
-                        
-                        <p>
-                            Normal resolutions (sub-1080p HD)
-                        </p>
-                        
-    <code><pre class="rounded">
-      &lt;header class="container"&gt;
-        &lt;nav class="row"&gt;
-          &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
-            &lt;h1&gt;
-              StringBean
-            &lt;/h1&gt;
-          &lt;/div&gt;
-          &lt;div class="column xsmall-16 small-16 medium-5 large-4"&gt;
-            &lt;p id="Strapline"&gt;
-              Powering the internet, gently.
-            &lt;/p&gt;
-            &lt;/div&gt;
-          &lt;/nav&gt;
-      &lt;/header&gt;
-    </pre></code>
-                    
-                    
-                    </section>
-                    <section class="row">
-                    
-                            
-                        <h3>
-                           HD and UHD Breakpoints
-                        </h3>
-                        
-                        <p>
-                            Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
-                        </p>
-                        
-                        
-    <code><pre class="rounded">
-      &lt;header class="container"&gt;
-        &lt;nav class="row"&gt;
-          &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
-            &lt;h1&gt;
-              StringBean
-            &lt;/h1&gt;
-          &lt;/div&gt;
-          
-          &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
-            &lt;p id="Strapline"&gt;
-              Powering the internet, gently.
-            &lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/nav&gt;
-      &lt;/header&gt;
-    </pre></code>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-    
-                        <h3>
-                            Taking full width on all breakpoints
-                        </h3>
-                        
-                        <p>
-                            If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
-                        </p>
-                        
-    <code><pre>
-      class="full-16"
-    </pre></code>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-                        <h3>
-                            Three-Way Split
-                        </h3>
-                        
-                        <p>
-                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
-                        </p>
-                        
-    <code><pre>
-    &lt;div class="column medium-third"&gt;
-      Column 1
-    &lt;/div&gt;
-    &lt;div class="column medium-third"&gt;
-      Column 2
-    &lt;/div&gt;
-    &lt;div class="column medium-third"&gt;
-      Column 3
-    &lt;/div&gt;
-    </pre></code>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-    
-                        <h3>
-                            Layouts
-                        </h3>
-                        
-                        <p>
-                            Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
-                        </p>
-                        
-                        
-    <code><pre>
-    &lt;main class="container"&gt;
-        &lt;article class="row layout-960"&gt;
-            &lt;h1&gt;
-                Hello World!
-            &lt;/h1&gt;
-            &lt;p&gt;
-                Some content goes in here.
-            &lt;/p&gt;
-        &lt;/article&gt;
-    &lt;/main&gt;
-    </pre></code>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-	
-						
-						<h3>
-	    					Showing/Hiding Elements at Certain Breakpoints
-						</h3>
-						
-						<p>
-	    					You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
-						</p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    	
-						
-						<h3>
-	    					Hiding Content Below Breakpoints
-						</h3>
-						
-						<p>
-	    					You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
-						</p>
-						
-						<p>
-						   Resize the Window: <span class="hide-below-medium">Hello world!</span>
-						</p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    	
-						
-						<h3>
-	    					Showing Content Below Certain Breakpoints
-						</h3>
-						
-						<p>
-						   Resize the Window: <span class="hide-above-medium">Hello World!</span>
-	                    </p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-	                    
-						<h3>
-	    					Showing Content Only on Certain Breakpoints
-						</h3>
-						
-						<p>
-	    					You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
-						</p>
-						
-						<p>
-						   Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
-						</p>
-                    
-                    
-                    </section>
-                    
-                    
                     <section class="row">
                     
 						
@@ -627,18 +598,87 @@
                         </h3>
                         
                         <table>
-                        CLASS           COLOUR      HEX CODE
-                        normal          Black       000000
-                        inactive        Grey        9d9d9d
-                        information     Blue        1a75ae
-                        success         Green       5eae45
-                        alert           Red         d93f3f
-                        regal           Purple      774a79
-                        Tables, Rows, and Cells
+	                        CLASS           COLOUR      HEX CODE
+	                        normal          Black       000000
+	                        inactive        Grey        9d9d9d
+	                        information     Blue        1a75ae
+	                        success         Green       5eae45
+	                        alert           Red         d93f3f
+	                        regal           Purple      774a79
+	                        Tables, Rows, and Cells
                         </table>
                     
                     
                     </section>
+                    
+                    <section class="row">
+                    
+    
+                        
+                        <h3>
+                            Showing/Hiding Elements at Certain Breakpoints
+                        </h3>
+                        
+                        <p>
+                            You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
+                        </p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        
+                        <h3>
+                            Hiding Content Below Breakpoints
+                        </h3>
+                        
+                        <p>
+                            You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+                        </p>
+                        
+                        <p>
+                           Resize the Window: <span class="hide-below-medium">Hello world!</span>
+                        </p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        
+                        <h3>
+                            Showing Content Below Certain Breakpoints
+                        </h3>
+                        
+                        <p>
+                           Resize the Window: <span class="hide-above-medium">Hello World!</span>
+                        </p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Showing Content Only on Certain Breakpoints
+                        </h3>
+                        
+                        <p>
+                            You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+                        </p>
+                        
+                        <p>
+                           Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
+                        </p>
+                    
+                    
+                    </section>
+                    
                     
                     
                     <section class="row">
@@ -749,3 +789,5 @@
         
     </body>
 </html>
+        
+        
