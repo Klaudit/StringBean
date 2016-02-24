@@ -13,6 +13,7 @@
 		<![endif]-->
         
         <!-- StringBean -->
+        <!--  -->
         <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
         
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
@@ -42,6 +43,7 @@
             h1,h2,h3,h4 { font-family: 'Catamaran', sans-serif !important; font-weight:300; color:#666; }
             div > p { padding:1em; }
             strong { font-weight:600; }
+            .code { background-color:#f5f5f5; border-left:0.25rem solid #10ec9c; padding:0.5em; }
         </style>
         
     </head>
@@ -103,11 +105,11 @@
                         
                         
                         <div class="table">
-                            <ul class="row">
-                                <li class="cell moot xsmall-4"><strong>LABEL</strong></li>
-                                <li class="cell moot xsmall-4"><strong>START</strong></li>
-                                <li class="cell moot xsmall-4"><strong>END</strong></li>
-                                <li class="cell moot xsmall-4"><strong>COLUMNS</strong></li>
+                            <ul class="row moot">
+                                <li class="cell xsmall-4"><strong>LABEL</strong></li>
+                                <li class="cell xsmall-4"><strong>START</strong></li>
+                                <li class="cell xsmall-4"><strong>END</strong></li>
+                                <li class="cell xsmall-4"><strong>COLUMNS</strong></li>
                             </ul>
                             <ul class="row">
                                 <li class="cell xsmall-4">XSMALL</li>
@@ -295,6 +297,59 @@ class="full-16"
 </pre></code>                    
                     
                     </section>
+
+                    
+                    
+                    <section class="row">
+                        
+                        
+                        <h3>
+                            Hiding Content Below Breakpoints
+                        </h3>
+                        
+                        <p>
+                            You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+                        </p>
+                        
+                        <div class="code">
+                        Resize the Window: <span class="hide-below-medium">Hello world!</span>
+                        </div>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        
+                        <h3>
+                            Showing Content Below Certain Breakpoints
+                        </h3>
+                        
+                        <div class="code">
+                           Resize the Window: <span class="hide-above-medium">Hello World!</span>
+                        </div>                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Showing Content Only on Certain Breakpoints
+                        </h3>
+                        
+                        <p>
+                            You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+                        </p>
+                        
+                        <div class="code">
+                           Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
+                        </div>
+                    
+                    
+                    </section>
                     
 					
                     
@@ -393,9 +448,25 @@ class="full-16"
                             Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
                         </p>
                         
-                        <span class="info-wheel success">99</span>
-                        <span class="info-wheel medium success">150</span>
-                        <span class="info-wheel large success">150</span>
+                                                                        
+                        <div class="row">
+    
+                            <span class="info-wheel small success">99</span>
+    
+                        </div>
+                        
+                        <div class="row">
+    
+                            <span class="info-wheel medium success">99</span>
+    
+                        </div>
+                        
+                        <div class="row">
+    
+                            <span class="info-wheel large success">99</span>
+    
+                        </div>
+                        
                     
                     
                     </section>
@@ -413,17 +484,30 @@ class="full-16"
                             Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
                         </p>
                         
-                        <span class="label success">
-                            Version 1.1.4
-                        </span>
+                        <div class="row">
+
+	                        <span class="label small success">
+	                            Version 1.1.4
+	                        </span>
                         
-                        <span class="label medium success">
-                            Version 1.1.4
-                        </span>
+                        </div>
+                                                
+                        <div class="row">
+
+                            <span class="label medium success">
+                                Version 1.1.4
+                            </span>
                         
-                        <span class="label large success">
-                            Version 1.1.4
-                        </span>
+                        </div>
+                                                
+                        <div class="row">
+
+                            <span class="label large success">
+                                Version 1.1.4
+                            </span>
+                        
+                        </div>
+                                                
                     
                     
                     </section>
@@ -440,36 +524,29 @@ class="full-16"
                             You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
                         </p>
                         
-                        <div class="progress-bar" style="width:500px;">
-                            <div class="progress-bar-filler information" style="width:75%;" data-sb-value="75%"></div>
+                        <div class="row">
+                        
+                            <div class="progress-bar" style="width:100%;">
+                                <div class="progress-bar-filler information" style="width:75%;" data-sb-value="75%"></div>
+                            </div>
+                        
                         </div>
                         
-                        <div class="progress-bar" style="width:500px;">
-                            <div class="progress-bar-filler warning" style="width:31%;" data-sb-value="75%"></div>
+                        <div class="row">
+                        
+                            <div class="progress-bar" style="width:100%;">
+                                <div class="progress-bar-filler regal" style="width:31%;" data-sb-value="31%"></div>
+                            </div>
+                        
                         </div>
                         
-                        <div class="progress-bar" style="width:500px;">
-                            <div class="progress-bar-filler alert" style="width:92%;" data-sb-value="75%"></div>
+                        <div class="row">
+                        
+                            <div class="progress-bar" style="width:100%;">
+                                <div class="progress-bar-filler alert" style="width:92%;" data-sb-value="92%"></div>
+                            </div>
+                        
                         </div>
-                    
-                    
-                    </section>
-                    
-                    <section class="row">
-                    
-						
-						<h3>
-	    					Pre-Set Colour Classes
-						</h3>
-						
-						<p>
-	    					You can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
-						</p>
-						
-						<p>
-	    					NOTE: HEX has been deprecated - now RGBa standardised - docs need to be updated.
-	    				</p>
-                    
                     
                     </section>
                     
@@ -488,10 +565,10 @@ class="full-16"
 						
 						
 						<div class="table">
-						    <ul class="row">
-						        <li class="cell information third">First Name</li>
-						        <li class="cell information third">Last Name</li>
-						        <li class="cell information third">Access Level</li>
+						    <ul class="row moot">
+						        <li class="cell third"><strong>First Name</strong></li>
+						        <li class="cell third"><strong>Last Name</strong></li>
+						        <li class="cell third"><strong>Access Level</strong></li>
 						    </ul>
 						    <ul class="row">
 						        <li class="cell third">John</li>
@@ -586,96 +663,6 @@ class="full-16"
                     </section>
                     
                     
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            Pre-Set colour table:
-                        </h3>
-                        
-                        <table>
-	                        CLASS           COLOUR      HEX CODE
-	                        normal          Black       000000
-	                        inactive        Grey        9d9d9d
-	                        information     Blue        1a75ae
-	                        success         Green       5eae45
-	                        alert           Red         d93f3f
-	                        regal           Purple      774a79
-	                        Tables, Rows, and Cells
-                        </table>
-                    
-                    
-                    </section>
-                    
-                    <section class="row">
-                    
-    
-                        
-                        <h3>
-                            Showing/Hiding Elements at Certain Breakpoints
-                        </h3>
-                        
-                        <p>
-                            You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
-                        </p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        
-                        <h3>
-                            Hiding Content Below Breakpoints
-                        </h3>
-                        
-                        <p>
-                            You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
-                        </p>
-                        
-                        <p>
-                           Resize the Window: <span class="hide-below-medium">Hello world!</span>
-                        </p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        
-                        <h3>
-                            Showing Content Below Certain Breakpoints
-                        </h3>
-                        
-                        <p>
-                           Resize the Window: <span class="hide-above-medium">Hello World!</span>
-                        </p>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            Showing Content Only on Certain Breakpoints
-                        </h3>
-                        
-                        <p>
-                            You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
-                        </p>
-                        
-                        <p>
-                           Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
-                        </p>
-                    
-                    
-                    </section>
-                    
-                    
                     
                     <section class="row">
                     
@@ -696,51 +683,29 @@ class="full-16"
                     <section class="row">
                         
                         <h3>
-                            A word on Internet Explorer 8 and Below
-                        </h3>
-                        
-                        <p>
-                            This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever. Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
-                        </p>
-                        
-                        <p>
-                            If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
-                        </p>
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
                             Project Release Information
                         </h3>
                     
                         <section class="row">
                         
-	                        <h4>
+	                        <h5>
 	                            Master Branch
-	                        </h4>
+	                        </h5>
 	                        
 	                        <p>
 	                            The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
 	                        </p>
 	                        
-	                        <h4>
+	                        <h5>
 	                            Version Branches
-	                        </h4>
+	                        </h5>
 	                        
 	                        <p>
 	                            StringBean is released in major+minor version. By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
 	                        </p>
                     
 	                    </section>
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
+                                            
                         <h3>
                             Support Information
                         </h3>
