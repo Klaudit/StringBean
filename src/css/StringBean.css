@@ -76,7 +76,10 @@
     .light { background-color:#fff; border:1px solid #555; }
     .dark { background-color:#555; border:1px solid #333; color:#eee; }    
     .rounded { border-radius:5px; }
-        
+    
+    /** Code & Pre **/
+    code > pre { background:#f5f5f5; padding:0.5em; border-left:0.25em solid #10ec9c; font-weight:500; }
+    
     /** Sizes **/
     .small { font-size:0.75em; } .medium { font-size:1.25em; } .large { font-size:2em; }    
     
@@ -87,7 +90,7 @@
 /** 7. Breakpoints **/
 
     /** XSMALL **/
-    @media screen and (max-width: 319px) {
+    @media screen and (min-width: 0px) {
         .xsmall-1 { width:4.25%; } .xsmall-2 { width:10.50%; } .xsmall-3 { width:16.75%; } .xsmall-4 { width:23.00%; } .xsmall-5 { width:29.25%; } .xsmall-6 { width:35.50%; } .xsmall-7 { width:41.75%; } .xsmall-8 { width:48.00%; } .xsmall-9 { width:54.25%; } .xsmall-10 { width:60.50%; } .xsmall-11 { width:66.75%; } .xsmall-12 { width:73.00%; } .xsmall-13 { width:79.25%; } .xsmall-14 { width:85.50%; } .xsmall-15 { width:91.75%; } .xsmall-16, .full-16 { width:98.00%; }
         .cell.xsmall-1 { width:6.250%; } .cell.xsmall-2 { width:12.50%; } .cell.xsmall-3 { width:18.75%; } .cell.xsmall-4 { width:25.00%; } .cell.xsmall-5 { width:31.25%; } .cell.xsmall-6 { width:37.50%; } .cell.xsmall-7 { width:43.75%; } .cell.xsmall-8 { width:50.00%; } .cell.xsmall-9 { width:56.25%; } .cell.xsmall-10 { width:62.50%; } .cell.xsmall-11 { width:68.75%; } .cell.xsmall-12 { width:75.00%; } .cell.xsmall-13 { width:81.25%; } .cell.xsmall-14 { width:87.50%; } .cell.xsmall-15 { width:93.75%; } .cell.xsmall-16 { width:100.0%; }
         .xsmall-third { width:30.833% }
