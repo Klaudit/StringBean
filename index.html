@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         
-        <title>StringBean - The Featherweight Mobile-First Framework</title>
+        <title></title>
         <meta name="description" content=""/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -16,12 +16,32 @@
         <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
         <!-- / -->
         
-        <link href='https://fonts.googleapis.com/css?family=Khula' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
+        
         
         <style type="text/css">
-            body, html { font-family: 'Khula', sans-serif; color:#333; }
-        	.jumbotron { background:#fff; border:0; }
-        	.service-alert { padding:0.5em; color:#fff; }
+            body, html { font-family: 'Source Sans Pro', sans-serif !important; font-weight:300; color:#333 !important; }
+        	.container { margin-left:0; margin-right:0; }
+        	
+        	header { background-repeat: no-repeat; background-attachment: fixed; background-position: center; }
+            @media screen and (max-width: 600px) {
+               header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_small.jpg'); }
+            }
+            @media screen and (min-width: 601px) and (max-width: 900px) {
+               header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_medium.jpg'); }
+            }
+            @media screen and (min-width: 901px) and (max-width: 1600px) {
+               header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_large.jpg'); }
+            }
+            @media screen and (min-width: 1601px) and (max-width: 2047px) {
+               header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_2k.jpg'); }
+            }
+            @media screen and (min-width: 2048px) {
+               header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_4k.jpg'); }
+            }
+                        
+            h1,h2,h3,h4 { font-weight:300; color:#444; }
+            div > p { padding:1em; }
         </style>
         
     </head>
@@ -32,18 +52,17 @@
             
                         
             
-            <header>
+            <header class="row">
                 <div class="column">
-                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg" alt="" style="width:100%; max-width:300px;" />
+                    <img src="img/logo.png" alt="" style="width:100%; max-width:300px;" />
                 </div>
             </header>
             
             
-            <section>
-            
-            
-                <article class="column xsmall-16 small-16 medium-11 large-11 mega-hd-11 mega-uhd-11">
+            <section class="row">
                     
+                
+                <article class="column xsmall-16 small-16 medium-16 large-10">
                     
                     <h1>
                         Documentation
@@ -61,450 +80,661 @@
     					StringBean also has 5 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
 					</p>
 					
-					<h3>
-    					How it works
-	   				</h3>
-	   				
-	   				<p>
-	   				    To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class.
-					</p>
-					
-					<p>
-    					This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
-					</p>
-					
-					<h3>
-    					Breakpoint Breakdown
-					</h3>
-					
-					<p>
-    				    LABEL     START    END      COLUMNS<br />
-	   				    XSMALL    0        319px    16<br />
-				        SMALL     320px    599px    16<br />
-				        MEDIUM    600px    900px    16<br />
-				        LARGE     901px    1600px   16<br />
-			            MEGA-HD   1601px   2048px   16<br />
-				        MEGA-UHD  2049px   ~        16<br />
-					    FULL-16   0        ~        1<br />
-					</p>
-					
-					<h3>
-    				    Using breakpoint specific selectors
-					</h3>
-					
-					<p>
-    					You can stack the breakpoint selectors on an element.
-					</p>
-					
-					<code><pre class="rounded">class="xsmall-5 small-9 medium-10 large-2"</pre></code>
                     
-                    <p>
-    					Normal resolutions (sub-1080p HD)
-					</p>
-					
-<code><pre class="rounded">
-  &lt;header class="container"&gt;
-    &lt;nav class="row"&gt;
-	  &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
-        &lt;h1&gt;
-          StringBean
-        &lt;/h1&gt;
-      &lt;/div&gt;
-      &lt;div class="column xsmall-16 small-16 medium-5 large-4"&gt;
-        &lt;p id="Strapline"&gt;
-		  Powering the internet, gently.
-        &lt;/p&gt;
-        &lt;/div&gt;
-      &lt;/nav&gt;
-  &lt;/header&gt;
-</pre></code>
-
-					<h3>
-					   HD and UHD Breakpoints
-					</h3>
-					
-					<p>
-    					Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
-					</p>
-					
-					
-<code><pre class="rounded">
-  &lt;header class="container"&gt;
-    &lt;nav class="row"&gt;
-      &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
-        &lt;h1&gt;
-          StringBean
-        &lt;/h1&gt;
-      &lt;/div&gt;
-      
-      &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
-        &lt;p id="Strapline"&gt;
-          Powering the internet, gently.
-        &lt;/p&gt;
-      &lt;/div&gt;
-    &lt;/nav&gt;
-  &lt;/header&gt;
-</pre></code>
-
-                    <h3>
-    					Taking full width on all breakpoints
-					</h3>
-					
-					<p>
-    					If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
-					</p>
-					
-<code><pre>
-  class="full-16"
-</pre></code>
-                    <h3>
-    					Three-Way Split
-					</h3>
-					
-					<p>
-    					With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
-					</p>
-					
-<code><pre>
-&lt;div class="column medium-third"&gt;
-  Column 1
-&lt;/div&gt;
-&lt;div class="column medium-third"&gt;
-  Column 2
-&lt;/div&gt;
-&lt;div class="column medium-third"&gt;
-  Column 3
-&lt;/div&gt;
-</pre></code>
-
-                    <h3>
-        				Layouts
-					</h3>
-					
-					<p>
-    					Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
-					</p>
-					
+                    <section class="row">
+                        
+                        
+                        
+                        <h3>
+                           Buttons
+                        </h3>
+                        
+                        <p>
+                            The button classes provide a beautiful way to display a button to the user.
+                        </p>
+                
                     
-<code><pre>
-&lt;main class="container"&gt;
-    &lt;article class="row layout-960"&gt;
-        &lt;h1&gt;
-            Hello World!
-        &lt;/h1&gt;
-        &lt;p&gt;
-            Some content goes in here.
-        &lt;/p&gt;
-    &lt;/article&gt;
-&lt;/main&gt;
-</pre></code>
-
-					
-					<h3>
-    					Showing/Hiding Elements at Certain Breakpoints
-					</h3>
-					
-					<p>
-    					You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
-					</p>
-					
-					
-					
-					<h3>
-    					Hiding Content Below Breakpoints
-					</h3>
-					
-					<p>
-    					You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
-					</p>
-					
-					<p>
-					   Resize the Window: <span class="hide-below-medium">Hello world!</span>
-					</p>
-					
-					
-					
-					<h3>
-    					Showing Content Below Certain Breakpoints
-					</h3>
-					
-					<p>
-					   Resize the Window: <span class="hide-above-medium">Hello World!</span>
-                    </p>
+                        <div class="row button-set">
+                           <button class="button">CONTINUE</button>
+                           <button class="button inactive">DISABLED</button>
+                           <div class="button success">SUCCESS</div>
+                           <li class="button warning">WARNING</li>
+                           <a class="button alert">ERROR</a>
+                        </div>
                     
                     
+                    </section>
                     
-					<h3>
-    					Showing Content Only on Certain Breakpoints
-					</h3>
-					
-					<p>
-    					You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
-					</p>
-					
-					<p>
-					   Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
-					</p>
-					
-					
-					
-					<h3>
-    					Pre-Set Colour Classes
-					</h3>
-					
-					<p>
-    					You can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
-					</p>
-					
-					<p>
-    					NOTE: HEX has been deprecated - now RGBa standardised - docs need to be updated.
-    				</p>
-    				
-    				<h3>
-    					Pre-Set colour table:
-					</h3>
-					
-					<table>
-					CLASS           COLOUR      HEX CODE
-					normal          Black       000000
-					inactive        Grey        9d9d9d
-					information     Blue        1a75ae
-					success         Green       5eae45
-					alert           Red         d93f3f
-					regal           Purple      774a79
-					Tables, Rows, and Cells
-					</table>
-					
-					
-					<h3>
-					   Tables, Rows, and Cells
-					</h3>
-					
-					<p>
-    					Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content. If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
-					</p>
-					
-					
-					<div class="table">
-					    <ul class="row">
-					        <li class="cell information third">First Name</li>
-					        <li class="cell information third">Last Name</li>
-					        <li class="cell information third">Access Level</li>
-					    </ul>
-					    <ul class="row">
-					        <li class="cell third">John</li>
-					        <li class="cell third">Doe</li>
-					        <li class="cell third">1</li>
-					    </ul>
-					    <ul class="row">
-					        <li class="cell third">Jane</li>
-					        <li class="cell third">Doe</li>
-					        <li class="cell third">1</li>
-					    </ul>
-					    <ul class="row">
-					        <li class="cell third">John</li>
-					        <li class="cell third">Smith</li>
-					        <li class="cell third">2</li>
-					    </ul>
-					</div>
-					
-					
-					
-					<h3>
-					   Buttons
-					</h3>
-					
-					<p>
-    					The button classes provide a beautiful way to display a button to the user.
-					</p>
-					
-					<a href="/login" class="button">Login</a>
-					<a href="/login" class="button">Register</a>
-					<a href="/login" class="button">Contact</a>
-					
-					
-					<h3>
-    					Buttons with Colour Selectors
-					</h3>
-					
-					<p>
-    					If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
-					</p>
-					
-					<a href="/login" class="button normal">Login</a>
-					<a href="/login" class="button inactive">Register</a>
-					<a href="/login" class="button alert">Contact</a>
-					
-					
-					<h3>
-    					Button Sets
-					</h3>
-					
-					<p>
-    					When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
-					</p>
-					
-					<div class="button-set">
-					    <a href="" class="button information">One</a>
-					    <a href="" class="button information">Two</a>
-					    <a href="" class="button information">Three</a>
-					</div>
-					
-					
-					<h3>
-    					Info Wheels
-					</h3>
-					
-					<p>
-    					Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
-					</p>
-					
-					<span class="info-wheel success">12</span>
-					
-					
-					<h3>
-    					Labels
-					</h3>
-					
-					<p>
-    					Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
-					</p>
-					
-					<span class="label success">
-					    Version 1.1.4
-					</span>
-					
-					<h3>
-    					Progress Bars
-					</h3>
-					
-					<p>
-    					You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
-					</p>
-					
-					<div class="progress-bar" style="width:500px;">
-					    <div class="progress-bar-filler information" style="width:75%;">75%</div>
-					</div>
-					
-					<h3>
-    					Divisions with Colour Selectors
-					</h3>
-					
-					<p>
-    					You can also apply colour sleectors to other elements such as divisions...
-					</p>
-					
-					<div class="alert">
-                       <p>
-					       There was an error saving your password!
-					   </p>
-					</div>
-					
-					<p>
-					   or...
-					</p>
-					
-					<aside class="success">
-					   <p>
-        			     You are logged in! (<a href="#logout">Logout</a>)
-        			   </p>
-					</aside>
-					
-					
-					<h3>
-    					Forms &amp; Inputs
-					</h3>
-					
-					<form action="post" method="/auth">
-					   
-					   <li>
-					    <label>
-					        Username
-					    </label>
-					    <input type="text" placeholder="Enter your username" />
-					   </li>
-					   
-					   <li>
-					    <label>
-					        Password
-					    </label>
-					    <input type="password" placeholder="Enter your password" />
-					   </li>
-					   
-					   <li>
-					    <label>
-					        Pin No.
-					    </label>
-					    <input type="password" placeholder="1234" />
-					   </li>
-					   
-					   <li>
-					    <input type="submit" class="button information" value="Login" />
-					   </li>
-					   
-					</form>
-					
-					<h3>
-					   ....and that, is that.
-					</h3>
-					                    
+                    
+                    <section class="row">
+                    
+                        
+                        
+                        <h3>
+                            Buttons with Colour Selectors
+                        </h3>
+                        
+                        <p>
+                            If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
+                        </p>
+                        
+                        <a href="/login" class="button normal">Login</a>
+                        <a href="/login" class="button inactive">Register</a>
+                        <a href="/login" class="button alert">Contact</a>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        
+                        <h3>
+                            Light &amp; Dark Buttons
+                        </h3>
+                        
+                        <div class="button-set">
+                           <button class="button dark">EXIT APP</button>
+                           <button class="button light">READ MORE</button>
+                        </div>
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        
+                        <h3>
+                            Button Sets
+                        </h3>
+                        
+                        <p>
+                            When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
+                        </p>
+                        
+                        <div class="button-set">
+                            <a href="" class="button information">One</a>
+                            <a href="" class="button information">Two</a>
+                            <a href="" class="button information">Three</a>
+                        </div>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        
+                        <h3>
+                            Info Wheels
+                        </h3>
+                        
+                        <p>
+                            Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
+                        </p>
+                        
+                        <span class="info-wheel success">99</span>
+                        <span class="info-wheel medium success">150</span>
+                        <span class="info-wheel large success">150</span>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        
+                        <h3>
+                            Labels
+                        </h3>
+                        
+                        <p>
+                            Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
+                        </p>
+                        
+                        <span class="label success">
+                            Version 1.1.4
+                        </span>
+                        
+                        <span class="label medium success">
+                            Version 1.1.4
+                        </span>
+                        
+                        <span class="label large success">
+                            Version 1.1.4
+                        </span>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Progress Bars
+                        </h3>
+                        
+                        <p>
+                            You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
+                        </p>
+                        
+                        <div class="progress-bar" style="width:500px;">
+                            <div class="progress-bar-filler information" style="width:75%;" data-sb-value="75%"></div>
+                        </div>
+                        
+                        <div class="progress-bar" style="width:500px;">
+                            <div class="progress-bar-filler warning" style="width:31%;" data-sb-value="75%"></div>
+                        </div>
+                        
+                        <div class="progress-bar" style="width:500px;">
+                            <div class="progress-bar-filler alert" style="width:92%;" data-sb-value="75%"></div>
+                        </div>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        <h1>
+                            How it works
+                        </h1>
+                        
+                        <p>
+                            To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class.
+                        </p>
+                        
+                        <p>
+                            This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
+                        </p>
+                    
+                    
+                    </section>
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Breakpoint Breakdown
+                        </h3>
+                        
+                        <p>
+                            LABEL     START    END      COLUMNS<br />
+                            XSMALL    0        319px    16<br />
+                            SMALL     320px    599px    16<br />
+                            MEDIUM    600px    900px    16<br />
+                            LARGE     901px    1600px   16<br />
+                            MEGA-HD   1601px   2048px   16<br />
+                            MEGA-UHD  2049px   ~        16<br />
+                            FULL-16   0        ~        1<br />
+                        </p>
+                    
+                    
+                    </section>
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Using breakpoint specific selectors
+                        </h3>
+                        
+                        <p>
+                            You can stack the breakpoint selectors on an element.
+                        </p>
+                        
+                        <code><pre class="rounded">class="xsmall-5 small-9 medium-10 large-2"</pre></code>
+                        
+                        <p>
+                            Normal resolutions (sub-1080p HD)
+                        </p>
+                        
+    <code><pre class="rounded">
+      &lt;header class="container"&gt;
+        &lt;nav class="row"&gt;
+          &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
+            &lt;h1&gt;
+              StringBean
+            &lt;/h1&gt;
+          &lt;/div&gt;
+          &lt;div class="column xsmall-16 small-16 medium-5 large-4"&gt;
+            &lt;p id="Strapline"&gt;
+              Powering the internet, gently.
+            &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/nav&gt;
+      &lt;/header&gt;
+    </pre></code>
+                    
+                    
+                    </section>
+                    <section class="row">
+                    
+                            
+                        <h3>
+                           HD and UHD Breakpoints
+                        </h3>
+                        
+                        <p>
+                            Notice the additional classes starting "mega-" - these define the breakpoints for HD (High Definition - 1080p to 2K) and UHD (Ultra-High Definition - 3K, 4K, etc).
+                        </p>
+                        
+                        
+    <code><pre class="rounded">
+      &lt;header class="container"&gt;
+        &lt;nav class="row"&gt;
+          &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
+            &lt;h1&gt;
+              StringBean
+            &lt;/h1&gt;
+          &lt;/div&gt;
+          
+          &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
+            &lt;p id="Strapline"&gt;
+              Powering the internet, gently.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+    </pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+    
+                        <h3>
+                            Taking full width on all breakpoints
+                        </h3>
+                        
+                        <p>
+                            If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
+                        </p>
+                        
+    <code><pre>
+      class="full-16"
+    </pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        <h3>
+                            Three-Way Split
+                        </h3>
+                        
+                        <p>
+                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+                        </p>
+                        
+    <code><pre>
+    &lt;div class="column medium-third"&gt;
+      Column 1
+    &lt;/div&gt;
+    &lt;div class="column medium-third"&gt;
+      Column 2
+    &lt;/div&gt;
+    &lt;div class="column medium-third"&gt;
+      Column 3
+    &lt;/div&gt;
+    </pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+    
+                        <h3>
+                            Layouts
+                        </h3>
+                        
+                        <p>
+                            Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
+                        </p>
+                        
+                        
+    <code><pre>
+    &lt;main class="container"&gt;
+        &lt;article class="row layout-960"&gt;
+            &lt;h1&gt;
+                Hello World!
+            &lt;/h1&gt;
+            &lt;p&gt;
+                Some content goes in here.
+            &lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/main&gt;
+    </pre></code>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+	
+						
+						<h3>
+	    					Showing/Hiding Elements at Certain Breakpoints
+						</h3>
+						
+						<p>
+	    					You can use different sets of show/hide selectors to present the right content to the right device users without having to inject content - just mark the elements you wish to show/hide with StringBean selectors.
+						</p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    	
+						
+						<h3>
+	    					Hiding Content Below Breakpoints
+						</h3>
+						
+						<p>
+	    					You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+						</p>
+						
+						<p>
+						   Resize the Window: <span class="hide-below-medium">Hello world!</span>
+						</p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    	
+						
+						<h3>
+	    					Showing Content Below Certain Breakpoints
+						</h3>
+						
+						<p>
+						   Resize the Window: <span class="hide-above-medium">Hello World!</span>
+	                    </p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+	                    
+						<h3>
+	    					Showing Content Only on Certain Breakpoints
+						</h3>
+						
+						<p>
+	    					You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+						</p>
+						
+						<p>
+						   Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
+						</p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+						
+						<h3>
+	    					Pre-Set Colour Classes
+						</h3>
+						
+						<p>
+	    					You can easily and consistently colour speciality/focus elements with standardised colours using selectors from the below table.
+						</p>
+						
+						<p>
+	    					NOTE: HEX has been deprecated - now RGBa standardised - docs need to be updated.
+	    				</p>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+						
+						
+						<h3>
+						   Tables, Rows, and Cells
+						</h3>
+						
+						<p>
+	    					Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content. If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
+						</p>
+						
+						
+						<div class="table">
+						    <ul class="row">
+						        <li class="cell information third">First Name</li>
+						        <li class="cell information third">Last Name</li>
+						        <li class="cell information third">Access Level</li>
+						    </ul>
+						    <ul class="row">
+						        <li class="cell third">John</li>
+						        <li class="cell third">Doe</li>
+						        <li class="cell third">1</li>
+						    </ul>
+						    <ul class="row">
+						        <li class="cell third">Jane</li>
+						        <li class="cell third">Doe</li>
+						        <li class="cell third">1</li>
+						    </ul>
+						    <ul class="row">
+						        <li class="cell third">John</li>
+						        <li class="cell third">Smith</li>
+						        <li class="cell third">2</li>
+						    </ul>
+						</div>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+						
+						<h3>
+	    					Divisions with Colour Selectors
+						</h3>
+						
+						<p>
+	    					You can also apply colour sleectors to other elements such as divisions...
+						</p>
+						
+						<div class="alert">
+	                       <p>
+						       There was an error saving your password!
+						   </p>
+						</div>
+						
+						<p>
+						   or...
+						</p>
+						
+						<div class="success">
+						   <p>
+	        			     You are logged in! (<a href="#logout">Logout</a>)
+	        			   </p>
+						</div>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+						
+						
+						<h3>
+	    					Forms &amp; Inputs
+						</h3>
+						
+						<form action="post" method="/auth">
+						   
+						   <li>
+						    <label>
+						        Username
+						    </label>
+						    <input type="text" placeholder="Enter your username" />
+						   </li>
+						   
+						   <li>
+						    <label>
+						        Password
+						    </label>
+						    <input type="password" placeholder="Enter your password" />
+						   </li>
+						   
+						   <li>
+						    <label>
+						        Pin No.
+						    </label>
+						    <input type="password" placeholder="1234" />
+						   </li>
+						   
+						   <li>
+						    <input type="submit" class="button information" value="Login" />
+						   </li>
+						   
+						</form>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+                        
+                        <h3>
+                            Pre-Set colour table:
+                        </h3>
+                        
+                        <table>
+                        CLASS           COLOUR      HEX CODE
+                        normal          Black       000000
+                        inactive        Grey        9d9d9d
+                        information     Blue        1a75ae
+                        success         Green       5eae45
+                        alert           Red         d93f3f
+                        regal           Purple      774a79
+                        Tables, Rows, and Cells
+                        </table>
+                    
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                    
+						
+						<h3>
+						   ....and that, is that.
+						</h3>
+                
+                    </section>
+                    
+                                    
                 </article>
-				
-				
-				
-			    <aside class="column xsmall-16 small-16 medium-5 large-5 mega-hd-5 mega-uhd-5">
-					
-					<h3>
-    					A word on Internet Explorer 8 and Below
-					</h3>
-					
-					<p>
-    					This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever. Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
-					</p>
-					
-					<p>
-    					If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
-					</p>
-					
-					<h3>
-    					Project Release Information
-    				</h3>
-    				
-    				<h4>
-    					Master Branch
-					</h4>
-					
-					<p>
-    					The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
-					</p>
-					
-					<h4>
-    					Version Branches
-					</h4>
-					
-					<p>
-    					StringBean is released in major+minor version. By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
-					</p>
-					
-					<h3>
-    					Support Information
-					</h3>
-					
-					<p>
-    					Support can be delivered via the Github wiki and issue tabs - ask a question and I will endevour to answer.
-					</p>
-					
-					<h3>
-    					Want to contribute?
-    				</h3>
-    				
-    				<p>
-    					If you want to contribute to this project then feel free to look at the CONTRIBUTING.md file.
-                    </p>
+                
+                
+                <aside class="column xsmall-16 small-16 medium-16 large-6">
                     
+                    
+                    <section class="row">
+                        
+                        <h3>
+                            A word on Internet Explorer 8 and Below
+                        </h3>
+                        
+                        <p>
+                            This framework has limited support for IE8 and below. The web has moved on since those early days, and we cannot support old browsers forever. Now that Windows XP is out of support we welcome the deprecation of IE7 & 8, and look forward to a truely responsive internet.
+                        </p>
+                        
+                        <p>
+                            If you require IE8 support then you can use the HTML5Shiv and Respond.js polyfills provided by third party, to give basic StringBean support.
+                        </p>
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        <h3>
+                            Project Release Information
+                        </h3>
+                    
+                        <section class="row">
+                        
+	                        <h4>
+	                            Master Branch
+	                        </h4>
+	                        
+	                        <p>
+	                            The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
+	                        </p>
+	                        
+	                        <h4>
+	                            Version Branches
+	                        </h4>
+	                        
+	                        <p>
+	                            StringBean is released in major+minor version. By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
+	                        </p>
+                    
+	                    </section>
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        <h3>
+                            Support Information
+                        </h3>
+                        
+                        <p>
+                            Support can be delivered via the Github wiki and issue tabs - ask a question and I will endevour to answer.
+                        </p>
+                    
+                    </section>
+                    
+                    
+                    <section class="row">
+                        
+                        <h3>
+                            Want to contribute?
+                        </h3>
+                        
+                        <p>
+                            If you want to contribute to this project then feel free to look at the CONTRIBUTING.md file.
+                        </p>
+                    
+                    </section>
+                        
                 </aside>
-            
+                
             </section>
+				
+				
+				
+
             
             
         </main>	
@@ -519,3 +749,5 @@
         
     </body>
 </html>
+        
+        
