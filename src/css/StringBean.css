@@ -82,7 +82,7 @@
     code > pre { background:#f5f5f5; padding:0.5em; margin:0.5em 0; border-left:0.25em solid #10ec9c; }
     
     /** Sizes **/
-    .small { font-size:0.75em; } .medium { font-size:1.25em; } .large { font-size:2em; }    
+    .small { font-size:0.75rem; } .medium { font-size:1.25rem; } .large { font-size:2rem; }    
     
 /** 6. Forms **/
     form, input, button, textarea, select { font-size:1em; font-weight:normal; }
