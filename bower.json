@@ -1,33 +1,29 @@
 {
   "name": "stringbean",
+	"version": "2.1",
   "description": "Build seemless - featherweight - scaffold apps for mobile, 4K, and beyond.",
-  "main": [
-    "src/css/StringBean.css",
-    "src/css/"
+	"repository": "markgreenall/StringBean",
+	"homepage": "http://stringbean-lang.com",
+	"keywords": [
+		"css",
+		"css2",
+		"css3",
+		"front-end",
+		"html",
+		"html5",
+		"mobile",
+		"mobile-first",
+		"4K",
+		"2K",
+		"HD",
+		"responsive",
+		"framework",
+		"bootstrap",
+		"foundation",
+		"polymer"
   ],
-  "dependencies": {
-    "jquery": "1.9.1"
-  },
-  "devDependencies": {
-    "jquery": "1.9.1"
-  },
-  "moduleType": [],
-  "keywords": [
-    "css",
-    "4K",
-    "framework"
-  ],
-  "authors": [
-    "Mark Greenall <mark@markgreenall.uk>"
-  ],
-  "homepage": "http://stringbean-lang.com/",
-  "license": "",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+	"license": "",
+	"author": "Mark Greenall <mark@markgreenall.uk>",
+  "main": ["src/css/StringBean.css"],
   "private": false
 }
