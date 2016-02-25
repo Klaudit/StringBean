@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,9 +18,9 @@
         <meta name="twitter:description" content="Build seemless - featherweight - responsive scaffold apps for mobile, 4K, and beyond. StringBean is a pure CSS solution.">
         <meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/stringbean/img/TwitterCard.jpg">
 
-	<!--[if lt IE 9]>
-	    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     
         <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
@@ -27,6 +28,7 @@
         <style type="text/css">
             body, html { font-family: 'Source Sans Pro', sans-serif; font-weight:300; color:#444 !important; }
             .container { margin-left:0; margin-right:0; }
+            .row.separator { border-top:1px dotted #aaa; padding-top:2em; margin-top:2em; }
             header { background-colour:rgba(16,236,156,1); height:700px; padding:0; height:100%; overflow:auto; }
             .Intro { position:absolute; top:50%; margin:auto; margin-top:-150px; width:99%; max-width:500px; }
             
@@ -49,6 +51,7 @@
             }
                         
             h1,h2,h3,h4 { font-family: 'Catamaran', sans-serif !important; font-weight:300; color:rgba(16,236,156,1); }
+            h3 > .label { font-size:0.75rem; vertical-align:top; margin-top:0.5em; }
             div > p { padding:1em; }
             strong { font-weight:600; }
             .code { background-color:#f5f5f5; border-left:0.25rem solid #10ec9c; padding:0.5em; }
@@ -120,12 +123,12 @@
                     </h1>
                     
                     <p>
-                The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
-            </p>
-        
-            <p>
-                    StringBean also has 6 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
-            </p>
+		                The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use.  Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own! This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
+		            </p>
+		        
+		            <p>
+		                    StringBean also has 6 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
+		            </p>
                     
                     
                     
@@ -189,11 +192,13 @@
                         </div>
                     
                     </section>
+                    
+                    
                     <section class="row">
                     
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Using breakpoint specific selectors
+                            <span class="fa fa-puzzle-piece"></span> Using breakpoint specific selectors <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -227,11 +232,13 @@ class="xsmall-5 small-9 medium-10 large-2"
                     
                     
                     </section>
+                    
+                    
                     <section class="row">
                     
                             
                         <h3>
-                           <span class="fa fa-bolt"></span> HD and UHD Breakpoints
+                           <span class="fa fa-puzzle-piece"></span> HD and UHD Breakpoints <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -283,7 +290,7 @@ class="full-16"
                     <section class="row">
                     
                         <h3>
-                            <span class="fa fa-bolt"></span> Three-Way Split
+                            <span class="fa fa-puzzle-piece"></span> Three-Way Split <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -310,7 +317,7 @@ class="full-16"
                     
     
                         <h3>
-                            <span class="fa fa-bolt"></span> Layouts
+                            <span class="fa fa-puzzle-piece"></span> Layouts <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -332,14 +339,13 @@ class="full-16"
 </pre></code>                    
                     
                     </section>
-
                     
                     
                     <section class="row">
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Hiding Content Below Breakpoints
+                            <span class="fa fa-puzzle-piece"></span> Hiding Content Below Breakpoints <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -358,7 +364,7 @@ Resize the Window: <span class="hide-below-medium">Hello world!</span>
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Showing Content Below Certain Breakpoints
+                            <span class="fa fa-puzzle-piece"></span> Showing Content Below Certain Breakpoints <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
 <div class="code rounded">
@@ -372,7 +378,7 @@ Resize the Window: <span class="hide-above-medium">Hello World!</span>
                     
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Showing Content Only on Certain Breakpoints
+                            <span class="fa fa-puzzle-piece"></span> Showing Content Only on Certain Breakpoints <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -387,13 +393,12 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                     </section>
                     
                     
-                    
                     <section class="row">
                         
                         
                         
                         <h3>
-                           <span class="fa fa-bolt"></span> Buttons
+                           <span class="fa fa-puzzle-piece"></span> Buttons <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -416,7 +421,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Buttons with Colour Selectors
+                            <span class="fa fa-puzzle-piece"></span> Buttons with Colour Selectors <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -440,7 +445,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Light &amp; Dark Buttons
+                            <span class="fa fa-bolt"></span> Light &amp; Dark Buttons <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <button class="button dark">EXIT APP</button>
@@ -454,7 +459,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Button Sets
+                            <span class="fa fa-puzzle-piece"></span> Button Sets <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -476,7 +481,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Info Wheels
+                            <span class="fa fa-puzzle-piece"></span> Info Wheels <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -512,7 +517,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Labels
+                            <span class="fa fa-puzzle-piece"></span> Labels <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -552,7 +557,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                     
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Progress Bars
+                            <span class="fa fa-puzzle-piece"></span> Progress Bars <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -591,7 +596,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                           <span class="fa fa-bolt"></span> Tables, Rows, and Cells
+                           <span class="fa fa-puzzle-piece"></span> Tables, Rows, and Cells <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -630,7 +635,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                     
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Divisions with Colour Selectors
+                            <span class="fa fa-puzzle-piece"></span> Divisions with Colour Selectors <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
@@ -662,7 +667,7 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                         
                         
                         <h3>
-                            <span class="fa fa-bolt"></span> Forms &amp; Inputs
+                            <span class="fa fa-puzzle-piece"></span> Forms &amp; Inputs <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <form action="post" method="/auth">
@@ -698,7 +703,6 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                     </section>
                     
                     
-                    
                     <section class="row">
                     
                         
@@ -709,27 +713,184 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                     </section>
                     
                     
+                    
+                    
                     <section class="row">
+                    
                         
-                        <h3>
-                            <span class="fa fa-download"></span> Get in on the action
-                        </h3>
-                    
-                    <p>
-                        Get in on the action; view, contribute to, or download the project from Github.
-                    </p>
-                    
-                        <div class="button-set">
-                            <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
-                                <span class="fa fa-github"></span> View on Github
-                            </a>
-                            <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information extend-with raised">
-                                <span class="fa fa-arrow-down"></span> Download v2.0
-                            </a>
-                        </div>
+                        <section class="row separator">
+                        
+	                        <h1>
+	                            <span class="fa fa-download"></span> Get in on the action
+	                        </h1>
+		                    
+		                    <p>
+		                        Get in on the action; view, contribute to, or download the project from Github.
+		                    </p>
+	                    
+	                        <div class="button-set">
+	                            <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
+	                                <span class="fa fa-github"></span> View on Github
+	                            </a>
+	                            <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information extend-with raised">
+	                                <span class="fa fa-arrow-down"></span> Download v2.0
+	                            </a>
+	                        </div>
+	                    
+	                    </section>
                     
                     </section>
                     
+                    
+                    
+                    
+                    <section class="row">
+                    
+	                    
+	                    <section class="row separator">
+	                        
+	                        <h1>
+	                            <span class="fa fa-cubes"></span> Extending StringBean
+	                        </h1>
+	                        
+	                        <p>
+	                            To keep StringBean on-course with the scope (featherweight) we are creating a suite of add-ons that can extend StringBean with animations &amp; effects, without bloating the core codebase.
+	                        </p>
+	                    
+	                    </section>
+	                    
+	                    
+                        <section class="row">
+	                    
+	                        <h3>
+	                            <span class="fa fa-bolt"></span> Getting started
+	                        </h3>
+	                        
+	                        <p>
+	                            Let's look at how we implement sb-ext-animations.css...
+	                        </p>
+	                        
+<code><pre class="rounded">
+&lt;link rel="stylesheet" href="/src/css/extentions/sb-ext-animations.css"&gt;
+</pre></code>
+	                        
+
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;
+</pre></code>
+
+	                        <p>
+	                            You will notice that after the standard StringBean classes we have used the "extend-with" class, followed by an extended class name - in this case it's "raised".
+	                        </p>
+	                        
+                        </section>
+                        
+                        
+                        
+                        <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> raised <span class="label moot pull-right">Extention Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            The Raised class when used on a button will animate a box-shaddow on the button when hovered or focussed.  This gives the effect of 3D, and an UI feedback technique. Example :-
+	                        </p>
+	                        
+	                        <a href="#TicketToNoWhere" class="button default extend-with raised">EXAMPLE</a>
+	                        
+	                        <p>
+	                            ...the code required...
+	                        </p>
+	                        
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;
+</pre></code>
+	                    
+	                    </section>
+                        
+                        
+                        
+                        
+                        <section class="row">
+                            
+                            <h3>
+                                <span class="fa fa-puzzle-piece"></span> skewx-slight-* <span class="label moot pull-right">Extention Class</span>
+                            </h3>
+                            
+                            <a href="#TicketToNoWhere" class="button extend-with skewx-slight-left">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button extend-with skewx-slight-right">EXAMPLE</a>
+                            
+                            
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with skewx-slight-left"&gt;My Blog&lt;/a&gt;
+</pre></code>                            
+                            
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with skewx-slight-right"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+                        </section>
+                        
+                        
+                        
+                        
+                        <section class="row">
+                            
+                            <h3>
+                                <span class="fa fa-puzzle-piece"></span> skewx-* <span class="label moot pull-right">Extention Class</span>
+                            </h3>
+                            
+                            <a href="#TicketToNoWhere" class="button extend-with skewx-left">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button extend-with skewx-right">EXAMPLE</a>
+                            
+                            
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with skewx-left"&gt;My Blog&lt;/a&gt;
+</pre></code>
+        
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with skewx-right"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+                        </section>
+                        
+                        
+                        
+                        
+                        <section class="row">
+                            
+                            <h3>
+                                <span class="fa fa-puzzle-piece"></span> border-* <span class="label moot pull-right">Extention Class</span>
+                            </h3>
+                            
+                            <a href="#TicketToNoWhere" class="button extend-with border-top">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button extend-with border-right">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button extend-with border-bottom">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button extend-with border-left">EXAMPLE</a>
+                            
+                            
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with border-top"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with border-right"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with border-bottom"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+<code><pre class="rounded">
+&lt;a href="/my-blog/" class="button extend-with border-left"&gt;My Blog&lt;/a&gt;
+</pre></code>
+                        
+                        </section>
+	                    
+	                    
+                    
+                    </section>
                                     
                 </article>
                 
@@ -785,9 +946,9 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                             <span class="fa fa-download"></span> Get in on the action
                         </h3>
                     
-                    <p>
-                        Get in on the action; view, contribute to, or download the project from Github.
-                    </p>
+	                    <p>
+	                        Get in on the action; view, contribute to, or download the project from Github.
+	                    </p>
                     
                         <div class="button-set">
                             <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
