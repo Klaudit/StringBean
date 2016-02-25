@@ -805,7 +805,8 @@ class="full-16"
             	SetIntroHeight();
             });
             function SetIntroHeight () {
-            	$('header').height($(window).height());
+            	height = window.innerHeight || $(window).height();
+            	$('header').height(height);
             }
             
             $(function() {
