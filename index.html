@@ -31,6 +31,7 @@
             .row.separator { border-top:1px dotted #aaa; padding-top:2em; margin-top:2em; }
             header { background-colour:rgba(16,236,156,1); height:700px; padding:0; height:100%; overflow:auto; }
             .Intro { position:absolute; top:50%; margin:auto; margin-top:-150px; width:99%; max-width:500px; }
+            .pull-right, .pull-left { display:block; }
             
             @media screen and (min-width: 0px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_small.jpg'); }
@@ -42,6 +43,7 @@
             }
             @media screen and (min-width: 901px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_large.jpg'); }
+               .pull-right, .pull-left { display:inline-block; }
             }
             @media screen and (min-width: 1601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_2k.jpg'); }
@@ -55,6 +57,7 @@
             div > p { padding:1em; }
             strong { font-weight:600; }
             .code { background-color:#f5f5f5; border-left:0.25rem solid #10ec9c; padding:0.5em; }
+            pre, code { background-color:#f5f5f5; }
             
             .Intro .row { padding:0; } .Intro .row:last-child { padding:2rem 0 }
             .Intro small { font-weight:700; color:#448866; }
@@ -272,7 +275,7 @@ class="xsmall-5 small-9 medium-10 large-2"
                     
     
                         <h3>
-                            <span class="fa fa-puzzle-piece"></span> Taking full width on all breakpoints
+                            <span class="fa fa-puzzle-piece"></span> Taking full width on all breakpoints <span class="label moot pull-right">Core Class</span>
                         </h3>
                         
                         <p>
