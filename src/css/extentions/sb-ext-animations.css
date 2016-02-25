@@ -1,0 +1,94 @@
+/** 
+ * Button Effects Extention for the StringBean CSS Framework
+ * *****************************************************************************
+ * @version 0.1
+ * *****************************************************************************
+ * @description : This is a set of classes that extends the featherweight
+ * functionality of the StringBean project.  These extentions give life to
+ * ordinarily simple controls and elements-such as transitions, and animation.
+ * *****************************************************************************
+ *
+ * Contents
+ * --------
+ *   1. Extending Classes
+ *   2. Animations
+ */
+
+/** 1. Extend StringBean Classes **/
+    .extend-with { -webkit-transition: all 0.5s linear; -o-transition: all 0.5s linear; -moz-transition: all 0.5s linear; -ms-transition: all 0.5s linear; -kthtml-transition: all 0.5s linear; transition: all 0.5s linear; }
+    
+    /** Classes **/
+    .extend-with.skewx-slight-right:hover { animation-name: skewx_slight_right; animation-duration: 1s; }
+    .extend-with.skewx-slight-left:hover { animation-name: skewx_slight_left; animation-duration: 1s; }
+    .extend-with.skewx-right:hover { animation-name: skewx_right; animation-duration: 1s; }
+    .extend-with.skewx-left:hover { animation-name: skewx_left; animation-duration: 1s; }
+    .extend-with.raised:hover, .button.raised:focus { opacity:1 !important; -webkit-box-shadow: 0px 2px 5px 0px rgba(50,50,50,1); -moz-box-shadow: 0px 2px 5px 0px rgba(50,50,50,1); box-shadow: 0px 2px 5px 0px rgba(50,50,50,1); }
+    .extend-with.border-top:hover, .button.extend-with.border-top:focus { opacity:1 !important; border-top:3px solid #000; }
+    .extend-with.border-right:hover, .button.extend-with.border-right:focus { opacity:1 !important; border-right:3px solid #000; }
+    .extend-with.border-bottom:hover, .button.extend-with.border-bottom:focus { opacity:1 !important; border-bottom:3px solid #000; }
+    .extend-with.border-left:hover, .button.extend-with.border-left:focus { opacity:1 !important; border-left:3px solid #000; }
+
+    
+/** 2. Animations **/
+
+	/** SkewX **/
+	@keyframes skewx_slight_right {
+	    from {
+	        -ms-transform: skewX(0deg); /* IE 9 */
+	        -webkit-transform: skewX(0deg); /* Safari */
+	        transform: skewX(0deg); /* Standard syntax */ 
+	    }
+	    to {
+	        -ms-transform: skewX(-5deg); /* IE 9 */
+	        -webkit-transform: skewX(-5deg); /* Safari */
+	        transform: skewX(-5deg); /* Standard syntax */ 
+	    }
+    }
+    @keyframes skewx_slight_left {
+        from {
+            -ms-transform: skewX(0deg); /* IE 9 */
+            -webkit-transform: skewX(0deg); /* Safari */
+            transform: skewX(0deg); /* Standard syntax */ 
+        }
+        to {
+            -ms-transform: skewX(5deg); /* IE 9 */
+            -webkit-transform: skewX(5deg); /* Safari */
+            transform: skewX(5deg); /* Standard syntax */ 
+        }
+    }
+    @keyframes skewx_right {
+        from {
+            -ms-transform: skewX(0deg); /* IE 9 */
+            -webkit-transform: skewX(0deg); /* Safari */
+            transform: skewX(0deg); /* Standard syntax */ 
+        }
+        to {
+            -ms-transform: skewX(-15deg); /* IE 9 */
+            -webkit-transform: skewX(-15deg); /* Safari */
+            transform: skewX(-15deg); /* Standard syntax */ 
+        }
+    }
+    @keyframes skewx_left {
+        from {
+            -ms-transform: skewX(0deg); /* IE 9 */
+            -webkit-transform: skewX(0deg); /* Safari */
+            transform: skewX(0deg); /* Standard syntax */ 
+        }
+        to {
+            -ms-transform: skewX(15deg); /* IE 9 */
+            -webkit-transform: skewX(15deg); /* Safari */
+            transform: skewX(15deg); /* Standard syntax */ 
+        }
+    }
+
+    /** Pop Out / Raised **/
+    @keyframes dfs {
+        from {
+            -webkit-box-shadow: 0px 0px 0px 0px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 0px 0px rgba(255,255,255,1);
+            box-shadow: 0px 0px 0px 0px rgba(255,255,255,1);
+        }
+        to {
+        }
+    }
+    
