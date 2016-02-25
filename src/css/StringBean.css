@@ -2,7 +2,7 @@
 /** 
  * StringBean CSS Framework
  * *****************************************************************************
- * @version StringBean 2
+ * @version StringBean 2.1
  * *****************************************************************************
  * @description : StringBean is a mobile-first responsive CSS framework designed
  * to work with not just mobiles, but also with higher resolutions such as 2K,
@@ -44,7 +44,7 @@
     
 /** 4. Buttons & Links, and Features **/
     .button, a, button, input[type=submit] { cursor:pointer; }
-    .button { display:inline-block !important; font-size:0.75em; margin:0; padding:0.75em 2em; color:#555; border:0; text-decoration:none; line-height:normal; box-sizing:border-box; font-weight:bold; }
+    .button { display:inline-block !important; font-size:0.75em; margin:1px 0; padding:0.75em 2em; color:#555; border:0; text-decoration:none; line-height:normal; box-sizing:border-box; font-weight:bold; }
     .button:hover, .button:focus { opacity:0.7; }
     .button-set > .button { border-radius:0; margin:1px 0; }
     .button-set > .button:first-child { border-top-left-radius:5px; border-bottom-left-radius:5px; }
@@ -79,7 +79,7 @@
     .rounded { border-radius:5px; }
     
     /** Code & Pre **/
-    code > pre { background:#f5f5f5; padding:0.5em; border-left:0.25em solid #10ec9c; }
+    code > pre { background:#f5f5f5; padding:0.5em; margin:0.5em 0; border-left:0.25em solid #10ec9c; }
     
     /** Sizes **/
     .small { font-size:0.75em; } .medium { font-size:1.25em; } .large { font-size:2em; }    
