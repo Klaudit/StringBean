@@ -49,7 +49,7 @@
             @media screen and (min-width: 601px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_medium.jpg'); }
                .Intro { position:absolute; top:50%; left:50%; margin-top:-150px; margin-left:-250px; }
-               section.row > .column:last-child { border-left:1px dotted #aaa; padding-left:2rem; }
+               .row .column:last-child { border-left:1px dotted #aaa; padding-left:2rem; }
             }
             @media screen and (min-width: 901px) {
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_large.jpg'); }
@@ -62,7 +62,9 @@
                header { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/img/bg_4k.jpg'); }
             }
                         
-            h1,h2,h3,h4 { font-family: 'Catamaran', sans-serif !important; font-weight:300; color:rgba(16,236,156,1); }
+            h1,h2,h3,h4 { font-family: 'Catamaran', sans-serif !important; font-weight:300; color:#466478; }
+            .row.moot h1, .row.moot h2,.row.moot h3,.row.moot h4 { color:rgba(16,236,156,1); }
+            
             h3 > .label { font-size:0.75rem; vertical-align:top; margin-top:0.5em; }
             div > p { padding:1em; }
             strong { font-weight:600; }
@@ -78,6 +80,16 @@
             
             .fa { margin-right:0.25rem; color:#777; }
             .button .fa { color:#fff; }
+            .paralax.moot .fa { color:#fff !important; }
+			.paralax.moot .label { background:#ddd; color:#466478; }
+			.paralax.moot .code { color:#555; }
+            .paralax.default .fa { color:#466478; }
+            .paralax.default h3 { color:#466478; }
+            
+            .depression { background:#395161; color:#fff; }
+            /**
+            code[class*="language-"], pre[class*="language-"], .paralax code, .paralax pre { background-color:#ddeeff !important; }
+            **/
         </style>
         
     </head>
@@ -129,7 +141,7 @@
             <section class="row layout-1200" id="content">
                     
                 
-                <article class="column xsmall-16 small-16 medium-16 large-10">
+                <article class="column xsmall-16 large-8">
                     
                     
                     <section class="row">
@@ -210,29 +222,28 @@
 	                        </div>
 	                        
 	                    </section>
+                    	
+                    	
+                    	
+                        <section class="row">
                     
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Using breakpoint specific selectors <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            You can stack the breakpoint selectors on an element.
-                        </p>
-                        
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Using breakpoint specific selectors <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can stack the breakpoint selectors on an element.
+	                        </p>
+	                        
 <pre class="rounded"><code class="language-markup">
 class="xsmall-5 small-9 medium-10 large-2"
 </code></pre>
-                        
-                        <p>
-                            Normal resolutions (sub-1080p HD)
-                        </p>
-                        
+	                        
+	                        <p>
+	                            Normal resolutions (sub-1080p HD)
+	                        </p>
+	                        
 <pre class="rounded"><code class="language-markup">
 &lt;header class="container"&gt;
     &lt;nav class="row"&gt;
@@ -249,9 +260,17 @@ class="xsmall-5 small-9 medium-10 large-2"
     &lt;/nav&gt;
 &lt;/header&gt;
 </code></pre>
-                    
-                    
+	                    
+	                    
+	                    </section>
+                    	
                     </section>
+                
+           		</article>    
+                
+                
+                
+                <aside class="column xsmall-16 large-8">
                     
                     
                     <section class="row">
@@ -269,16 +288,16 @@ class="xsmall-5 small-9 medium-10 large-2"
 <pre class="rounded"><code class="language-markup">
 &lt;header class="container"&gt;
     &lt;nav class="row"&gt;
-        &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-10 mega-hd-13 mega-uhd-14"&gt;
             &lt;h1&gt;
                 StringBean
             &lt;/h1&gt;
         &lt;/div&gt;
         
-        &lt;div class="column xsmall-16 small-16 medium-5 large-4 mega-hd-3 mega-uhd-2"&gt;
-            &lt;p id="Strapline"&gt;
+        &lt;div class="column xsmall-16 small-16 medium-6 mega-hd-3 mega-uhd-2"&gt;
+            &lt;small class="pull-right"&gt;
                 Powering the internet, gently.
-            &lt;/p&gt;
+            &lt;/small&gt;
         &lt;/div&gt;
     &lt;/nav&gt;
 &lt;/header&gt;
@@ -300,51 +319,87 @@ class="xsmall-5 small-9 medium-10 large-2"
                         </p>
                         
 <pre class="rounded"><code class="language-markup">
-class="full-16"
+&lt;div class="full-16"&gt;
+  Full width content here.
+&lt;/div&gt;
 </code></pre>
                     
                     
                     </section>
                     
-                    
-                    <section class="row">
-                    
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Three-Way Split <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
-                        </p>
-                        
+	               
+	                <section class="row">
+	                    
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Three-Way Split <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+	                        </p>
+	                        
+	<pre class="rounded"><code class="language-markup">
+	&lt;div class="column third"&gt;
+	    Column 1
+	&lt;/div&gt;
+	&lt;div class="column third"&gt;
+	    Column 2
+	&lt;/div&gt;
+	&lt;div class="column third"&gt;
+	    Column 3
+	&lt;/div&gt;
+	</code></pre>
+	                    
+	                    
+	               </section>
+           
+           		</aside>
+           		
+       		</section>
+           
+            
+            <!-- Paralax Unit -->
+            <section class="row paralax moot">
+            
+            	<section class="layout-1200">
+            	
+            		<aside class="column xsmall-16 large-8">	                    
+	                    
+	                    <section class="row">
+	                    
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> pull-left &amp; pull-right <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can float columns or items to the left or right, using the pull-left and pull-right classes.
+	                        </p>
+	                        
 <pre class="rounded"><code class="language-markup">
-&lt;div class="column medium-third"&gt;
+&lt;div class="column third"&gt;
     Column 1
 &lt;/div&gt;
-&lt;div class="column medium-third"&gt;
-    Column 2
-&lt;/div&gt;
-&lt;div class="column medium-third"&gt;
+&lt;div class="column third"&gt;
     Column 3
 &lt;/div&gt;
 </code></pre>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-    
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Layouts <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
-                        </p>
-                        
-                        
+	                    
+	                    
+	                    </section>
+	                    
+	                    
+	                    <section class="row">
+	                    
+	    
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Layouts <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            Layouts give you the power to set a max-width size on the content so that when viewing the site above that breakpoint the site will be fixed width. Viewing the site below that size (on a mobile or tablet etc) will make the site responsive.
+	                        </p>
+	                        
+	                        
 <pre class="rounded"><code class="language-markup">
 &lt;main class="container"&gt;
     &lt;article class="row layout-960"&gt;
@@ -357,379 +412,394 @@ class="full-16"
     &lt;/article&gt;
 &lt;/main&gt;
 </code></pre>
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Hiding Content Below Breakpoints <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
-                        </p>
-                        
+	                    
+	                    </section>
+	                    
+            	
+            		</aside>
+            		
+            		
+            		
+            		
+            		<aside class="column xsmall-16 large-8">   
+	                    
+	                    <section class="row">
+	                        
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Hiding Content <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can hide content below certain breakpoints - for instance: hide-below-large will hide the element below the large breakpoint.
+	                        </p>
+	                        
 <div class="code rounded">
 Resize the Window: <span class="hide-below-medium">Hello world!</span>
 </div>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Showing Content Below Certain Breakpoints <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-<div class="code rounded">
-Resize the Window: <span class="hide-above-medium">Hello World!</span>
-</div>                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Showing Content Only on Certain Breakpoints <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
-                        </p>
-                        
+	
+<pre class="rounded"><code class="language-markup">
+&lt;span class="hide-below-medium"&gt;Hello world!&lt;/span&gt;
+</code></pre>
+	                    
+	                    
+	                    </section>
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Showing Content <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	
+<pre class="rounded"><code class="language-markup">
+&lt;span class="show-below-medium"&gt;Hello world!&lt;/span&gt;
+</code></pre>                   
+	                    
+	                    </section>
+	                    
+	                    
+	                    <section class="row">
+	                    
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Showing on Breakpoint Only <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can use the show-only-x set of selectors to show content on certain breakpoints only. The below example will show your element only on xsmall and large screens, and will be hidden for all other breakpoints.
+	                        </p>
+	                        
 <div class="code rounded">
 Resize the Window: <span class="show-only-medium show-only-large">Hello World!</p>
 </div>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        
-                        
-                        <h3>
-                           <span class="fa fa-puzzle-piece"></span> Buttons <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            The button classes provide a beautiful way to display a button to the user.
-                        </p>
-                
-                    
-                        <button class="button">BUTTON #1</button>
-                        <button class="button">BUTTON #2</button>
-                        <div class="button">BUTTON #3</div>
-                        <li class="button">BUTTON #4</li>
-                        <a class="button">BUTTON #5</a>
-                    
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                    
-                        
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Buttons with Colour Selectors <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
-                        </p>
-                        
-                        <button class="button information">INFORMATION</button>
-                        <button class="button inactive">INACTIVE</button>
-                        <div class="button success">SUCCESS</div>
-                        <li class="button warning">WARNING</li>
-                        <a class="button alert">ERROR</a>
-                        <button class="button regal">REGAL</button>
-                        <button class="button moot">MOOT</button>
-                    
-                    
-                    </section>
-                    
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Light &amp; Dark Buttons <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <button class="button dark">EXIT APP</button>
-                        <button class="button light">READ MORE</button>
-                    
-                    </section>
-                    
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Button Sets <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
-                        </p>
-                        
-                        <div class="button-set">
-                            <a href="" class="button">One</a>
-                            <a href="" class="button moot">Two</a>
-                            <a href="" class="button moot">Three</a>
-                        </div>
-                    
-                    </section>
-                    
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Info Wheels <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
-                        </p>
-                                                                        
-                        <div class="row">
-                            <span class="info-wheel small success">99</span>
-                        </div>
-                        
-                        <div class="row">
-                            <span class="info-wheel medium success">99</span>
-                        </div>
-                        
-                        <div class="row">
-                            <span class="info-wheel large success">99</span>
-                        </div>
-                    
-                    </section>
-                    
-
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Labels <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
-                        </p>
-                        
-                        <div class="row">
-                            <span class="label small success">
-                                Version 1.1.4
-                            </span>
-                        </div>
-                                                
-                        <div class="row">
-                            <span class="label medium success">
-                                Version 1.1.4
-                            </span>
-                        </div>
-                                                
-                        <div class="row">
-                            <span class="label large success">
-                                Version 1.1.4
-                            </span>
-                        </div>
-                    
-                    </section>
-
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Progress Bars <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
-                        </p>
-                        
-                        <div class="row">
-                            <div class="progress-bar" style="width:100%;">
-                                <div class="progress-bar-filler information" style="width:75%;" data-sb-value="75%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="progress-bar" style="width:100%;">
-                                <div class="progress-bar-filler regal" style="width:31%;" data-sb-value="31%"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="progress-bar" style="width:100%;">
-                                <div class="progress-bar-filler alert" style="width:92%;" data-sb-value="92%"></div>
-                            </div>
-                        </div>
-                    
-                    </section>
-                    
-
-                    
-                    <section class="row">
-                        
-                        <h3>
-                           <span class="fa fa-puzzle-piece"></span> Tables, Rows, and Cells <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content. If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
-                        </p>
-                        
-                        <div class="table">
-                            <ul class="row moot">
-                                <li class="cell third"><strong>First Name</strong></li>
-                                <li class="cell third"><strong>Last Name</strong></li>
-                                <li class="cell third"><strong>Access Level</strong></li>
-                            </ul>
-                            <ul class="row">
-                                <li class="cell third">John</li>
-                                <li class="cell third">Doe</li>
-                                <li class="cell third">1</li>
-                            </ul>
-                            <ul class="row">
-                                <li class="cell third">Jane</li>
-                                <li class="cell third">Doe</li>
-                                <li class="cell third">1</li>
-                            </ul>
-                            <ul class="row">
-                                <li class="cell third">John</li>
-                                <li class="cell third">Smith</li>
-                                <li class="cell third">2</li>
-                            </ul>
-                        </div>
-                    
-                    </section>
-                    
-
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Divisions with Colour Selectors <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            You can also apply colour sleectors to other elements such as divisions...
-                        </p>
-                        
-                        <div class="alert">
-                           <p>
-                               There was an error saving your password!
-                           </p>
-                        </div>
-                        
-                        <p>
-                           or...
-                        </p>
-                        
-                        <div class="success">
-                           <p>
-                             You are logged in! (<a href="#logout">Logout</a>)
-                           </p>
-                        </div>
-                    
-                    </section>
-
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Forms &amp; Inputs <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <form action="post" method="/auth">
-                           
-                           <li>
-                            <label>
-                                Username
-                            </label>
-                            <input type="text" placeholder="Enter your username" />
-                           </li>
-                           
-                           <li>
-                            <label>
-                                Password
-                            </label>
-                            <input type="password" placeholder="Enter your password" />
-                           </li>
-                           
-                           <li>
-                            <label>
-                                Pin No.
-                            </label>
-                            <input type="password" placeholder="1234" />
-                           </li>
-                           
-                           <li>
-                            <input type="submit" class="button information" value="Login" />
-                           </li>
-                           
-                        </form>
-                    
-                    </section>
-
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                           ....and that, is that.
-                        </h3>
-                
-                    </section>
-                    
-                    
-                    
-                    <section class="row">
-                        
-                        <section class="row separator">
-                        
-	                        <h1>
-	                            <span class="fa fa-download"></span> Get in on the action
-	                        </h1>
-		                    
-		                    <p>
-		                        Get in on the action; view, contribute to, or download the project from Github.
-		                    </p>
 	                    
+	                    
+	                    </section>
+	                    
+	                </aside>
+	                
+	            </section>
+	            
+	        </section>
+	        
+	        
+	        
+	        
+            
+            <!-- Paralax Unit -->
+            <section class="row paralax">
+            
+            	<section class="layout-1200">
+            	
+            		<aside class="column xsmall-16">
+                    
+                    
+	                    <section class="row">
+	                        
+	                        
+	                        
+	                        <h3>
+	                           <span class="fa fa-puzzle-piece"></span> Buttons <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            The button classes provide a beautiful way to display a button to the user.
+	                        </p>
+	                
+	                    
+	                        <button class="button moot">BUTTON #1</button>
+	                        <button class="button moot">BUTTON #2</button>
+	                        <div class="button moot">BUTTON #3</div>
+	                        <li class="button moot">BUTTON #4</li>
+	                        <a class="button moot">BUTTON #5</a>
+	                    
+	                    
+	                    </section>
+	                    
+	                    
+	                    <section class="row">
+	                    
+	                        
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Buttons with Colour Selectors <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            If you combine the button class with other classes such as "information" (blue colour), "alert" (red), and "success" (green) you can display the right button for the action.
+	                        </p>
+	                        
+	                        <button class="button information">INFORMATION</button>
+	                        <button class="button inactive">INACTIVE</button>
+	                        <div class="button success">SUCCESS</div>
+	                        <li class="button warning">WARNING</li>
+	                        <a class="button alert">ERROR</a>
+	                        <button class="button regal">REGAL</button>
+	                        <button class="button moot">MOOT</button>
+	                    
+	                    
+	                    </section>
+	                    
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Light &amp; Dark Buttons <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <button class="button dark">EXIT APP</button>
+	                        <button class="button light">READ MORE</button>
+	                    
+	                    </section>
+	                    
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Button Sets <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            When you wrap your buttons in a "button set" it draws them closer together, making them a grouped set of CTAs (call to actions) - this is ideal for form completions.
+	                        </p>
+	                        
 	                        <div class="button-set">
-	                            <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
-	                                <span class="fa fa-github"></span> View on Github
-	                            </a>
-	                            <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information extend-with raised">
-	                                <span class="fa fa-arrow-down"></span> Download v2.0
-	                            </a>
+	                            <a href="" class="button">One</a>
+	                            <a href="" class="button moot">Two</a>
+	                            <a href="" class="button moot">Three</a>
 	                        </div>
 	                    
 	                    </section>
+	                    
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Info Wheels <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            Info Wheels are round dots that can contain 1, 2, or 3 characters - these can signify a version number, or an alert (such as the amount of unread notifications you have).
+	                        </p>
+	                                                                        
+	                        <div class="row">
+	                            <span class="info-wheel small success">99</span>
+	                        </div>
+	                        
+	                        <div class="row">
+	                            <span class="info-wheel medium success">99</span>
+	                        </div>
+	                        
+	                        <div class="row">
+	                            <span class="info-wheel large success">99</span>
+	                        </div>
+	                    
+	                    </section>
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Labels <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            Labels are small blocks that look like miniture buttons - in style - but cannot be clicked or edited through the browser. Labels are a good way to signify versions, or small snippets of information.
+	                        </p>
+	                        
+	                        <div class="row">
+	                            <span class="label small success">
+	                                Version 1.1.4
+	                            </span>
+	                        </div>
+	                                                
+	                        <div class="row">
+	                            <span class="label medium success">
+	                                Version 1.1.4
+	                            </span>
+	                        </div>
+	                                                
+	                        <div class="row">
+	                            <span class="label large success">
+	                                Version 1.1.4
+	                            </span>
+	                        </div>
+	                    
+	                    </section>
+	                    
+	                                      
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Progress Bars <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can visually represent the state of loading AJAX or other assets by using the progress bar classes.
+	                        </p>
+	                        
+	                        <div class="row">
+	                            <div class="progress-bar" style="width:100%;">
+	                                <div class="progress-bar-filler moot" style="width:75%;" data-sb-value="75%"></div>
+	                            </div>
+	                        </div>
+	                        
+	                        <div class="row">
+	                            <div class="progress-bar" style="width:100%;">
+	                                <div class="progress-bar-filler moot" style="width:31%;" data-sb-value="31%"></div>
+	                            </div>
+	                        </div>
+	                        
+	                        <div class="row">
+	                            <div class="progress-bar" style="width:100%;">
+	                                <div class="progress-bar-filler moot" style="width:92%;" data-sb-value="92%"></div>
+	                            </div>
+	                        </div>
+	                    
+	                    </section>
+	                    
+	
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                           <span class="fa fa-puzzle-piece"></span> Tables, Rows, and Cells <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            Using .table, .row, and .cell you can create a responsive spreadsheet-style table for tabulated content. If you use the status classes (alert, infomration, regal, etc) with the first three cells then you can create a header for the table.
+	                        </p>
+	                        
+	                        <div class="table">
+	                            <ul class="row moot">
+	                                <li class="cell third"><strong>First Name</strong></li>
+	                                <li class="cell third"><strong>Last Name</strong></li>
+	                                <li class="cell third"><strong>Access Level</strong></li>
+	                            </ul>
+	                            <ul class="row">
+	                                <li class="cell third">John</li>
+	                                <li class="cell third">Doe</li>
+	                                <li class="cell third">1</li>
+	                            </ul>
+	                            <ul class="row">
+	                                <li class="cell third">Jane</li>
+	                                <li class="cell third">Doe</li>
+	                                <li class="cell third">1</li>
+	                            </ul>
+	                            <ul class="row">
+	                                <li class="cell third">John</li>
+	                                <li class="cell third">Smith</li>
+	                                <li class="cell third">2</li>
+	                            </ul>
+	                        </div>
+	                    
+	                    </section>
+	                    
+	
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Divisions with Colour Selectors <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <p>
+	                            You can also apply colour sleectors to other elements such as divisions...
+	                        </p>
+	                        
+	                        <div class="alert">
+	                           <p>
+	                               There was an error saving your password!
+	                           </p>
+	                        </div>
+	                        
+	                        <p>
+	                           or...
+	                        </p>
+	                        
+	                        <div class="success">
+	                           <p>
+	                             You are logged in! (<a href="#logout">Logout</a>)
+	                           </p>
+	                        </div>
+	                    
+	                    </section>
+	
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                            <span class="fa fa-puzzle-piece"></span> Forms &amp; Inputs <span class="label moot pull-right">Core Class</span>
+	                        </h3>
+	                        
+	                        <form action="post" method="/auth">
+	                           
+	                           <li>
+	                            <label>
+	                                Username
+	                            </label>
+	                            <input type="text" placeholder="Enter your username" />
+	                           </li>
+	                           
+	                           <li>
+	                            <label>
+	                                Password
+	                            </label>
+	                            <input type="password" placeholder="Enter your password" />
+	                           </li>
+	                           
+	                           <li>
+	                            <label>
+	                                Pin No.
+	                            </label>
+	                            <input type="password" placeholder="1234" />
+	                           </li>
+	                           
+	                           <li>
+	                            <input type="submit" class="button information" value="Login" />
+	                           </li>
+	                           
+	                        </form>
+	                    
+	                    </section>
+	
+	                    
+	                    
+	                    <section class="row">
+	                        
+	                        <h3>
+	                           ....and that, is that.
+	                        </h3>
+	                
+	                    </section>
                     
-                    </section>
+                    </aside>
                     
-                    
-                    
-                    <section class="row">
-                    
-	                    <section class="row separator">
+                </section>
+                
+            </section>
+            
+            
+            
+            
+            
+            
+            
+            <!-- Paralax Unit -->
+            <section class="row paralax moot">
+            
+            	<section class="layout-1200">
+            	
+            		<aside class="column xsmall-16 large-8">
+            	
+	                    <section class="row">
 	                        
 	                        <h1>
 	                            <span class="fa fa-cubes"></span> Extending StringBean
@@ -774,15 +844,14 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
 	                            <span class="fa fa-puzzle-piece"></span> raised <span class="label moot pull-right">Extention Class</span>
 	                        </h3>
 	                        
-	                        <a href="#TicketToNoWhere" class="button default extend-with raised">EXAMPLE</a>
+	                        <a href="#TicketToNoWhere" class="button depression extend-with raised">EXAMPLE</a>
 	                        
 <pre class="rounded"><code class="language-markup">
 &lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;
 </code></pre>
 	                    
 	                    </section>
-                        
-                                                
+                    
                         
                         <section class="row">
                             
@@ -790,8 +859,8 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                                 <span class="fa fa-puzzle-piece"></span> skewx-slight-* <span class="label moot pull-right">Extention Class</span>
                             </h3>
                             
-                            <a href="#TicketToNoWhere" class="button extend-with skewx-slight-left">EXAMPLE</a>
-                            <a href="#TicketToNoWhere" class="button extend-with skewx-slight-right">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with skewx-slight-left">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with skewx-slight-right">EXAMPLE</a>
                             
 <pre class="rounded"><code class="language-markup">
 &lt;a href="/my-blog/" class="button extend-with skewx-slight-left"&gt;My Blog&lt;/a&gt;
@@ -799,6 +868,12 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
 </code></pre>
                         
                         </section>
+                        
+                    </aside>
+                    
+            	
+            	
+            		<aside class="column xsmall-16 large-8">
                         
                         
                         
@@ -808,8 +883,8 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                                 <span class="fa fa-puzzle-piece"></span> skewx-* <span class="label moot pull-right">Extention Class</span>
                             </h3>
                             
-                            <a href="#TicketToNoWhere" class="button extend-with skewx-left">EXAMPLE</a>
-                            <a href="#TicketToNoWhere" class="button extend-with skewx-right">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with skewx-left">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with skewx-right">EXAMPLE</a>
                                                         
 <pre class="rounded"><code class="language-markup">
 &lt;a href="/my-blog/" class="button extend-with skewx-left"&gt;My Blog&lt;/a&gt;
@@ -826,10 +901,10 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                                 <span class="fa fa-puzzle-piece"></span> border-* <span class="label moot pull-right">Extention Class</span>
                             </h3>
                             
-                            <a href="#TicketToNoWhere" class="button extend-with border-top">EXAMPLE</a>
-                            <a href="#TicketToNoWhere" class="button extend-with border-right">EXAMPLE</a>
-                            <a href="#TicketToNoWhere" class="button extend-with border-bottom">EXAMPLE</a>
-                            <a href="#TicketToNoWhere" class="button extend-with border-left">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with border-top">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with border-right">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with border-bottom">EXAMPLE</a>
+                            <a href="#TicketToNoWhere" class="button depression extend-with border-left">EXAMPLE</a>
                             
 
 <pre class="rounded"><code class="language-markup">
@@ -840,81 +915,66 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
 </code></pre>
                         
                         </section>
-	                    
-                    </section>
-                                    
-                </article>
                 
-                
-                <aside class="column xsmall-16 small-16 medium-16 large-6">
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-group"></span> Want to contribute?
-                        </h3>
-                        
-                        <p>
-                            If you want to contribute to this project then feel free to look at the CONTRIBUTING.md file on the Github repository.
-                        </p>
-                    
-                    </section>
-                    
-                    
-                    <section class="row">
-                        
-                        <h3>
-                            <span class="fa fa-gears"></span> Project Release Information
-                        </h3>
-                    
-                        <section class="row">
-                        
-                            <h5>
-                                <span class="fa fa-code-fork"></span> Master Branch
-                            </h5>
-                            
-                            <p>
-                                The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
-                            </p>
-                            
-                            <h5>
-                                <span class="fa fa-code-fork"></span> Version Branches
-                            </h5>
-                            
-                            <p>
-                                StringBean is released in major+minor version. By this it is meant 1.3, or 1.4, etc, not 1.3.2, for example.
-                            </p>
-                    
-                        </section>
-                             
-                        
-                        <section class="row">
-                        
-		                    <h3>
-		                        <span class="fa fa-download"></span> Get in on the action
-		                    </h3>
-		                
-			                <p>
-			                    Get in on the action; view, contribute to, or download the project from Github.
-			                </p>
-		                
-		                    <div class="button-set">
-		                        <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
-		                            <span class="fa fa-github"></span> View on Github
-		                        </a>
-		                        <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information extend-with raised">
-		                            <span class="fa fa-arrow-down"></span> Download v2.0
-		                        </a>
-		                    </div>
-		                    
-	                    </section>
-	                    
-	                </section>
-                        
-                </aside>
+                </section>
                 
             </section>
+            
+            
+            
+            
+            
+            <!--  FOOTER -->
+            <footer class="row paralax default">
+            
+            	<div class="layout-1200">
+            	
+		            <aside class="column xsmall-16 large-8">
+		                    
+		                <section class="row">
+		                        
+				            <h3>
+				                <span class="fa fa-download"></span> Get in on the action
+				            </h3>
+				        
+					        <p>
+					            Get in on the action; view, contribute to, or download the project from Github.
+					        </p>
+				        
+				            <div class="button-set">
+				                <a href="https://github.com/markgreenall/StringBean/" target="_New" class="button moot extend-with raised">
+				                    <span class="fa fa-github"></span> View on Github
+				                </a>
+				                <a href="https://github.com/markgreenall/StringBean/archive/v2.0.zip" target="_New" class="button information extend-with raised">
+				                    <span class="fa fa-arrow-down"></span> Download v2.0
+				                </a>
+				            </div>
+				            
+			            </section>
+		                
+		            </aside>
+		            
+		            
+	            	
+	          		<aside class="column xsmall-16 large-8">
+	                   
+	                    <section class="row">
+	                                                
+		                    <h5>
+		                        <span class="fa fa-copyright"></span> Copyright XXXXXXX 2016
+		                    </h5>
+		                 
+		                    <p>
+			                    All rights reserved.
+			                </p>
+		                	
+		                </section>
+	                    
+	                </aside>
+	        	
+	        	</div>
+	        	    
+	        </footer>
             
         </main> 
         
