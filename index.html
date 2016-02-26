@@ -66,8 +66,8 @@
             h3 > .label { font-size:0.75rem; vertical-align:top; margin-top:0.5em; }
             div > p { padding:1em; }
             strong { font-weight:600; }
-            .code { background-color:#f5f5f5; border-left:0.25rem solid #10ec9c; padding:0.5em; }
-            pre, code { background-color:#f5f5f5; }
+            pre, code, .code { background-color:#f5f5f5; }
+            .code { padding:1em; }
             
             .Intro .row { padding:0; } .Intro .row:last-child { padding:2rem 0 }
             .Intro small { font-weight:700; color:#448866; }
@@ -225,15 +225,15 @@
                             You can stack the breakpoint selectors on an element.
                         </p>
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 class="xsmall-5 small-9 medium-10 large-2"
-</pre></code>
+</code></pre>
                         
                         <p>
                             Normal resolutions (sub-1080p HD)
                         </p>
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 &lt;header class="container"&gt;
     &lt;nav class="row"&gt;
         &lt;div class="column xsmall-16 small-16 medium-10 large-11"&gt;
@@ -248,7 +248,7 @@ class="xsmall-5 small-9 medium-10 large-2"
         &lt;/div&gt;
     &lt;/nav&gt;
 &lt;/header&gt;
-</pre></code>
+</code></pre>
                     
                     
                     </section>
@@ -266,7 +266,7 @@ class="xsmall-5 small-9 medium-10 large-2"
                         </p>
                         
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 &lt;header class="container"&gt;
     &lt;nav class="row"&gt;
         &lt;div class="column xsmall-16 small-16 medium-10 large-11 mega-hd-13 mega-uhd-14"&gt;
@@ -282,7 +282,7 @@ class="xsmall-5 small-9 medium-10 large-2"
         &lt;/div&gt;
     &lt;/nav&gt;
 &lt;/header&gt;
-</pre></code>
+</code></pre>
                     
                     
                     </section>
@@ -299,9 +299,9 @@ class="xsmall-5 small-9 medium-10 large-2"
                             If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
                         </p>
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 class="full-16"
-</pre></code>
+</code></pre>
                     
                     
                     </section>
@@ -317,7 +317,7 @@ class="full-16"
                             With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
                         </p>
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 &lt;div class="column medium-third"&gt;
     Column 1
 &lt;/div&gt;
@@ -327,7 +327,7 @@ class="full-16"
 &lt;div class="column medium-third"&gt;
     Column 3
 &lt;/div&gt;
-</pre></code>
+</code></pre>
                     
                     
                     </section>
@@ -345,7 +345,7 @@ class="full-16"
                         </p>
                         
                         
-<code><pre class="rounded">
+<pre class="rounded"><code class="language-markup">
 &lt;main class="container"&gt;
     &lt;article class="row layout-960"&gt;
         &lt;h1&gt;
@@ -356,7 +356,7 @@ class="full-16"
         &lt;/p&gt;
     &lt;/article&gt;
 &lt;/main&gt;
-</pre></code>                    
+</code></pre>
                     
                     </section>
                     
@@ -752,9 +752,13 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
 	                            Let's look at how we implement sb-ext-animations.css...
 	                        </p>
 	                        
-                            <code><pre class="rounded">&lt;link rel="stylesheet" href="/src/css/extentions/sb-ext-animations.css"&gt;</pre></code>
-	                        
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;</pre></code>
+<pre class="rounded"><code class="language-markup">
+&lt;link rel="stylesheet" href="/src/css/extentions/sb-ext-animations.css"&gt;</code></pre>
+</code></pre>
+
+<pre class="rounded"><code class="language-markup">
+&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;
+</code></pre>
 
 	                        <p>
 	                            You will notice that after the standard StringBean classes we have used the "extend-with" class, followed by an extended class name - in this case it's "raised".
@@ -770,17 +774,11 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
 	                            <span class="fa fa-puzzle-piece"></span> raised <span class="label moot pull-right">Extention Class</span>
 	                        </h3>
 	                        
-	                        <p>
-	                            The Raised class when used on a button will animate a box-shaddow on the button when hovered or focussed.  This gives the effect of 3D, and an UI feedback technique. Example :-
-	                        </p>
-	                        
 	                        <a href="#TicketToNoWhere" class="button default extend-with raised">EXAMPLE</a>
 	                        
-	                        <p>
-	                            ...the code required...
-	                        </p>
-	                        
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;</pre></code>
+<pre class="rounded"><code class="language-markup">
+&lt;a href="/my-blog/" class="button success extend-with raised"&gt;My Blog&lt;/a&gt;
+</code></pre>
 	                    
 	                    </section>
                         
@@ -795,13 +793,10 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                             <a href="#TicketToNoWhere" class="button extend-with skewx-slight-left">EXAMPLE</a>
                             <a href="#TicketToNoWhere" class="button extend-with skewx-slight-right">EXAMPLE</a>
                             
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with skewx-slight-left"&gt;My Blog&lt;/a&gt;</pre></code>
-                            
-                            <p>
-                                ...or...
-                            </p>
-                            
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with skewx-slight-right"&gt;My Blog&lt;/a&gt;</pre></code>
+<pre class="rounded"><code class="language-markup">
+&lt;a href="/my-blog/" class="button extend-with skewx-slight-left"&gt;My Blog&lt;/a&gt;
+&lt;a href="/my-blog/" class="button extend-with skewx-slight-right"&gt;My Blog&lt;/a&gt;
+</code></pre>
                         
                         </section>
                         
@@ -816,13 +811,10 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                             <a href="#TicketToNoWhere" class="button extend-with skewx-left">EXAMPLE</a>
                             <a href="#TicketToNoWhere" class="button extend-with skewx-right">EXAMPLE</a>
                                                         
-							<code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with skewx-left"&gt;My Blog&lt;/a&gt;</pre></code>
-							
-							<p>
-							    ...or...
-							</p>
-							
-							<code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with skewx-right"&gt;My Blog&lt;/a&gt;</pre></code>
+<pre class="rounded"><code class="language-markup">
+&lt;a href="/my-blog/" class="button extend-with skewx-left"&gt;My Blog&lt;/a&gt;
+&lt;a href="/my-blog/" class="button extend-with skewx-right"&gt;My Blog&lt;/a&gt;
+</code></pre>
                             
                         </section>
                         
@@ -840,25 +832,12 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
                             <a href="#TicketToNoWhere" class="button extend-with border-left">EXAMPLE</a>
                             
 
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with border-top"&gt;My Blog&lt;/a&gt;</pre></code>
-
-                            <p>
-                                ...or...
-                            </p>
-                            
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with border-right"&gt;My Blog&lt;/a&gt;</pre></code>
-
-                            <p>
-                                ...or...
-                            </p>
-                            
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with border-bottom"&gt;My Blog&lt;/a&gt;</pre></code>
-
-                            <p>
-                                ...or...
-                            </p>
-                            
-                            <code><pre class="rounded">&lt;a href="/my-blog/" class="button extend-with border-left"&gt;My Blog&lt;/a&gt;</pre></code>
+<pre class="rounded"><code class="language-markup">
+&lt;a href="/my-blog/" class="button extend-with border-top"&gt;My Blog&lt;/a&gt;
+&lt;a href="/my-blog/" class="button extend-with border-right"&gt;My Blog&lt;/a&gt;
+&lt;a href="/my-blog/" class="button extend-with border-bottom"&gt;My Blog&lt;/a&gt;
+&lt;a href="/my-blog/" class="button extend-with border-left"&gt;My Blog&lt;/a&gt;
+</code></pre>
                         
                         </section>
 	                    
@@ -942,10 +921,12 @@ Resize the Window: <span class="show-only-medium show-only-large">Hello World!</
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/extentions/sb-ext-animations.css">
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/Prism.css">
         
         <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/matchmedia.polyfill.js"></script>
         <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/Respond.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/Prism.js"></script>
         
         <script>
             $(document).ready(function () {
