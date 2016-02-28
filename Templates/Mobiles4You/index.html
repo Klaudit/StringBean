@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- SEO Settings -->
+        <title>StringBean - The 4K Featherweight Framework!</title>
+        <meta name="description" content="Build seemless - featherweight - responsive scaffold apps for mobile, 4K, and beyond. StringBean is a pure CSS solution."/>
+        <link rel="canonical" href="http://stringbean-lang.com" />
+
+	<!-- User Experience Settings -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <!-- Social Media -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@MarkGreenall">
+        <meta name="twitter:creator" content="@MarkGreenall">
+        <meta name="twitter:title" content="StringBean - The 4K Featherweight Framework!">
+        <meta name="twitter:description" content="Build seemless - featherweight - responsive scaffold apps for mobile, 4K, and beyond. StringBean is a pure CSS solution.">
+        <meta name="twitter:image" content="https://s3-eu-west-1.amazonaws.com/stringbean/img/AppleIcon-512.png">
+        
+        <!-- Apple Device Settings -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon" href="https://s3-eu-west-1.amazonaws.com/stringbean/img/AppleIcon-512.png">
+        <link rel="apple-touch-icon" sizes="512x512" href="https://s3-eu-west-1.amazonaws.com/stringbean/img/AppleIcon-512.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="https://s3-eu-west-1.amazonaws.com/stringbean/img/AppleIcon-1024.png">
+        <link rel="apple-touch-icon" sizes="2048x2048" href="https://s3-eu-west-1.amazonaws.com/stringbean/img/AppleIcon-2K.png">
+        
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/StringBean.css" />
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Catamaran:100' rel='stylesheet' type='text/css'>
+        
+        <style type="text/css">
+            body, html { font-family: 'Source Sans Pro', sans-serif; font-weight:300; color:#444 !important; }
+            h1,h2,h3,h4 { font-family: 'Catamaran', sans-serif !important; font-weight:300; color:#466478; }
+            a { text-decoration:none; }
+            .container { margin:0em 0em; padding:1em 1em !important; background-color:#fff; }
+            header { padding:2em 0 !important; }
+            header .column { margin:0 0; }
+            header img { border:0; width:100%; max-width:150px; }
+            header nav { padding:1em 0; }
+            .paralax { background-color:transparent; }
+            .paralax h2, .paralax p { color:#fff; font-weight:bold; text-shadow: 1px 1px #000; }
+            .paralax .row { padding:7em 0; }
+            
+            .search-bar { background-color:#eee; padding:2em 0; }
+            
+            body { background-position:center; background-attachment:fixed; background-size:100%; }            
+            @media screen and (min-width: 0px) {
+               body { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/bg3_small.jpg'); }
+               header .column { text-align:center; } 
+               nav { text-align:center !important; }
+            }
+            @media screen and (min-width: 601px) {
+               body { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/bg3_medium.jpg'); }
+            }
+            @media screen and (min-width: 901px) {
+               body { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/bg3_large.jpg'); }
+               header .column { text-align:left; } 
+               nav { text-align:right !important; }
+            }
+            @media screen and (min-width: 1601px) {
+               body { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/bg3_2k.jpg'); }
+            }
+            @media screen and (min-width: 2048px) {
+               body { background-image:url('https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/bg3_4k.jpg'); }
+            }
+            
+            .products { padding:1em 0; } .products > div { margin-top:2em; margin-bottom:2em; } .products > div > img { width:100%; max-width:125px; }
+            footer.container { background-color:#777; } footer h2, footer h3, footer p, footer a { color:#fff; }
+            footer ul:last-child li { color:#aaa; padding:0.5em 0; } footer small { font-size:0.75em; }
+            em { font-weight:700; }
+        </style>
+        
+    </head>
+    <body>
+        
+        
+        <!-- HEADER -->
+        <header class="container">
+            <div class="row layout-1200">
+	            <section class="column xsmall-16 large-6">
+	                <a href="/Templates/Mobiles4You/">
+	                    <h1><span class="fa fa-mobile-phone"></span> Mobiles4You</h1>
+	                </a>
+	            </section>
+	            <nav class="column xsmall-16 large-10 pull-right align-right">
+	                <a href="./#!/phones/" class="button information">Phones</a>
+	                <a href="./#!/sim-only/" class="button information">Sim-Only</a>
+	                <a href="./#!/broadband/" class="button information">Broadband</a>
+	                <a href="./#!/contact/" class="button information">Contact</a>
+	            </nav>
+	        </div>
+        </header>
+        
+        
+        <!--  PARALAX -->
+        <section class="container search-bar">
+            <div class="row align-center">
+                <h3>
+                    Find a product...
+                </h3>
+                <label>Search</label> <input type="text" name="query" placeholder="Enter a product name..." /> <a href="#" class="button information"><span class="fa fa-search"></span> Go!</a>
+            </div>       
+        </section>
+        
+        
+        <!-- PRODUCTS -->
+        <section class="container products">
+	        <section class="row layout-1200 products">
+	           
+	            <h2>
+	               Our latest deals
+	            </h2>
+	           
+	            <div class="column xsmall-16 medium-8 large-4 align-center">
+	                <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone2.png" alt="" />
+	                <h3>Sr32-T</h3>
+	                <ol class="row">
+	                    <li>1GB Data. 3,000 Minutes</li>
+	                </ol>
+	                <ol class="row">
+	                    <li><em>&pound;0</em> upfront cost.</li>
+	                    <li><em>&pound;25</em> per month.</li>
+	                </ol>
+	                <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+	            </div>
+            
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone3.png" alt="" />
+                    <h3>LRF Hero</h3>
+                    <ol class="row">
+                        <li>1GB Data. 500 Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;0</em> upfront cost.</li>
+                        <li><em>&pound;15</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone3.png" alt="" />
+                    <h3>LRF Hero</h3>
+                    <ol class="row">
+                        <li>2GB Data. 1,000 Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;25</em> upfront cost.</li>
+                        <li><em>&pound;30</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone4.png" alt="" />
+                    <h3>Griffin 3</h3>
+                    <ol class="row">
+                        <li>5GB Data. Unlimited Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;0</em> upfront cost.</li>
+                        <li><em>&pound;45</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+            </section>
+        </section>
+        
+        
+        <!--  PARALAX -->
+        <section class="container paralax">
+            <div class="row align-center">
+                <h2>
+                    ALWAYS STAY CONNECTED
+                </h2>
+                <p>
+                    Never be disconnected from your friends again with our data-heavy plans! <a href="#readmore">read more</a>
+                </p>
+            </div>       
+        </section>
+        
+        
+        <!-- PRODUCTS -->
+        <section class="container products">
+            <section class="row layout-1200 products">
+            
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone4.png" alt="" />
+                    <h3>Griffin 3 Pro</h3>
+                    <ol class="row">
+                        <li>15GB Data. Unlimited Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;55</em> upfront cost.</li>
+                        <li><em>&pound;45</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone4.png" alt="" />
+                    <h3>Griffin 3 Pro+</h3>
+                    <ol class="row">
+                        <li>20GB Data. Unlimited Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;125</em> upfront cost.</li>
+                        <li><em>&pound;60</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone3.png" alt="" />
+                    <h3>Firestack 2</h3>
+                    <ol class="row">
+                        <li>1GB Data. 3,000 Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;0</em> upfront cost.</li>
+                        <li><em>&pound;25</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+                <div class="column xsmall-16 medium-8 large-4 align-center">
+                    <img src="https://s3-eu-west-1.amazonaws.com/stringbean/Templates/Mobiles4You/img/MobilePhone3.png" alt="" />
+                    <h3>Firestack 2</h3>
+                    <ol class="row">
+                        <li>3GB Data. Unlimited Minutes</li>
+                    </ol>
+                    <ol class="row">
+                        <li><em>&pound;0</em> upfront cost.</li>
+                        <li><em>&pound;35</em> per month.</li>
+                    </ol>
+                    <a href="" class="button information"><span class="fa fa-shopping-basket"></span> Purchase</a>
+                </div>
+                
+            </section>
+            
+        </section> 
+        
+        
+        <!--  PARALAX -->
+        <footer class="container">
+            <div class="row layout-1200">
+                
+                <ul class="column xsmall-16 medium-8 large-4">
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> About Mobiles4You</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Our Price Promise</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Sustainability</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Get in touch</a></li>
+                </ul>
+                
+                <ul class="column xsmall-16 medium-8 large-4">
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Terms and Conditions</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Privacy Policy</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Returns Policy</a></li>
+                    <li><a href="#"><span class="fa fa-arrow-circle-right"></span> Customer Services</a></li>
+                </ul>
+                
+                <ul class="column xsmall-16 medium-8 large-8">
+                    <li>
+                        Copyright Mobiles4You 2016
+                    </li>
+                    <li>
+                        <small>
+                            All rights reserved.
+                        </small>
+                    </li>
+                </ul>
+                
+            </div>       
+        </footer>
+        
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/stringbean/src/css/extentions/sb-ext-animations.css">
+        
+        <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/matchmedia.polyfill.js"></script>
+        <script src="https://s3-eu-west-1.amazonaws.com/stringbean/js/Respond.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
+        <script>
+            
+            $(function() {
+	          $('a[href*="#"]:not([href="#"])').click(function() {
+	            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	              var target = $(this.hash);
+	              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	              if (target.length) {
+	                $('html, body').animate({
+	                  scrollTop: target.offset().top
+	                }, 1000);
+	                return false;
+	              }
+	            }
+	          });
+	        });
+        </script>
+                
+    </body>
+</html>
+        
+        
