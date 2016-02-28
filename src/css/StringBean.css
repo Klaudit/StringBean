@@ -24,7 +24,7 @@
     html,body { display:block; width:100%; font-size:16px; }
     html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; box-sizing:border-box; word-wrap:break-word; font-size:1rem; line-height:1.25em; }
     a, b, i, u, strong, span, label { display:inline; width:auto; }
-    ol, ul { list-style:none; overflow:auto; }
+    ol, ul { list-style:none; overflow:auto; } em, strong { font-weight:bold; }
     
 /** 2. Containers & Rows **/
     .container { display:block; margin-left:1%; margin-right:1%; overflow:auto; }
@@ -72,10 +72,9 @@
     h1,h2,h3,h4,h5,h6 { margin:0.75rem 0; margin-bottom:0.25rem; font-weight:normal; } h1 { font-size:2.5rem; } h2 { font-size:2rem; } h3 { font-size:1.75rem; } h4 { font-size:1.5rem; } h5 { font-size:1.25rem; } h6 { font-size:1rem; }
     p { padding:0.5rem 0; }
     .button, button, input, selection { background-color:#10ec9c; }
-    .normal, .default { background-color:rgba(16,236,156,1); color:#555; } .warning { background-color:rgba(255,200,0,1); color:#fff; } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); color:#fff; } .alert { background-color:rgba(215,65,65,1); color:#fff; } .information { background-color:rgba(25,120,175,1); color:#fff; } .regal { background-color:rgba(120,75,120,1); color:#fff; } .amber { background-color:rgba(220,100,50,1); color:#fff; } .moot { background-color:rgba(70,100,120,1); color:#fff; }
-    .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
-    .light { background-color:#fff; border:1px solid #555; }
-    .dark { background-color:#555; border:1px solid #333; color:#eee; }    
+    .normal, .default { background-color:rgba(16,236,156,1); color:#555; } .warning { background-color:rgba(255,200,0,1); color:#fff; } .inactive { background-color:rgba(165,165,165,1); } .success { background-color:rgba(94,174,69,1); color:#fff; } .alert { background-color:rgba(215,65,65,1); color:#fff; } .information { background-color:rgba(25,120,175,1); color:#fff; } .regal { background-color:rgba(120,75,120,1); color:#fff; } .amber { background-color:rgba(220,100,50,1); color:#fff; } .moot { background-color:rgba(70,100,120,1); color:#fff; } .dusk { background-color:#395161; color:#fff; }
+    .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot .dusk { filter:none; } /** Fixes background color not showing in IE issue **/
+    .light { background-color:#fff; border:1px solid #555; } .dark { background-color:#555; border:1px solid #333; color:#eee; }    
     .rounded { border-radius:5px; }
     
     /** Code & Pre **/
