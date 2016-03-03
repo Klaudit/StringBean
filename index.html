@@ -241,22 +241,31 @@
                                 
                         </section>
                         
+                    
+	               
                         <section class="row">
                             
-                                <h3>
-                                    <span class="fa fa-puzzle-piece"></span> Taking full width on all breakpoints <span class="label moot pull-right">Core Class</span>
-                                </h3>
+                            <h3>
+                                <span class="fa fa-puzzle-piece"></span> Three-Way Split <span class="label moot pull-right">Core Class</span>
+                            </h3>
+                            
+                            <p>
+                                With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
+                            </p>
                                 
-                                <p>
-                                    If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
-                                </p>
-                                
-        <pre class="rounded"><code class="language-markup">
-        &lt;div class="full-16"&gt;
-          Full width content here.
-        &lt;/div&gt;
-        </code></pre>
-
+    <pre class="rounded"><code class="language-markup">
+    &lt;div class="column third"&gt;
+        Column 1
+    &lt;/div&gt;
+    &lt;div class="column third"&gt;
+        Column 2
+    &lt;/div&gt;
+    &lt;div class="column third"&gt;
+        Column 3
+    &lt;/div&gt;
+    </code></pre>
+                            
+                            
                         </section>
                             
                     </section>
@@ -328,35 +337,6 @@
     </code></pre>
 
                     </section>
-                        
-                    
-
-                    
-	               
-                    <section class="row">
-	                    
-                        <h3>
-                            <span class="fa fa-puzzle-piece"></span> Three-Way Split <span class="label moot pull-right">Core Class</span>
-                        </h3>
-                        
-                        <p>
-                            With great things comes a slight downside - and it is slight - 16 does not split equally three ways into integers. The knock-on effect of this is that you cannot have three identically width columns with the standard classes (as you would do with Bootstrap), so to achieve this three-way split we've added special classes to each breakpoint; where "medium" is replaced with the desired breakpoint and then "third" defines one-third of the screen:
-                        </p>
-	                        
-<pre class="rounded"><code class="language-markup">
-&lt;div class="column third"&gt;
-    Column 1
-&lt;/div&gt;
-&lt;div class="column third"&gt;
-    Column 2
-&lt;/div&gt;
-&lt;div class="column third"&gt;
-    Column 3
-&lt;/div&gt;
-</code></pre>
-	                    
-	                    
-                    </section>
                
                 </aside>
                  
@@ -419,6 +399,26 @@
 </code></pre>
 	                    
 	                    </section>
+                        
+                        
+                        
+                        <section class="row">
+                            
+                                <h3>
+                                    <span class="fa fa-puzzle-piece"></span> Taking full width on all breakpoints <span class="label moot pull-right">Core Class</span>
+                                </h3>
+                                
+                                <p>
+                                    If you apply this class then it will take 16 points (full width of parent) in all breakpoints.
+                                </p>
+                                
+        <pre class="rounded"><code class="language-markup">
+        &lt;div class="full-16"&gt;
+          Full width content here.
+        &lt;/div&gt;
+        </code></pre>
+
+                        </section>
 	                    
             	
             		</aside>
