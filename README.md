@@ -1,4 +1,5 @@
-####  FP of Hacker News - thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email here: mark@markgreenall.uk
+####  FP of Hacker News!
+Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
 
 ![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
 
