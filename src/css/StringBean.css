@@ -30,18 +30,17 @@
     .container { display:block; margin-left:1%; margin-right:1%; overflow:auto; }
     .row { padding:0.5rem 0; overflow:auto; clear:both; }
     .column { float:left; margin-left:1%; margin-right:1%; }
-    .third { width:33.3% } .column.third { width:30.833%; }
     .cell { display:inline-block; float:left; }
-    .clear-fix { clear:both; }
     .layout-600 { max-width:600px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
     
 /** 3. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
     .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd { display:inline-block; }
-    .float-left { float:left; } .float-right { float:right; } .clear-both { clear:both; }
-    .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; } .align-top { verical-align:top; } .align-middle { vertical-align:middle } .align-bottom { vertical-align:bottom; }
     .hide { display:none; }
-    
+    .third { width:33.3% } .column.third { width:30.833%; }
+    .float-left { float:left; } .float-right { float:right; } .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; } .align-top { verical-align:top; } .align-middle { vertical-align:middle } .align-bottom { vertical-align:bottom; } .clear-both { clear:both; }
+    .pull-left { float:left; display:block; } .pull-right { float:right; display:block; } .clear-fix { clear:both; }
+
 /** 4. Buttons & Links, and Features **/
     .button, a, button, input[type=submit] { cursor:pointer; }
     .button { display:inline-block !important; font-size:0.75em; margin:1px 0; padding:0.75em 2em; color:#555; border:0; text-decoration:none; line-height:normal; box-sizing:border-box; font-weight:bold; }
