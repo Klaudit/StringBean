@@ -1,3 +1,5 @@
+![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
+
 ### Announcements
 
 ###### March 16th 2016
@@ -12,7 +14,6 @@ Featured on Onextrapixel.com, and DesignBeep.com
 ###### February 2016
 Featured on CodeVisually.com
 
-![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
 
 # Documentation
 The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. 
