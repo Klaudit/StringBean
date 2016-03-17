@@ -38,7 +38,7 @@
     .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd { display:inline-block; }
     .hide { display:none; }
     .third { width:33.3% } .column.third { width:30.833%; }
-    .float-left { float:left; } .float-right { float:right; } .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; } .align-top { verical-align:top; } .align-middle { vertical-align:middle } .align-bottom { vertical-align:bottom; } .clear-both { clear:both; }
+    .float-left { float:left; } .float-right { float:right; } .align-left { text-align:left; } .align-center { text-align:center; } .align-right { text-align:right; } .align-top { vertical-align:top; } .align-middle { vertical-align:middle } .align-bottom { vertical-align:bottom; } .clear-both { clear:both; }
     .pull-left { float:left; display:block; } .pull-right { float:right; display:block; } .clear-fix { clear:both; }
 
 /** 4. Buttons & Links, and Features **/
