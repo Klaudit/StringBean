@@ -1,15 +1,15 @@
 ### Announcements
 
-###### March 16th
+###### March 16th 2016
 FP of Hacker News! - Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
 
-###### March 15th
+###### March 15th 2016
 v2.2 reached stable and was merged into master branch (Included pull-left & pull-right, syntax order was cleaned up, and bugs fixed).
 
-###### March 10th & 13th
+###### March 10th & 13th 2016
 Featured on Onextrapixel.com, and DesignBeep.com
 
-###### February
+###### February 2016
 Featured on CodeVisually.com
 
 ![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
