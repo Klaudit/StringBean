@@ -1,9 +1,7 @@
 ### Publications & Features
-[16.03.2016] - FP of Hacker News! - Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
-
-[15.03.2016] - DesignBeep.com
-
-[13.02.2016] - CodeVisually.com
+###### March 16th - FP of Hacker News! - Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
+###### March 10th & 13th - Featured on Onextrapixel.com, and DesignBeep.com
+###### February - Featured on CodeVisually.com
 
 ![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/StringBean-Simple.jpg "StringBean")
 
