@@ -1,5 +1,6 @@
-### Publications & Features
+### Announcements
 ###### March 16th - FP of Hacker News! - Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
+###### March 15th - v2.2 reached stable and was merged into master branch (Included pull-left & pull-right, syntax order was cleaned up, and bugs fixed).
 ###### March 10th & 13th - Featured on Onextrapixel.com, and DesignBeep.com
 ###### February - Featured on CodeVisually.com
 
