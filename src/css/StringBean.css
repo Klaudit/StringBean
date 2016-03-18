@@ -111,6 +111,7 @@
         .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .show-only-xsmall { display:block; }
         h1 {font-size:2.25rem;} h2 {font-size:2rem;} h3 {font-size:1.75rem;} h4 {font-size:1.5rem;} h5 {font-size:1.25rem;} h6 {font-size:1rem;}
+        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; }
     }
 
     /** SMALL **/
@@ -123,6 +124,7 @@
         .hide-above-xsmall { display:none; }  /** Show elements only below certain points **/
         .show-only-small { display:block; }
         h1 {font-size:2.25rem;} h2 {font-size:2rem;} h3 {font-size:1.75rem;} h4 {font-size:1.5rem;} h5 {font-size:1.25rem;} h6 {font-size:1rem;}
+        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; }
     }
 
     /** MEDIUM **/
@@ -133,6 +135,7 @@
         .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small { display:none; } /** Show elements only below certain points **/
         .show-only-medium { display:block; }
+        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; }
     }
 
     /** LARGE **/
