@@ -67,17 +67,11 @@
     .table > .row > .cell { float:left; text-align:center; }
     .table > .row > .cell.header { font-weight:bold; background:#f5f5f5; }
     
-    /** Navbar **/
-    nav > ul > li { display:none; }  
-    nav li { line-height:2em; text-align:center; } 
-    nav a .fa { margin-left:0.25em; } 
-    nav ul, nav li, nav a { text-decoration:none; } 
-    nav a:focus, nav a:hover { text-decoration:underline; }
-    nav > ul > ul > li { display:inline-block; border-right:1px dotted #ccc; } 
-    nav > ul > ul > li > a { display:block; padding:0 1em; }
-    nav > ul > ul > li > ul { position:absolute; visibility:hidden; }
-    nav > ul:focus > ul, nav > ul:hover > ul, nav > ul > ul > li:focus > ul, nav > ul > ul > li:hover > ul { display:block; visibility:visible; }
-    nav > ul > ul ul { margin:0; margin-left:-4px; padding:0 1em 0.5em; font-style:normal; box-shadow:0px 1px 2px #ccc; }
+    /** Navbar (Defaults at mobile view) **/
+    nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } 
+    nav > ul > ul > li { display:block; } 
+    nav > ul > ul > li > ul { position:static; visibility:visible; display:none; } 
+    nav > ul > ul ul { padding:0.25em; }
     
 /** 5. Basic Formatting **/    
     h1,h2,h3,h4,h5,h6 { margin:0.75rem 0; margin-bottom:0.25rem; font-weight:normal; } h1 { font-size:2.5rem; } h2 { font-size:2rem; } h3 { font-size:1.75rem; } h4 { font-size:1.5rem; } h5 { font-size:1.25rem; } h6 { font-size:1rem; }
@@ -111,7 +105,6 @@
         .hide-below-small, .hide-below-medium, .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .show-only-xsmall { display:block; }
         h1 {font-size:2.25rem;} h2 {font-size:2rem;} h3 {font-size:1.75rem;} h4 {font-size:1.5rem;} h5 {font-size:1.25rem;} h6 {font-size:1rem;}
-        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; } nav > ul > ul ul { padding:0.25em; }
     }
 
     /** SMALL **/
@@ -124,7 +117,6 @@
         .hide-above-xsmall { display:none; }  /** Show elements only below certain points **/
         .show-only-small { display:block; }
         h1 {font-size:2.25rem;} h2 {font-size:2rem;} h3 {font-size:1.75rem;} h4 {font-size:1.5rem;} h5 {font-size:1.25rem;} h6 {font-size:1rem;}
-        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; } nav > ul > ul ul { padding:0.25em; }
     }
 
     /** MEDIUM **/
@@ -135,7 +127,6 @@
         .hide-below-large, .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small { display:none; } /** Show elements only below certain points **/
         .show-only-medium { display:block; }
-        nav > ul > li { display:inline-block; } nav > ul > ul { display:none; } nav > ul > ul > li { display:block; } nav > ul > ul > li > ul { position:static; visibility:visible; display:none; } nav > ul > ul ul { padding:0.25em; }
     }
 
     /** LARGE **/
@@ -146,6 +137,7 @@
         .hide-below-mega-hd, .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium { display:none; }  /** Show elements only below certain points **/
         .show-only-large { display:block; }
+        nav > ul > li { display:none; } nav li { line-height:2em; text-align:center; } nav a .fa { margin-left:0.25em; } nav ul, nav li, nav a { text-decoration:none; } nav a:focus, nav a:hover { text-decoration:underline; } nav > ul > ul > li { display:inline-block; border-right:1px dotted #ccc; } nav > ul > ul > li > a { display:block; padding:0 1em; } nav > ul > ul > li > ul { position:absolute; visibility:hidden; } nav > ul:focus > ul, nav > ul:hover > ul, nav > ul > ul > li:focus > ul, nav > ul > ul > li:hover > ul { display:block; visibility:visible; } nav > ul > ul ul { margin:0; margin-left:-4px; padding:0 1em 0.5em; font-style:normal; box-shadow:0px 1px 2px #ccc; }
     }
 
     /** HD **/
@@ -156,6 +148,7 @@
         .hide-below-mega-uhd { display:none; }  /** Hide elements below certain points **/
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large { display:none; }
         .show-only-mega-hd { display:block; }
+        nav > ul > li { display:none; } nav li { line-height:2em; text-align:center; } nav a .fa { margin-left:0.25em; } nav ul, nav li, nav a { text-decoration:none; } nav a:focus, nav a:hover { text-decoration:underline; } nav > ul > ul > li { display:inline-block; border-right:1px dotted #ccc; } nav > ul > ul > li > a { display:block; padding:0 1em; } nav > ul > ul > li > ul { position:absolute; visibility:hidden; } nav > ul:focus > ul, nav > ul:hover > ul, nav > ul > ul > li:focus > ul, nav > ul > ul > li:hover > ul { display:block; visibility:visible; } nav > ul > ul ul { margin:0; margin-left:-4px; padding:0 1em 0.5em; font-style:normal; box-shadow:0px 1px 2px #ccc; }
     }
 
     /** Ultra-HD (2K, 3K, and 4K **/
@@ -165,5 +158,6 @@
         .mega-uhd-third { width:30.833% }
         .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd { display:none; }
         .show-only-mega-uhd { display:block; }
+        nav > ul > li { display:none; } nav li { line-height:2em; text-align:center; } nav a .fa { margin-left:0.25em; } nav ul, nav li, nav a { text-decoration:none; } nav a:focus, nav a:hover { text-decoration:underline; } nav > ul > ul > li { display:inline-block; border-right:1px dotted #ccc; } nav > ul > ul > li > a { display:block; padding:0 1em; } nav > ul > ul > li > ul { position:absolute; visibility:hidden; } nav > ul:focus > ul, nav > ul:hover > ul, nav > ul > ul > li:focus > ul, nav > ul > ul > li:hover > ul { display:block; visibility:visible; } nav > ul > ul ul { margin:0; margin-left:-4px; padding:0 1em 0.5em; font-style:normal; box-shadow:0px 1px 2px #ccc; }
     }
 /** END StringBean **/
