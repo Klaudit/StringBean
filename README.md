@@ -191,6 +191,26 @@ The grid class is like the row class, except it accepts "box" sub elements (as p
         </li>
     </ul>
 
+### Navigation Bar (Navbar)
+Basic support for a navigation bar with  dropdown submenus - also works in mobile view.
+
+    <nav>
+        <ul>
+            <li><i class="fa fa-bars"></i></li>
+            <ul>
+                <li><a href="#" class="">New Products</a></li>
+                <li><a href="#" class="">Services <span class="fa fa-angle-down"></span></a>
+                    <ul class="">
+                        <li><a href="#" class="">Dry Cleaning</a></li>
+                        <li><a href="#" class="">Pressing / Ironing</a></li>
+                        <li><a href="#" class="">Starching</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="">Contact Us</a></li>
+            </ul>
+        </ul>
+    </nav>
+
 ### Buttons
 The button classes provide a beautiful way to display a button to the user.  
 
