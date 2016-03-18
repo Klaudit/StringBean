@@ -75,6 +75,7 @@
     .normal, .warning, .inactive, .success, .alert, .information, .regal, .amber, .moot { filter:none; } /** Fixes background color not showing in IE issue **/
     .light { background-color:#fff; border:1px solid #555; }
     .dark { background-color:#555; border:1px solid #333; color:#eee; }    
+    .white-text { color:#fff; } .black-text { color:#000; }
     .rounded { border-radius:5px; }
     
     /** Code & Pre **/
