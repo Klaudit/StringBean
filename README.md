@@ -15,22 +15,24 @@ Featured on Onextrapixel.com, and DesignBeep.com
 Featured on CodeVisually.com
 
 
-# Documentation
+# Where can I find the documentation?
+You can view the documentation on the StringBean website using the link below.
+
+### [Documentation on StringBean-Lang.com](http://stringbean-lang.com/ "StringBean Documentation")
+
+
+# What is StringBean?
 The featherweight responsive CSS Framework based on a 16-point system, rather than the traditional 12-point system that other frameworks use. 
 
 Sometimes, 12 is just too few, especially on a high resolution screen, such as 4K - at 4K String Bean comes into its own!  This gives the developer the power to divide the screen up in more finite segments providing you with greater control over the widths of content on your site, especially at higher resolutions (think HD & UHD (2K, 3K, 4K, and above).
 
 StringBean also has 6 breakpoints, instead of the traditional 4, so you can implement your design with: xsmall, small, medium, large, mega-hd, and mega-uhd.
 
-## How it works
+
+# How it works
 To define column widths we use a points system - each parent element/page is split into 16 points - you can then specify how wide a column or item is by applying the appropriate sized class.
 
 This defines the division as a column (floats left) and applies a hard width, similar to Bootstrap and Foundation 5, but with a twist:- we use a 16 point system rather than the limiting 12 point system used in the aforementioned.
-
-# Where can I find the documentation?
-You can view the documentation on the StringBean website using the link below.
-
-### [Documentation on StringBean-Lang.com](http://example.com/ "StringBean Documentation")
 
 
 # Project Release Information
