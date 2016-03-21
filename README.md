@@ -18,7 +18,7 @@ Featured on CodeVisually.com
 # Where's the documentation?
 You can view the documentation on the StringBean website using the link below.
 
-### > [Documentation on StringBean-Lang.com](http://stringbean-lang.com/ "StringBean Documentation")
+### > [Documentation on StringBean-Lang.com](http://stringbean-lang.com/#content "StringBean Documentation")
 
 
 # What is StringBean?
