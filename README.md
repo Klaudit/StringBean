@@ -15,10 +15,10 @@ Featured on Onextrapixel.com, and DesignBeep.com
 Featured on CodeVisually.com
 
 
-# Where can I find the documentation?
+# Where's the documentation?
 You can view the documentation on the StringBean website using the link below.
 
-### [Documentation on StringBean-Lang.com](http://stringbean-lang.com/ "StringBean Documentation")
+### > [Documentation on StringBean-Lang.com](http://stringbean-lang.com/ "StringBean Documentation")
 
 
 # What is StringBean?
