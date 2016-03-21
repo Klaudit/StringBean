@@ -36,6 +36,7 @@ This defines the division as a column (floats left) and applies a hard width, si
 
 
 # Project Release Information
+The project is developed and released in a certain way - in gerneral it sticks to a major version release, with the master branch being merged regularly upon stable commits.
 
 ### Master Branch
 The master branch contains the latest stable version of StringBean, merged from the latest version branch periodically.
