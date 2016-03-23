@@ -2,7 +2,7 @@
 /** 
  * StringBean CSS Framework
  * *****************************************************************************
- * @version StringBean 2.2
+ * @version StringBean 2.3
  * *****************************************************************************
  * @description : StringBean is a mobile-first responsive CSS framework designed
  * to work with not just mobiles, but also with higher resolutions such as 2K,
@@ -24,14 +24,14 @@
     html,body { display:block; width:100%; font-size:16px; }
     html, body, button, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; font-size:100%; font:inherit; box-sizing:border-box; word-wrap:break-word; font-size:1rem; line-height:1.25em; }
     a, b, i, u, strong, span, label { display:inline; width:auto; }
-    ol, ul { list-style:none; overflow:auto; }
+    ol, ul { list-style:none; }
     
 /** 2. Containers & Rows **/
     .container { display:block; margin-left:1%; margin-right:1%; overflow:auto; }
     .row { padding:0.5rem 0; overflow:auto; clear:both; }
     .column { float:left; margin-left:1%; margin-right:1%; }
     .cell { display:inline-block; float:left; }
-    .layout-600 { max-width:600px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
+    .layout-600 { max-width:600px; margin:auto; } .layout-700 { max-width:700px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-900 { max-width:900px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
     
 /** 3. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
