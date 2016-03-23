@@ -31,7 +31,7 @@
     .row { padding:0.5rem 0; overflow:auto; clear:both; }
     .column { float:left; margin-left:1%; margin-right:1%; }
     .cell { display:inline-block; float:left; }
-    .layout-600 { max-width:600px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
+    .layout-600 { max-width:600px; margin:auto; } .layout-700 { max-width:700px; margin:auto; } .layout-800 { max-width:800px; margin:auto; } .layout-900 { max-width:900px; margin:auto; } .layout-960 { max-width:960px; margin:auto; } .layout-1200 { max-width:1200px; margin:auto; } 
     
 /** 3. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd { display:none; }
