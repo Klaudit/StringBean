@@ -3,7 +3,7 @@
 ### Announcements
 
 ###### March 24th 2016
-v2.3 has been released - major changes have been made for viability of the projet long term - see details here: [Release v2.3 Release Notes](https://github.com/markgreenall/StringBean/releases/tag/v2.3).
+v2.3 has been released - major changes have been made for viability of the project long term - see details here: [Release v2.3 Release Notes](https://github.com/markgreenall/StringBean/releases/tag/v2.3).
 
 ###### March 16th 2016
 FP of Hacker News! - Thank you to all of those who upvoted this project, and particular thanks to those who gave constructive feedback and suggestions, it is always welcome. Any questions please feel free to drop me an email: mark@markgreenall.uk
