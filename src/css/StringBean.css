@@ -2,7 +2,7 @@
 /** 
  * StringBean CSS Framework
  * *****************************************************************************
- * @version StringBean 2.3
+ * @version StringBean 2.4
  * *****************************************************************************
  * @description : StringBean is a mobile-first responsive CSS framework designed
  * to work with not just mobiles, but also with higher resolutions such as 2K,
@@ -35,8 +35,7 @@
 /** 3. Visibility **/
     .show-only-xsmall, .show-only-small, .show-only-medium, .show-only-large, .show-only-mega-hd, .show-only-mega-uhd {display:none;}
     .hide-above-xsmall, .hide-above-small, .hide-above-medium, .hide-above-large, .hide-above-mega-hd, .hide-above-mega-uhd {display:inline-block;}
-    .hide{display:none;}
-    .full-24{width:100%;}
+    .hide{display:none;} .full-24{width:100%;}
     .float-left{float:left} .float-right{float:right} .align-left {text-align:left} .align-center{text-align:center} .align-right{text-align:right} .align-top{vertical-align:top} .align-middle{vertical-align:middle} .align-bottom{vertical-align:bottom}
     .pull-left{float:left; display:block;} .pull-right {float:right; display:block;} .clear-fix,.clear-both{clear:both;}
 
@@ -47,25 +46,32 @@
     .button-set > .button { border-radius:0; margin:1px 0; }
     .button-set > .button:first-child { border-top-left-radius:5px; border-bottom-left-radius:5px; }
     .button-set > .button:last-child { border-top-right-radius:5px; border-bottom-right-radius:5px; }
+
+    /** Jumbotrons **/
     .jumbotron { display:block; padding:2em; background:#ececec; border:1px solid #d5d5d5; border-radius:0.35rem; -webkit-border-radius:0.35rem; -moz-border-radius:0.35rem; background-color:#f8faff; padding: 0.5em; margin-top:2em; }
     .jumbotron .row { margin:0 0 0 0; padding:1em; } .jumbotron .row + .row { padding-top:0; }
     .jumbotron h1, .jumbotron h2, .jumbotron h3, .jumbotron h4, .jumbotron h5, .jumbotron h6 { padding-top:0; padding-bottom:0; } .jumbotron p, .jumbotron a { margin-top:0; margin-bottom:0.25rem; }
-    
+
+    /** Cards **/
+    .card { min-height:150px; height:100%; overflow:hidden; position:relative; padding:0; border-top:5px solid transparent; border-right:5px solid transparent; }
+    .card > a > img, .card > a > figure { display:block; position:absolute; }
+    .card > a > img { width:100%; } .card > a > figure { bottom:0; padding:0.5em; background-image:url(img/fader.png); }
+    .card h1, .card h2, .card h3, .card h4, .card h5, .card h6 { text-shadow:1px 1px #000; margin:0 0; }
+
     /** Info Wheels, Labels, and Alerts **/
     .info-wheel { display:inline-block; width:1.75em; max-width:1.75em; height:1.75em; max-height:1.75em; text-align:center; padding:0.25em 0; border-radius:3em; font-size:0.75em; }
     .label { display:inline-block; padding:0.1em 0.5em; font-size:0.75em; font-weight:bold; }
-    
+
     /** Progress Bars **/
     .progress-bar { display:inline-block; border:1px solid #ddd; background-color:#f5f5f5; margin:1px 0; }
     .progress-bar-filler { line-height:2em; min-height:2em; text-align:center; font-weight:bold; font-size:0.75em; padding:0; width: attr(data-sb-value); }
     .progress-bar-filler:after { content: attr(data-sb-value); }  /** Displays the value of data-sb-value attribute in the innerHTML **/
-    
+
     /** Grid Table **/
     .table { padding:0; }
     .table > .row { margin:0; padding:0.5em 0; clear:both; overflow:hidden; border-bottom:1px solid #ddd;  }
-    .table > .row > .cell { float:left; text-align:center; }
-    .table > .row > .cell.header { font-weight:bold; background:#f5f5f5; }
-    
+    .table > .row > .cell { float:left; text-align:center; } .table > .row > .cell.header { font-weight:bold; background:#f5f5f5; }
+
     /** Navbar **/
     nav li { line-height:2em; text-align:center; } nav ul { padding:0.5em 1em; }
     nav a .fa { margin-left:0.25em; } nav ul, nav li, nav a { text-decoration:none; } 
@@ -75,7 +81,7 @@
     nav > ul > ul > li > ul { position:absolute; visibility:hidden; } 
     nav > ul:focus > ul, nav > ul:hover > ul, nav > ul > ul > li:focus > ul, nav > ul > ul > li:hover > ul { display:block; visibility:visible; } 
     nav > ul > ul ul { margin:0; margin-left:-4px; padding:0 1em 0.5em; font-style:normal; box-shadow:0px 1px 2px #ccc; background-color:#fff; z-index:3000000; }
-  
+
 /** 5. Basic Formatting **/    
     h1,h2,h3,h4,h5,h6 { margin:0.75rem 0; margin-bottom:0.25rem; font-weight:normal; } h1 { font-size:2.5rem; } h2 { font-size:2rem; } h3 { font-size:1.75rem; } h4 { font-size:1.5rem; } h5 { font-size:1.25rem; } h6 { font-size:1rem; }
     p { padding:0.5rem 0; }
@@ -86,17 +92,17 @@
     .dark { background-color:#555; border:1px solid #333; color:#eee; }    
     .white-text { color:#fff; } .black-text { color:#000; }
     .rounded { border-radius:5px; }
-    
+
     /** Code & Pre **/
     code > pre { background:#f5f5f5; padding:0.5em; margin:0.5em 0; border-left:0.25em solid #10ec9c; }
-    
+
     /** Sizes **/
     .small { font-size:0.75rem; } .medium { font-size:1.25rem; } .large { font-size:2rem; }    
-    
+
 /** 6. Forms **/
     form,input,button,textarea,select{font-size:1em;font-weight:normal;}
     input[type=text],input[type=password],input[type=file],input[type=radio],input[type=checkbox],textarea,select{display:inline-block; background-color:#fff; border:1px solid #ddd; padding:0 0.5em 0 0.5em; min-height:2.25em; line-height:2em;}
-    
+
 /** 7. Breakpoints **/
 
     /** XSMALL **/
