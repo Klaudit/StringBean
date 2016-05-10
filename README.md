@@ -1,4 +1,4 @@
-![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/img/StringBean-Logos/1024x1024-Trans.png "StringBean")
+![alt text](https://s3-eu-west-1.amazonaws.com/stringbean/img/StringBean-Logos/Github-Logo.png "StringBean")
 
 ### Announcements
 
